@@ -4,8 +4,8 @@ main:
     url: /publications/
  
 
-  - title: "Teaching"
-    url: /teaching/    
+#  - title: "Teaching"
+#    url: /teaching/
 
     
   - title: "CV"

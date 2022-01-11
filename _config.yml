@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Matthew Cheng"
   avatar           : "profile.png"
-  bio              : "PhD Student at UCL, Space Physics and Data Intensive Science"
+  bio              : "PhD Student at UCL in Data Intensive Science and Space Physics"
   location         : "London"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : #"http://yourfullgooglescholarurl.com"
-  email            :
+  email            : "i.cheng.19@ucl.ac.uk"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "matthew-cheng-472090110"
   orcid            : "http://orcid.org/0000-0002-3016-3711"
   pinterest        :
   soundcloud       :
