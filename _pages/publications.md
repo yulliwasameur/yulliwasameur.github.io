@@ -11,7 +11,7 @@ These works provide an overview of my research in space plasma physics at Saturn
 
 * **Cheng, I.**, Achilleos, N., Masters, A., Lewis, G., Kane, M., & Guio, P. (2021). "Electron bulk heating at Saturn's magnetopause." <i>Journal of Geophysical Research: Space Physics, 126. </i> Full text available at <a href="https://doi.org/10.1029/2020JA028800"> JGR </a>.
 
-* Upcoming paper on: "Automated Bow Shock and Magnetopause Boundary Detection With Cassini Using Threshold and Deep Learning Methods"
+* **Cheng, I.K.**, Achilleos, N., Smith, A. (2022) "Automated Bow Shock and Magnetopause Boundary Detection With Cassini Using Threshold and Deep Learning Methods"
 
 ## Social Science
 ___
@@ -23,7 +23,7 @@ These works provide an overview of my research in social science data analysis w
 ___
 These works provide an overview of my research in sustainability data analysis with the use of machine learning techniques. 
 
-* Upcoming paper on: "Data-driven decarbonisation pathways for reducing life cycle GHG emissions from food waste in the hospitality & food service sectors"
+* **Cheng, I.K.**, Leong, K.K. (2022). "Data-driven decarbonisation pathways for reducing life cycle GHG emissions from food waste in the hospitality & food service sectors." Prepreint available at <a href="https://europepmc.org/article/ppr/ppr512570"> Europe PMC </a>.
 
 <!-- {% if author.googlescholar %}
   You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
