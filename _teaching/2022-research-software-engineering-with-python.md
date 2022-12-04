@@ -1,5 +1,5 @@
 ---
-title: "Teaching experience 1"
+title: "Research Software Engineering With Python"
 collection: teaching
 type: "Masters course"
 permalink: /teaching/research-software-engineering-with-python
