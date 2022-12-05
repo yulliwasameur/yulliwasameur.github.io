@@ -1,0 +1,23 @@
+---
+layout: archive
+title: "Code"
+permalink: /code/
+author_profile: true
+---
+
+<article class="code">
+  <div>
+    {% assign public_repos = site.github.public_repositories | sort: 'pushed_at'
+    | reverse %} {% for repo in public_repos %} {% if repo.fork == false %}
+    <h1>
+      <a href="{{ repo.html_url }}" target="_blank"> {{ repo.name }} </a>
+    </h1>
+    <h4>{{ repo.description }}</h4>
+    {% if repo.language %} {{ repo.language }} {% endif %}
+    <i class="fas fa-star pl-md-2" aria-hidden="true"></i> {{
+    repo.stargazers_count }}
+    <i class="fas fa-code-branch pl-md-2" aria-hidden="true"></i>{{
+    repo.forks_count }} <br /><br />
+    {% endif %} {% endfor %}
+  </div>
+</article>
