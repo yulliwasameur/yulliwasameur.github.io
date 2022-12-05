@@ -10,5 +10,3 @@ redirect_to: https://www.dropbox.com/s/5ncwxg9f7ukjxxw/CV.pdf?dl=0
 ---
 
 {% include base_path %}
-
-[Download CV here](https://ikitcheng.github.io/files/cv.pdf)
