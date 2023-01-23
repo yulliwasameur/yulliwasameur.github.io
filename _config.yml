@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Yulliwas Ameur"
   avatar           : "profile.png"
-  bio              : "PhD Student CYBER SECURITY, DATA SCIENCE, member of ARCSI"
+  bio              : "PhD Student CYBER SECURITY, DATA SCIENCE, member of <a href="https://www.arcsi.fr/">ARCSI</a> " 
   location         : "Paris"
   employer         :
   googlescholar    : "https://scholar.google.com/citations?view_op=list_works&hl=fr&user=wwTgzYsAAAAJ"
