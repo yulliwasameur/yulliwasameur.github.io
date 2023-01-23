@@ -82,7 +82,8 @@ analytics:
 author:
   name             : "Yulliwas Ameur"
   avatar           : "profile.png"
-  bio              : "Phd student in cryptography and machine learning"
+  bio              : "PhD Student CYBER SECURITY & DATA SCIENCE- member of <a href="https://www.arcsi.fr/">Association des Réservistes du Chiffre et de la Sécurité de l'Information
+  ARCSI</a> 🔐"
   location         : "Paris"
   employer         :
   googlescholar    : "https://scholar.google.com/citations?view_op=list_works&hl=fr&user=wwTgzYsAAAAJ"
@@ -100,7 +101,7 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/yameur/"
+  linkedin         : "yameur"
   orcid            : "https://orcid.org/0000-0003-1435-2982"
   pinterest        :
   soundcloud       :
