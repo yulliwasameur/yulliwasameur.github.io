@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Yulliwas AMEUR"
 title_separator          : "-"
 name                     : &name "Yulliwas AMEUR"
-description              : &description "PhD Student CYBER SECURITY & DATA SCIENCE- 🔐ARCSI member"
+description              : &description "Teacher-Researcher in Cybersecurity - Efrei Research Lab (Paris Pantheon-Assas University)"
 url                      : https://yulliwasameur.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "yulliwasameur/yulliwasameur.github.io"
@@ -82,13 +82,13 @@ analytics:
 author:
   name             : "Yulliwas Ameur"
   avatar           : "profile.png"
-  bio              : "PhD Student on CYBER SECURITY & DATA SCIENCE, member of ARCSI" 
+  bio              : "Teacher-Researcher in Cybersecurity, Efrei (Paris Panthéon-Assas Université). PhD in CS (Cnam, 2023). ARCSI member."
   location         : "Paris"
-  employer         :
+  employer         : "Efrei Research Lab"
   googlescholar    : "https://scholar.google.com/citations?view_op=list_works&hl=fr&user=wwTgzYsAAAAJ"
-  email            : "yulliwas.ameur@lecnam.net"
+  email            : "yulliwas.ameur@efrei.fr"
   researchgate     :  "https://www.researchgate.net/profile/Yulliwas-Ameur-3"
-  uri              :
+  uri              : "https://cv.hal.science/yulliwas-ameur"
   bitbucket        :
   codepen          :
   dribbble         :
