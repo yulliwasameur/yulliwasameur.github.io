@@ -6,18 +6,18 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "fr-FR"
 title                    : "Yulliwas AMEUR"
 title_separator          : "-"
 name                     : &name "Yulliwas AMEUR"
-description              : &description "Teacher-Researcher in Cybersecurity - Efrei Research Lab (Paris Pantheon-Assas University)"
+description              : &description "Dr Yulliwas Ameur, enseignant-chercheur en cybersécurité à Efrei : cryptographie, PPML, sécurité des systèmes, réseaux et IA."
 url                      : https://yulliwasameur.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "yulliwasameur/yulliwasameur.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
-future                   : true
+future                   : false
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : true #change to true to add link to talkmap on talks page
 comments:
@@ -62,18 +62,24 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Open Graph/Twitter default site image
+og_image                 : "profile.png" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : Person
+  name                   : "Yulliwas Ameur"
+  links:
+    - "https://github.com/yulliwasameur"
+    - "https://www.linkedin.com/in/yameur/"
+    - "https://cv.hal.science/yulliwas-ameur"
+    - "https://orcid.org/0000-0003-1435-2982"
+    - "https://scholar.google.com/citations?user=wwTgzYsAAAAJ"
+    - "https://www.researchgate.net/profile/Yulliwas-Ameur-3"
 
 
 # Analytics
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               : false # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          :
 
@@ -82,8 +88,8 @@ analytics:
 author:
   name             : "Yulliwas Ameur"
   avatar           : "profile.png"
-  bio              : "Teacher-Researcher in Cybersecurity, Efrei (Paris Panthéon-Assas Université). PhD in CS (Cnam, 2023). ARCSI member."
-  location         : "Paris"
+  bio              : "Enseignant-chercheur en cybersécurité à Efrei. Docteur en informatique du Cnam."
+  location         : "Paris, France"
   employer         : "Efrei Research Lab"
   googlescholar    : "https://scholar.google.com/citations?view_op=list_works&hl=fr&user=wwTgzYsAAAAJ"
   email            : "yulliwas.ameur@efrei.fr"
@@ -106,7 +112,7 @@ author:
   soundcloud       :
   steam            :
   tumblr           :
-  twitter          : "@EneeleTacticien"
+  twitter          :
   vine             :
   weibo            :
   xing             :
@@ -129,6 +135,7 @@ exclude:
   - Capfile
   - Gemfile
   - Gruntfile.js
+  - INSTRUCTIONS_MISE_A_JOUR.md
   - LICENSE
   - README
   - Rakefile
@@ -138,6 +145,7 @@ exclude:
   - config
   - gulpfile.js
   - log
+  - markdown_generator
   - node_modules
   - package.json
   - tmp
@@ -178,7 +186,7 @@ collections:
     output: true
     permalink: /:collection/:path/
   portfolio:
-    output: true
+    output: false
     permalink: /:collection/:path/
   talks:
     output: true
@@ -251,7 +259,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/Paris
 
 
 # Plugins

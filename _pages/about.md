@@ -1,21 +1,67 @@
 ---
 permalink: /
-title: " "
-excerpt: " "
+title: "Dr Yulliwas Ameur"
+excerpt: "Enseignant-chercheur en cybersécurité à Efrei, docteur en informatique du Cnam : cryptographie, PPML, sécurité des systèmes et des réseaux, IA et gouvernance."
+description: "Profil académique de Yulliwas Ameur : enseignant-chercheur en cybersécurité à Efrei, membre associé du CEDRIC, publications, enseignements et expertise."
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I am a teacher-researcher (enseignant-chercheur) in cybersecurity at <a href="https://www.efrei.fr/">Efrei</a> (Paris Panthéon-Assas Université), within the "Security, Resilience and Digital Trust" research group of the <a href="https://www.efrei.fr/innovation-recherche/le-laboratoire-de-recherche/">Efrei Research Lab</a>, and an associate member of the <a href="https://roc.cnam.fr/">ROC team</a> of the <a href="http://cedric.cnam.fr/">CEDRIC lab</a> (Cnam, Paris). At Efrei, I head the work-study "Networks & Security" major and oversee the educational use of the Airbus cyber range.
+Je suis **enseignant-chercheur en cybersécurité à [Efrei](https://www.efrei.fr/)**, établissement-composante de l'Université Paris-Panthéon-Assas. Mes travaux s'inscrivent dans l'axe « Sécurité, Résilience et Confiance Numérique » de l'[Efrei Research Lab](https://www.efrei.fr/innovation-recherche/le-laboratoire-de-recherche/). Je suis également **membre associé de l'équipe [ROC](https://roc.cnam.fr/) du laboratoire [CEDRIC](https://cedric.cnam.fr/)** au Cnam.
 
-I received my PhD in computer science from the <a href="https://www.cnam.fr/">Conservatoire national des arts et métiers</a> (HESAM Université) in December 2023, under the supervision of <a href="https://samia.roc.cnam.fr/">Samia Bouzefrane</a> (ROC team) and <a href="https://vincentaudigier.weebly.com/">Vincent Audigier</a> (MSDMA team). My thesis, <a href="https://theses.hal.science/tel-04587371">"Exploring the Scope of Machine Learning using Homomorphic Encryption in IoT/Cloud"</a>, focused on privacy-preserving machine learning over encrypted data. Before joining Efrei in 2024, I was a teaching and research fellow (ATER) at Université Paris Panthéon-Assas.
+[Publications](/publications/){: .btn .btn--primary }
+[CV public](/cv/){: .btn }
+[LinkedIn](https://www.linkedin.com/in/yameur/){: .btn }
+[HAL](https://cv.hal.science/yulliwas-ameur){: .btn }
+[GitHub](https://github.com/yulliwasameur){: .btn }
 
-I graduated from the <a href="https://www.univ-paris8.fr/-Master-Arithmetique-Codage-et-Cryptologie-">master's programme in Arithmetic, Coding and Cryptology</a> of the University of Paris 8 (2019), after a research internship on side-channel attacks against code-based (post-quantum) cryptographic schemes in the TAMIS team at <a href="https://www.inria.fr/fr/centre-inria-universite-rennes">Inria Rennes – Bretagne Atlantique</a>, supervised by <a href="https://axnxlxe.github.io/">Annelie Heuser</a>, <a href="https://www.math.univ-paris13.fr/~borello/">Martino Borello</a> and <a href="https://sites.google.com/site/taniarichmondnc/home/en">Tania Richmond</a>.
+## Responsabilités actuelles
 
-My research interests include homomorphic encryption and privacy-preserving machine learning (PPML), post-quantum cryptography (hybrid constructions, implementation optimisation, side-channel attacks), security of IoT/cloud environments and vehicular networks, intrusion detection over encrypted traffic (TLS 1.3/QUIC), security and governance of LLM-based applications (GovSecLLM++ benchmark), blockchain privacy, and multidisciplinary approaches to digital security (cybercriminology, digital forensics).
+- Responsable du programme **Réseaux et Sécurité en alternance** à Efrei.
+- Gestion pédagogique de la **cyber range Airbus**.
+- Enseignements de niveau master et fin de cycle ingénieur : ethical hacking, sécurité avancée Windows et Active Directory, cryptographie, cybersécurité, sécurité des réseaux, projets Windows et forensique.
+- Recherche, encadrement et expertise en cryptographie appliquée, sécurité des systèmes et investigation numérique.
 
-I am CEH v13 and PRINCE2 7 Foundation certified, and currently pursuing a university diploma in cybercriminology (Paris Nanterre), a master's degree in IT security, cybersecurity and cyberthreats (Cnam) and an Executive MBA (IAE Paris-Sorbonne). I am a member of <a href="https://www.arcsi.fr/">ARCSI</a>, <a href="https://new.afsin.org/">AFSIN</a> and <a href="https://cefcys.fr/">CEFCYS</a>, a cyber helper of the <a href="https://messervices.cyber.gouv.fr/cyberdepart">MonAideCyber</a> community (ANSSI), and I take part in science outreach with the Inria programme <a href="https://www.inria.fr/fr/programme-chiche-sensibilisation-numerique">"1 scientifique, 1 classe : chiche !"</a>.
+## Axes de recherche
 
-An always up-to-date list of my publications is available on my <a href="https://cv.hal.science/yulliwas-ameur">HAL CV</a>. You can reach me at <a href="mailto:yulliwas.ameur@efrei.fr">yulliwas.ameur@efrei.fr</a>.
+- **Chiffrement homomorphe et PPML** : k-NN et k-means sécurisés, confidentialité différentielle, calcul sur données chiffrées.
+- **Cryptographie post-quantique** : constructions hybrides, optimisation, implémentation et attaques par canaux auxiliaires.
+- **Sécurité des systèmes et réseaux** : IoT/cloud, multi-cloud, VANET et réseaux CAN automobiles, IDS sur trafic TLS 1.3/QUIC, SOC/SIEM.
+- **Sécurité et gouvernance de l'IA** : tests de sécurité des applications à base de LLM, preuve de conformité, benchmark [GovSecLLM++](https://github.com/yulliwasameur/GovSecLLMpp-SECAI2026).
+
+[Voir les projets, encadrements et activités scientifiques](/recherche/){: .btn }
+
+## Travaux récents
+
+- **2026** — *Energy-Efficient Adaptive Zero Trust Security for Automotive CAN Networks*, FiCloud 2026.
+- **2026** — *Secure k-means Clustering using Homomorphic Encryption*, Procedia Computer Science 280.
+- **2026** — *Artificial Intelligence and Machine Learning: Revolutionizing Supply Chain Security*, Springer.
+- **2026** — *GovSecLLM++*, logiciel et jeu de données de reproductibilité sur Zenodo et GitHub.
+
+[Consulter la liste complète et vérifiée](/publications/){: .btn .btn--primary }
+
+## Parcours
+
+Docteur en informatique du [Cnam](https://www.cnam.fr/) (HESAM Université, 2023), j'ai consacré ma [thèse](https://theses.hal.science/tel-04587371) à l'apprentissage automatique sous chiffrement homomorphe dans les environnements IoT/cloud, sous la direction de Samia Bouzefrane et Vincent Audigier. Je suis diplômé du master Arithmétique, Codage et Cryptologie de l'Université Paris 8 (2019) et j'ai effectué mon stage de recherche à Inria Rennes - Bretagne Atlantique sur les attaques par canaux auxiliaires contre les cryptosystèmes post-quantiques. Avant Efrei, j'ai été ATER à l'Université Paris-Panthéon-Assas.
+
+Je poursuis un Executive MBA à l'IAE Paris-Sorbonne et un master 2 « Sécurité informatique, cybersécurité et cybermenaces » au Cnam. La formation du DU de cybercriminologie de l'Université Paris Nanterre a été suivie ; le diplôme reste en cours de validation jusqu'à la soutenance annoncée en septembre 2026.
+
+## Expertise et engagement
+
+Certifié CEH v13 et PRINCE2 7 Foundation, je suis membre de l'[ARCSI](https://www.arcsi.fr/), de l'[AFSIN](https://new.afsin.org/) et du [CEFCYS](https://cefcys.fr/). Je contribue au dispositif [MonAideCyber](https://messervices.cyber.gouv.fr/cyberdepart) de l'ANSSI en tant qu'Aidant cyber et à la médiation scientifique avec le programme Inria [« 1 scientifique, 1 classe : Chiche ! »](https://www.inria.fr/fr/programme-chiche-sensibilisation-numerique).
+
+## Analyses et newsletter
+
+J'anime **« Les rendez-vous de la cyber »**, une newsletter professionnelle consacrée aux transformations de la menace, à la gouvernance numérique, à l'IA et à la conformité. Les articles d'analyse sont présentés séparément des publications scientifiques.
+
+[Lire les analyses et la newsletter](/analyses/){: .btn .btn--primary }
+
+## English profile
+
+I am a cybersecurity teacher-researcher at Efrei (Paris-Panthéon-Assas University) and an associate member of the ROC team at the CEDRIC laboratory, Cnam. My research covers homomorphic encryption and privacy-preserving machine learning, post-quantum cryptography, IoT/cloud and network security, encrypted-traffic intrusion detection, and security governance for LLM-based applications.
+
+## Contact professionnel
+
+[yulliwas.ameur@efrei.fr](mailto:yulliwas.ameur@efrei.fr) — Paris, France

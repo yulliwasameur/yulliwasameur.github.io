@@ -3,7 +3,7 @@ title: "Homomorphic encryption and machine learning: advances and challenges"
 collection: talks
 type: "Seminar talk"
 permalink: /talks/2021-04-15-cedric-seminar
-venue: "CEDRIC seminar - "Confiance et S&eacute;curit&eacute; Num&eacute;rique" axis"
+venue: 'CEDRIC seminar - "Confiance et S&eacute;curit&eacute; Num&eacute;rique" axis'
 date: 2021-04-15
 location: "Paris, France"
 ---

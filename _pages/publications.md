@@ -3,12 +3,48 @@ layout: archive
 title: "Publications"
 permalink: /publications/
 author_profile: true
+description: "Publications scientifiques, thèse, prépublication, logiciels et jeux de données de Yulliwas Ameur en cybersécurité, cryptographie et apprentissage automatique préservant la vie privée."
 ---
 
-## Book chapter
-___
-Ameur, Y., Bouzefrane, S., Audigier, V. (2023). Application of Homomorphic Encryption in Machine Learning. In: Daimi, K., Alsadoon, A., Peoples, C., El Madhoun, N. (eds)  <a href="https://doi.org/10.1007/978-3-031-09640-2_18"> Emerging Trends in Cybersecurity Applications. Springer, Cham. </a>
+Cette page distingue les publications évaluées par les pairs des autres productions de recherche. Les notices HAL et les DOI éditeurs sont fournis lorsqu'ils sont disponibles. Mon [CV HAL](https://cv.hal.science/yulliwas-ameur) reste la source institutionnelle de référence.
 
-## CONFERENCE PAPERS
-___
-Ameur, Y., Aziz, R., Audigier, V., Bouzefrane, S. (2022). Secure and Non-interactive k-NN Classifier Using Symmetric Fully Homomorphic Encryption. In: Domingo-Ferrer, J., Laurent, M. (eds)  <a href="https://doi.org/10.1007/978-3-031-13945-1_11"> Privacy in Statistical Databases. PSD 2022. Lecture Notes in Computer Science, vol 13463. Springer, Cham.</a>
+## Publications évaluées par les pairs
+
+{% assign sorted_publications = site.publications | sort: "date" | reverse %}
+{% for post in sorted_publications %}
+  {% if post.output_type == "peer-reviewed" %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
+## Prépublication
+
+{% for post in sorted_publications %}
+  {% if post.output_type == "preprint" %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
+## Thèse
+
+{% for post in sorted_publications %}
+  {% if post.output_type == "thesis" %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
+## Logiciels et jeux de données
+
+{% for post in sorted_publications %}
+  {% if post.output_type == "software" or post.output_type == "dataset" %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
+## Évaluation scientifique ouverte
+
+{% for post in sorted_publications %}
+  {% if post.output_type == "open-review" %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
