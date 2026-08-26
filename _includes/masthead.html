@@ -3,21 +3,30 @@
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
+      <nav id="site-nav" class="greedy-nav" aria-label="Navigation principale" data-i18n-aria="navAria">
+        <button class="greedy-nav__toggle" aria-label="Ouvrir le menu" data-i18n-aria="openMenuAria"><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">{{ site.title }}</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/" aria-label="Accueil — Yulliwas Ameur" data-i18n-aria="homeAria"><span class="site-brand-mark" aria-hidden="true">YA</span><span class="site-brand-name">{{ site.title }}</span></a></li>
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
-              {% else %}
+            {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            <li class="masthead__menu-item{% if link.featured %} masthead__menu-item--featured{% endif %}"><a href="{{ domain }}{{ link.url }}" data-nav-key="{{ link.key | default: link.title | downcase }}"{% if link.featured %} data-radar-link="top"{% endif %}>{{ link.title }}</a></li>
           {% endfor %}
         </ul>
         <ul class="hidden-links hidden"></ul>
+        <div class="site-nav-tools">
+          <div class="site-language" role="group" aria-label="Langue" data-i18n-aria="languageAria">
+            <button type="button" data-site-lang="fr" aria-pressed="true" title="Français">FR</button>
+            <button type="button" data-site-lang="en" aria-pressed="false" title="English">EN</button>
+            <button type="button" data-site-lang="kab" aria-pressed="false" title="Taqbaylit">TQ</button>
+          </div>
+          <button class="site-theme-toggle" type="button" data-theme-toggle aria-label="Changer de thème" data-i18n-aria="themeAria"><span aria-hidden="true"></span></button>
+        </div>
       </nav>
     </div>
   </div>
+  <div class="site-scroll-progress" aria-hidden="true"><span></span></div>
 </div>
