@@ -1,0 +1,56 @@
+name: Validate personal website
+
+on:
+  pull_request:
+    branches: [master]
+    paths: ['_pages/**','_includes/**','_data/navigation.yml','_sass/**','assets/css/**','assets/js/**','_config.yml','Gemfile','.github/workflows/validate-personal-site.yml']
+  push:
+    branches: ['redesign/**']
+    paths: ['_pages/**','_includes/**','_data/navigation.yml','_sass/**','assets/css/**','assets/js/**','_config.yml','Gemfile','.github/workflows/validate-personal-site.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-personal-site-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+      - name: Validate JavaScript
+        run: node --check assets/js/site-experience.js
+      - name: Build the Jekyll website
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build --trace
+      - name: Validate generated experience
+        run: |
+          python - <<'PY'
+          from html.parser import HTMLParser
+          from pathlib import Path
+          page = Path('_site/index.html').read_text(encoding='utf-8')
+          parser = HTMLParser(convert_charrefs=True); parser.feed(page); parser.close()
+          for marker in ('CyberResearch Radar','data-site-lang="fr"','data-site-lang="en"','data-site-lang="kab"','/assets/js/site-experience.js','/cyberresearchradar/','ya-home'):
+              assert marker in page, f'Missing homepage marker: {marker}'
+          for path in ('_site/assets/css/main.css','_site/assets/js/site-experience.js','_site/cyberresearchradar/index.html','_site/cyberresearchradar/data/manifest.json'):
+              assert Path(path).is_file(), f'Missing generated file: {path}'
+          PY
+          git diff --check
+      - name: Smoke-test public paths
+        run: |
+          python -m http.server 8765 --directory _site >/tmp/site-http.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+          sleep 1
+          curl --fail --silent --show-error http://127.0.0.1:8765/ >/dev/null
+          curl --fail --silent --show-error http://127.0.0.1:8765/assets/js/site-experience.js >/dev/null
+          curl --fail --silent --show-error http://127.0.0.1:8765/cyberresearchradar/ >/dev/null
