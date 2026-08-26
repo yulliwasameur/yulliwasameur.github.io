@@ -1,0 +1,25 @@
+{
+  "index.html": {
+    "parts": [
+      "index.01.b64"
+    ],
+    "sha256": "9c11536f0f051510c504c36b77a9399b13d6b0a5feb235b322384b164d4d4536",
+    "bytes": 15557
+  },
+  "assets/styles.css": {
+    "parts": [
+      "styles.01.b64"
+    ],
+    "sha256": "507088aebd1334b99bd267b0f44c25e363fcf35bfdc9e586cea1fb2e73e3b308",
+    "bytes": 23933
+  },
+  "assets/app.js": {
+    "parts": [
+      "app.01.b64",
+      "app.02.b64",
+      "app.03.b64"
+    ],
+    "sha256": "56656c3bff6d3ea480708746e73783d4e6ff97aaf15307c295c9690089377072",
+    "bytes": 60451
+  }
+}
