@@ -1,11 +1,27 @@
 {
-  "generatedAt": null,
-  "sourceCommit": null,
+  "generatedAt": "2026-08-26T16:54:41Z",
+  "sourceCommit": "83b3ec638233716c3d1400aeb1339e48ed07e4b8",
   "sourceRepository": "yulliwasameur/cyber-research-radar",
   "recordCounts": {
-    "eventsRaw": 0,
-    "eventsUnique": 0,
-    "journals": 0
+    "eventsRaw": 345,
+    "eventsUnique": 321,
+    "journals": 59,
+    "countries": 43
   },
-  "status": "waiting-for-first-automated-refresh"
+  "files": [
+    "opportunities.json",
+    "crypto_opportunities.json",
+    "cyber_opportunities.json",
+    "catalogue_events.json",
+    "journals.json",
+    "watch_report.json",
+    "journal_watch_report.json"
+  ],
+  "languages": [
+    "fr",
+    "en",
+    "kab"
+  ],
+  "publicPath": "/cyberresearchradar/",
+  "status": "ok"
 }

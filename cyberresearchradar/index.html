@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#07151b">
+  <meta name="description" content="Carte mondiale des conférences, workshops et appels à communications en cybersécurité et cryptographie.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://yulliwasameur.github.io/cyberresearchradar/">
+  <link rel="alternate" hreflang="fr" href="https://yulliwasameur.github.io/cyberresearchradar/?lang=fr">
+  <link rel="alternate" hreflang="en" href="https://yulliwasameur.github.io/cyberresearchradar/?lang=en">
+  <link rel="alternate" hreflang="kab" href="https://yulliwasameur.github.io/cyberresearchradar/?lang=kab">
+  <link rel="alternate" hreflang="x-default" href="https://yulliwasameur.github.io/cyberresearchradar/">
+  <title>CyberResearch Radar — Événements cyber dans le monde</title>
+  <link rel="preconnect" href="https://unpkg.com" crossorigin>
+  <link rel="preconnect" href="https://tile.openstreetmap.org" crossorigin>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script defer src="./assets/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Aller au contenu</a>
+
+  <header class="topbar" id="top">
+    <a class="brand" href="#top" aria-label="CyberResearch Radar">
+      <span class="brand-mark" aria-hidden="true">CR</span>
+      <span><strong>CyberResearch Radar</strong><small data-i18n="brandSubtitle">Veille mondiale des événements cyber</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Navigation principale" data-i18n-aria="navAria">
+      <a href="#events" data-i18n="navEvents">Événements</a>
+      <a href="#journals" data-i18n="navJournals">Revues</a>
+      <a href="#method" data-i18n="navMethod">Méthode</a>
+      <a href="#scope" data-i18n="navScope">Périmètre</a>
+      <a href="https://github.com/yulliwasameur/cyber-research-radar" target="_blank" rel="noreferrer" data-i18n="navContribute">Contribuer ↗</a>
+    </nav>
+    <div class="header-tools">
+      <span class="update-pill"><i aria-hidden="true"></i><span data-i18n="weeklyRefresh">Actualisation chaque lundi</span></span>
+      <div class="language-switcher" role="group" aria-label="Langue" data-i18n-aria="languageAria">
+        <button type="button" data-lang="fr" aria-pressed="true">FR</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-lang="kab" aria-pressed="false">TQ</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="heroEyebrow">Fondé sur les preuves · mondial · ouvert à la communauté</p>
+        <h1 id="hero-title" data-i18n-html="heroTitle">La carte mondiale des événements de <em>cybersécurité et cryptographie.</em></h1>
+        <p class="lede" data-i18n="heroLead">Suivez conférences, workshops, ateliers et échéances de CFP sur tous les continents, avec des classements distincts et des liens vers les sources officielles.</p>
+        <div class="hero-actions">
+          <a class="primary-action" href="#events" data-i18n="exploreRadar">Explorer le radar</a>
+          <a class="secondary-action" href="#journals" data-i18n="chooseJournal">Choisir une revue</a>
+          <a class="secondary-action" href="#method" data-i18n="readMethod">Lire la méthode</a>
+        </div>
+        <div class="quick-filters" aria-label="Thématiques principales" data-i18n-aria="coreScopeAria">
+          <span data-i18n="expertScope">Domaines :</span><b>PQC</b><b>Homomorphic encryption</b><b>PPML</b><b>AI security</b><b>Digital forensics</b>
+        </div>
+      </div>
+      <aside class="deadline-signal" aria-label="Prochaines échéances vérifiées" data-i18n-aria="nextDeadlinesAria">
+        <div class="signal-head"><span data-i18n="deadlineSignal">Signal des échéances</span><strong>LIVE · 2026—27</strong></div>
+        <div class="signal-orbit" aria-hidden="true"><i></i><i></i><i></i><span>CR</span></div>
+        <div class="next-calls" id="next-calls" aria-live="polite"></div>
+        <div class="signal-legend"><span><i class="dot aqua"></i><span data-i18n="officialEvidence">preuve officielle</span></span><span><i class="dot coral"></i><span data-i18n="closestFirst">échéances proches</span></span></div>
+      </aside>
+    </section>
+
+    <section class="pulse" aria-label="Couverture du portail" data-i18n-aria="coverageAria">
+      <div><strong id="stat-events">—</strong><span data-i18n="statEvents">événements cyber et crypto</span></div>
+      <div><strong id="stat-countries">—</strong><span data-i18n="statCountries">pays représentés</span></div>
+      <div><strong id="stat-journals">—</strong><span data-i18n="statJournals">fiches de revues</span></div>
+      <div><strong>A* → C</strong><span data-i18n="statRanks">signaux ICORE traçables</span></div>
+    </section>
+
+    <section class="research-hub" aria-label="Répertoire de veille scientifique" data-i18n-aria="hubAria">
+      <div class="portal-tabs" role="tablist">
+        <button id="events-tab" type="button" role="tab" aria-selected="true" aria-controls="events-panel" data-view="events">
+          <span>01</span><strong data-i18n="tabEvents">Événements</strong><small id="events-tab-count">—</small>
+        </button>
+        <button id="journals-tab" type="button" role="tab" aria-selected="false" aria-controls="journals-panel" data-view="journals" tabindex="-1">
+          <span>02</span><strong data-i18n="tabJournals">Revues</strong><small id="journals-tab-count">—</small>
+        </button>
+      </div>
+
+      <div id="events-panel" role="tabpanel" aria-labelledby="events-tab">
+        <section class="explorer" id="events">
+          <div class="section-heading">
+            <div><p class="eyebrow" data-i18n="eventsEyebrow">Veille mondiale des événements</p><h2 data-i18n="eventsTitle">Trouvez le bon événement avant la clôture du CFP.</h2></div>
+            <p data-i18n="eventsLead">Filtrez les conférences et workshops mondiaux. Les rangs restent séparés et reliés à leur cadre d’origine.</p>
+          </div>
+
+          <form class="filter-deck" id="event-filters" autocomplete="off">
+            <label class="wide-filter"><span data-i18n="searchLabel">Mots-clés, ville ou pays</span><input id="event-query" type="search" data-i18n-placeholder="searchPlaceholder" placeholder="ex. post-quantum, PPML, Paris"></label>
+            <label><span data-i18n="typeLabel">Type d’appel</span><select id="event-type"></select></label>
+            <label><span data-i18n="modeLabel">Format</span><select id="event-mode"></select></label>
+            <label><span data-i18n="rankLabel">Classement</span><select id="event-rank"></select></label>
+            <label><span data-i18n="continentLabel">Continent</span><select id="event-continent"></select></label>
+            <label><span data-i18n="countryLabel">Pays</span><select id="event-country"></select></label>
+            <label><span data-i18n="deadlineLabel">Échéance</span><select id="event-deadline"></select></label>
+            <label><span data-i18n="sortLabel">Tri</span><select id="event-sort"></select></label>
+            <label class="check-filter"><input id="event-verified" type="checkbox"><span data-i18n="verifiedOnly">Vérifiés uniquement</span></label>
+          </form>
+
+          <div class="result-bar">
+            <p id="event-result-copy" aria-live="polite">—</p>
+            <button type="button" id="reset-events" data-i18n="resetFilters">Réinitialiser</button>
+          </div>
+
+          <div class="explorer-grid">
+            <div>
+              <div class="result-list" id="event-list" aria-live="polite"></div>
+              <button class="show-more" id="show-more-events" type="button" hidden data-i18n="showMore">Afficher davantage</button>
+            </div>
+            <aside class="map-column" aria-label="Carte et détail de l’événement" data-i18n-aria="mapColumnAria">
+              <div class="map-toolbar"><div><span data-i18n="globalMap">Carte mondiale</span><small data-i18n="mapHint">Déplacez, zoomez et sélectionnez un marqueur.</small></div><p id="map-count">—</p></div>
+              <div id="research-map" class="research-map" role="region" aria-label="Carte interactive des événements" data-i18n-aria="mapAria"></div>
+              <div id="event-detail" class="event-detail" aria-live="polite"></div>
+            </aside>
+          </div>
+        </section>
+      </div>
+
+      <div id="journals-panel" role="tabpanel" aria-labelledby="journals-tab" hidden>
+        <section class="explorer journal-explorer" id="journals">
+          <div class="section-heading">
+            <div><p class="eyebrow" data-i18n="journalsEyebrow">Ciblage éditorial traçable</p><h2 data-i18n="journalsTitle">Comparez les revues sans confondre portée, frais et métriques.</h2></div>
+            <p data-i18n="journalsLead">Les informations sont datées et reliées aux sources de l’éditeur ou des index bibliométriques.</p>
+          </div>
+          <form class="filter-deck journal-filters" id="journal-filters" autocomplete="off">
+            <label class="wide-filter"><span data-i18n="journalSearchLabel">Titre, éditeur ou thématique</span><input id="journal-query" type="search" data-i18n-placeholder="journalSearchPlaceholder" placeholder="ex. privacy, cryptography, IEEE"></label>
+            <label><span data-i18n="accessLabel">Modèle d’accès</span><select id="journal-access"></select></label>
+            <label><span data-i18n="journalRankLabel">Signal de classement</span><select id="journal-rank"></select></label>
+            <label class="check-filter"><input id="journal-active" type="checkbox" checked><span data-i18n="activeOnly">Revues actives uniquement</span></label>
+          </form>
+          <div class="result-bar"><p id="journal-result-copy" aria-live="polite">—</p><button type="button" id="reset-journals" data-i18n="resetFilters">Réinitialiser</button></div>
+          <div class="journal-grid" id="journal-list"></div>
+          <button class="show-more" id="show-more-journals" type="button" hidden data-i18n="showMore">Afficher davantage</button>
+        </section>
+      </div>
+    </section>
+
+    <section class="method-section" id="method">
+      <div class="method-intro">
+        <p class="eyebrow" data-i18n="methodEyebrow">Aucun score de prestige opaque</p>
+        <h2 data-i18n="methodTitle">Des signaux académiques maintenus honnêtes.</h2>
+        <p data-i18n="methodLead">Classements de conférences, indexation des revues et métriques bibliométriques répondent à des questions différentes. Le radar les conserve séparés, datés et sourcés.</p>
+        <a href="https://github.com/yulliwasameur/cyber-research-radar/blob/main/docs/methodology.md" target="_blank" rel="noreferrer" data-i18n="openPolicy">Ouvrir la politique éditoriale ↗</a>
+      </div>
+      <div class="framework-list">
+        <a href="https://portal.core.edu.au/conf-ranks/" target="_blank" rel="noreferrer"><span>01</span><div><strong>ICORE / CORE 2026</strong><p data-i18n="coreText">Preuve principale A*, A, B et C pour les séries de conférences correspondantes.</p></div><b data-i18n="conferenceRank">Classement conférence ↗</b></a>
+        <a href="https://www.ccf.org.cn/Academic_Evaluation/By_category/" target="_blank" rel="noreferrer"><span>02</span><div><strong>CCF</strong><p data-i18n="ccfText">Une perspective A, B et C distincte, utile notamment pour les événements internationaux et asiatiques.</p></div><b data-i18n="ccfSignal">Conférences et revues ↗</b></a>
+        <a href="https://www.scopus.com/sources" target="_blank" rel="noreferrer"><span>03</span><div><strong>Scopus / SJR</strong><p data-i18n="scopusText">Indexation et métriques au niveau de la source, jamais converties artificiellement en rang CORE.</p></div><b data-i18n="indexSignal">Signal d’indexation ↗</b></a>
+        <a href="https://sfdora.org/read/" target="_blank" rel="noreferrer"><span>04</span><div><strong>DORA</strong><p data-i18n="doraText">Les métriques d’une revue ne remplacent pas l’évaluation d’un article, d’un chercheur ou d’un programme.</p></div><b data-i18n="responsibleUse">Usage responsable ↗</b></a>
+      </div>
+    </section>
+
+    <section class="scope-section" id="scope">
+      <div class="scope-copy"><p class="eyebrow" data-i18n="scopeEyebrow">Contexte de chercheur senior</p><h2 data-i18n="scopeTitle">Assez large pour découvrir. Assez précis pour préparer une soumission.</h2><p data-i18n="scopeLead">Le périmètre couvre la cryptographie appliquée, la cybersécurité, la confidentialité, les systèmes sûrs, l’IA digne de confiance et l’investigation numérique.</p></div>
+      <div class="scope-grid">
+        <article><span>01</span><h3 data-i18n="scopeCryptoTitle">Cryptographie et confidentialité</h3><p data-i18n="scopeCryptoText">Chiffrement homomorphe, PQC, calcul sécurisé, blockchain et apprentissage préservant la vie privée.</p></article>
+        <article><span>02</span><h3 data-i18n="scopeSystemsTitle">Systèmes et réseaux</h3><p data-i18n="scopeSystemsText">IoT/cloud, trafic chiffré, SIEM, Windows/AD, résilience réseau et infrastructures critiques.</p></article>
+        <article><span>03</span><h3 data-i18n="scopeAiTitle">IA et investigation numérique</h3><p data-i18n="scopeAiText">IA digne de confiance, ML adversarial, forensique, réponse à incident et cybercriminalité.</p></article>
+        <article><span>04</span><h3 data-i18n="scopeResearchTitle">Recherche et formation</h3><p data-i18n="scopeResearchText">Écoles de recherche, financements, doctorats, cyber ranges, programmes et pédagogie de la sécurité.</p></article>
+      </div>
+    </section>
+
+    <section class="community-cta">
+      <div><p class="eyebrow" data-i18n="communityEyebrow">Un point d’entrée partagé</p><h2 data-i18n="communityTitle">Aidez les chercheurs à trouver l’appel qu’ils auraient manqué.</h2></div>
+      <div><p data-i18n="communityText">Proposez un événement, corrigez une échéance ou ajoutez une source. Chaque changement reste visible et révisable.</p><a href="https://github.com/yulliwasameur/cyber-research-radar/issues/new/choose" target="_blank" rel="noreferrer" data-i18n="contributeGithub">Contribuer sur GitHub ↗</a></div>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>CyberResearch Radar</strong> · <span data-i18n="footerTagline">Carte mondiale des événements de cybersécurité et cryptographie.</span></p>
+    <p><span data-i18n="curatedBy">Sélectionné par Yulliwas Ameur</span> · <span id="last-refresh" data-i18n="loading">Chargement…</span> · <span data-i18n="officialFirst">sources officielles en priorité</span></p>
+    <p class="source-language-note" data-i18n="sourceLanguageNote">L’interface est trilingue ; les titres et résumés officiels restent dans leur langue source afin de préserver leur exactitude.</p>
+  </footer>
+
+  <noscript><div class="noscript">JavaScript est nécessaire pour charger les données et les filtres du radar.</div></noscript>
+</body>
+</html>
