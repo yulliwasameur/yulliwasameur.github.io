@@ -1,5 +1,6 @@
 name: Update CyberResearch Radar on GitHub Pages
 
+# Bootstrap marker: workflow is now established on the default branch.
 on:
   schedule:
     # The source registry refreshes Mondays at 06:00 UTC; publish after a safe buffer.
