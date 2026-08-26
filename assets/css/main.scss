@@ -10,7 +10,7 @@
  *
 */
 
-@import "vendor/breakpoint/breakpoint"; // media query mixins
+@import "vendor/breakpoint/breakpoint";
 @import "variables";
 @import "mixins";
 @import "vendor/susy/susy";
@@ -39,3 +39,6 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+/* Personal research experience layer. Keep this import last. */
+@import "site-experience";
