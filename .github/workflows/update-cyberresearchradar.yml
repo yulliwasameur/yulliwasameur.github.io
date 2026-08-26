@@ -1,0 +1,106 @@
+name: Update CyberResearch Radar on GitHub Pages
+
+on:
+  schedule:
+    # The source registry refreshes Mondays at 06:00 UTC; publish after a safe buffer.
+    - cron: '30 8 * * 1'
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+      - feature/cyberresearchradar-pages
+    paths:
+      - '.github/workflows/update-cyberresearchradar.yml'
+      - 'scripts/update_cyberresearchradar.py'
+      - 'scripts/build_cyberresearchradar_static.py'
+      - 'scripts/cyberresearchradar_assets/**'
+      - 'cyberresearchradar/index.html'
+      - 'cyberresearchradar/assets/**'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cyberresearchradar-pages-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  update:
+    if: github.actor != 'github-actions[bot]' || github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+
+    steps:
+      - name: Check out the personal GitHub Pages repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check out the CyberResearch Radar source registry
+        uses: actions/checkout@v4
+        with:
+          repository: yulliwasameur/cyber-research-radar
+          ref: main
+          path: _cyber_radar_source
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Rebuild the reviewed static application
+        run: |
+          python scripts/build_cyberresearchradar_static.py \
+            --destination cyberresearchradar
+
+      - name: Validate and copy the latest datasets
+        run: |
+          python scripts/update_cyberresearchradar.py \
+            --source _cyber_radar_source \
+            --destination cyberresearchradar
+
+      - name: Validate the static application
+        run: |
+          node --check cyberresearchradar/assets/app.js
+          python - <<'PY'
+          from html.parser import HTMLParser
+          from pathlib import Path
+
+          class StrictEnoughParser(HTMLParser):
+              def error(self, message):
+                  raise RuntimeError(message)
+
+          page = Path('cyberresearchradar/index.html').read_text(encoding='utf-8')
+          parser = StrictEnoughParser(convert_charrefs=True)
+          parser.feed(page)
+          parser.close()
+          assert '<html lang="fr">' in page
+          assert './assets/styles.css' in page
+          assert './assets/app.js' in page
+          assert 'data-lang="fr"' in page and 'data-lang="en"' in page and 'data-lang="kab"' in page
+          assert 'chatgpt.site' not in page.lower()
+          PY
+          git diff --check
+
+      - name: Smoke-test the /cyberresearchradar path
+        run: |
+          python -m http.server 8765 --directory . >/tmp/cyberradar-http.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+          sleep 1
+          curl --fail --silent --show-error http://127.0.0.1:8765/cyberresearchradar/ >/dev/null
+          curl --fail --silent --show-error http://127.0.0.1:8765/cyberresearchradar/assets/app.js >/dev/null
+          curl --fail --silent --show-error http://127.0.0.1:8765/cyberresearchradar/data/manifest.json >/dev/null
+
+      - name: Commit the Monday publication snapshot
+        run: |
+          if [ -z "$(git status --porcelain -- cyberresearchradar)" ]; then
+            echo "No publication change detected."
+            exit 0
+          fi
+          git config user.name "cyberresearch-radar-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cyberresearchradar
+          git commit -m "data: refresh CyberResearch Radar GitHub Pages snapshot"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
