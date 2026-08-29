@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const DATA_FILES = ['opportunities.json', 'crypto_opportunities.json', 'cyber_opportunities.json', 'catalogue_events.json'];
+  const DATA_FILES = ['opportunities.json', 'crypto_opportunities.json', 'cyber_opportunities.json', 'catalogue_events.json', 'publication_recommender_events.json'];
   const PAGE_SIZE_EVENTS = 60;
   const PAGE_SIZE_JOURNALS = 36;
   const LOCALES = { fr: 'fr-FR', en: 'en-GB', kab: 'fr-DZ' };
