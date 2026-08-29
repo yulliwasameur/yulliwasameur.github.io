@@ -1,6 +1,5 @@
 name: Update CyberResearch Radar on GitHub Pages
 
-# Bootstrap marker: workflow is now established on the default branch.
 on:
   schedule:
     # The source registry refreshes Mondays at 06:00 UTC; publish after a safe buffer.
@@ -13,6 +12,8 @@ on:
       - '.github/workflows/update-cyberresearchradar.yml'
       - 'scripts/update_cyberresearchradar.py'
       - 'scripts/build_cyberresearchradar_static.py'
+      - 'scripts/patch_cyberresearchradar_shell.py'
+      - 'scripts/sync_radar_additions.py'
       - 'scripts/cyberresearchradar_assets/**'
       - 'cyberresearchradar/index.html'
       - 'cyberresearchradar/assets/**'
@@ -24,6 +25,8 @@ on:
       - '.github/workflows/update-cyberresearchradar.yml'
       - 'scripts/update_cyberresearchradar.py'
       - 'scripts/build_cyberresearchradar_static.py'
+      - 'scripts/patch_cyberresearchradar_shell.py'
+      - 'scripts/sync_radar_additions.py'
       - 'scripts/cyberresearchradar_assets/**'
       - 'cyberresearchradar/index.html'
       - 'cyberresearchradar/assets/**'
@@ -39,7 +42,7 @@ jobs:
   update:
     if: github.actor != 'github-actions[bot]' || github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 15
 
     steps:
       - name: Check out the personal GitHub Pages repository
@@ -65,16 +68,29 @@ jobs:
           python scripts/build_cyberresearchradar_static.py \
             --destination cyberresearchradar
 
-      - name: Validate and copy the latest datasets
+      - name: Validate and copy the core datasets
         run: |
           python scripts/update_cyberresearchradar.py \
             --source _cyber_radar_source \
             --destination cyberresearchradar
 
+      - name: Publish supplementary recommender events
+        run: |
+          python scripts/sync_radar_additions.py \
+            --source _cyber_radar_source \
+            --destination cyberresearchradar
+
+      - name: Apply the persistent v3.2 shell upgrade
+        run: |
+          python scripts/patch_cyberresearchradar_shell.py \
+            --destination cyberresearchradar
+
       - name: Validate the static application
         run: |
           node --check cyberresearchradar/assets/app.js
+          node --check cyberresearchradar/assets/radar-upgrade.js
           python - <<'PY'
+          import json
           from html.parser import HTMLParser
           from pathlib import Path
 
@@ -83,12 +99,18 @@ jobs:
                   raise RuntimeError(message)
 
           page = Path('cyberresearchradar/index.html').read_text(encoding='utf-8')
+          app = Path('cyberresearchradar/assets/app.js').read_text(encoding='utf-8')
+          manifest = json.loads(Path('cyberresearchradar/data/manifest.json').read_text(encoding='utf-8'))
           parser = StrictEnoughParser(convert_charrefs=True)
           parser.feed(page)
           parser.close()
           assert '<html lang="fr">' in page
-          assert './assets/styles.css' in page
-          assert './assets/app.js' in page
+          assert 'cyberresearchradar-version' in page and '3.2.0' in page
+          assert 'radar-upgrade.css?v=3.2.0' in page
+          assert 'radar-upgrade.js?v=3.2.0' in page
+          assert 'publication_recommender_events.json' in app
+          assert manifest.get('version') == '3.2.0'
+          assert manifest['recordCounts']['eventsUnique'] >= 300
           assert 'data-lang="fr"' in page and 'data-lang="en"' in page and 'data-lang="kab"' in page
           assert 'chatgpt.site' not in page.lower()
           PY
@@ -101,8 +123,10 @@ jobs:
           trap 'kill "$server_pid" 2>/dev/null || true' EXIT
           sleep 1
           curl --fail --silent --show-error http://127.0.0.1:8765/cyberresearchradar/ >/dev/null
-          curl --fail --silent --show-error http://127.0.0.1:8765/cyberresearchradar/assets/app.js >/dev/null
+          curl --fail --silent --show-error http://127.0.0.1:8765/cyberresearchradar/assets/app.js?v=3.2.0 >/dev/null
+          curl --fail --silent --show-error http://127.0.0.1:8765/cyberresearchradar/assets/radar-upgrade.js?v=3.2.0 >/dev/null
           curl --fail --silent --show-error http://127.0.0.1:8765/cyberresearchradar/data/manifest.json >/dev/null
+          curl --fail --silent --show-error http://127.0.0.1:8765/cyberresearchradar/data/publication_recommender_events.json >/dev/null
 
       - name: Commit the Monday publication snapshot
         if: github.event_name != 'pull_request'
@@ -114,5 +138,5 @@ jobs:
           git config user.name "cyberresearch-radar-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add cyberresearchradar
-          git commit -m "data: refresh CyberResearch Radar GitHub Pages snapshot"
+          git commit -m "data: refresh CyberResearch Radar v3.2 snapshot"
           git push origin "HEAD:${GITHUB_REF_NAME}"

@@ -1,0 +1,101 @@
+.ya-version-badge {
+  display: flex;
+  align-items: center;
+  margin-left: .25rem;
+}
+
+.ya-version-badge span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.75rem;
+  padding: .28rem .62rem;
+  border: 1px solid rgba(32, 211, 190, .45);
+  border-radius: 999px;
+  background: rgba(5, 23, 31, .78);
+  color: #79f0df;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  line-height: 1;
+  box-shadow: 0 0 24px rgba(32, 211, 190, .12);
+}
+
+.ya-unique-counter {
+  position: fixed;
+  left: max(1rem, env(safe-area-inset-left));
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  z-index: 10000;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas: "dot count" "dot label";
+  align-items: center;
+  column-gap: .55rem;
+  min-width: 12rem;
+  padding: .7rem .9rem;
+  border: 1px solid rgba(125, 240, 223, .26);
+  border-radius: 1rem;
+  background: rgba(4, 18, 25, .9);
+  color: #f3fbfa;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, .28);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  transition: opacity .2s ease, transform .2s ease;
+}
+
+.ya-unique-counter i {
+  grid-area: dot;
+  width: .58rem;
+  height: .58rem;
+  border-radius: 50%;
+  background: #25d7bd;
+  box-shadow: 0 0 0 .28rem rgba(37, 215, 189, .12), 0 0 1rem rgba(37, 215, 189, .45);
+}
+
+.ya-unique-counter strong {
+  grid-area: count;
+  font-size: 1.05rem;
+  line-height: 1.05;
+  font-variant-numeric: tabular-nums;
+}
+
+.ya-unique-counter__label {
+  grid-area: label;
+  color: rgba(236, 250, 248, .68);
+  font-size: .68rem;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.ya-unique-counter.is-unavailable {
+  opacity: .72;
+}
+
+html[data-site-theme="light"] .ya-version-badge span,
+html[data-site-theme="light"] .ya-unique-counter {
+  border-color: rgba(0, 114, 118, .24);
+  background: rgba(250, 255, 254, .92);
+  color: #073d42;
+  box-shadow: 0 14px 42px rgba(5, 65, 71, .14);
+}
+
+html[data-site-theme="light"] .ya-unique-counter__label {
+  color: rgba(7, 61, 66, .68);
+}
+
+@media (max-width: 640px) {
+  .ya-version-badge { margin-left: 0; }
+  .ya-version-badge span { padding: .24rem .5rem; font-size: .65rem; }
+  .ya-unique-counter {
+    left: max(.65rem, env(safe-area-inset-left));
+    bottom: max(.65rem, env(safe-area-inset-bottom));
+    min-width: 0;
+    max-width: calc(100vw - 1.3rem);
+    padding: .58rem .72rem;
+  }
+  .ya-unique-counter__label { white-space: normal; }
+}
+
+@media print {
+  .ya-version-badge,
+  .ya-unique-counter { display: none !important; }
+}
