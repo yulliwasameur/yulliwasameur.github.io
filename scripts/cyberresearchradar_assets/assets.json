@@ -3,8 +3,8 @@
     "parts": [
       "index.01.b64"
     ],
-    "sha256": "9c11536f0f051510c504c36b77a9399b13d6b0a5feb235b322384b164d4d4536",
-    "bytes": 15557
+    "sha256": "1f271205aa2c1cc46bc1ad440691659d7d7bbc6eb55a49e057595e414254dafb",
+    "bytes": 22561
   },
   "assets/styles.css": {
     "parts": [
@@ -19,7 +19,7 @@
       "app.02.b64",
       "app.03.b64"
     ],
-    "sha256": "56656c3bff6d3ea480708746e73783d4e6ff97aaf15307c295c9690089377072",
-    "bytes": 60451
+    "sha256": "75dcb5bd3e67aa89a50ef1231f30b0bede301a17900453d19927db564a693cc3",
+    "bytes": 63072
   }
 }
