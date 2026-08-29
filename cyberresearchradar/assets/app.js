@@ -75,14 +75,7 @@
     authorGuidelines: 'Author guidelines ↗', submit: 'Submission portal ↗', journalWebsite: 'Journal website ↗',
     noJournalMatch: 'No journal matches these filters.', weeklyUpdated: 'Updated {date}', neverUpdated: 'Awaiting first automated refresh',
     countryAfrica: 'Africa', countryAsia: 'Asia', countryEurope: 'Europe', countryNorthAmerica: 'North America',
-    countrySouthAmerica: 'South America', countryOceania: 'Oceania', countryGlobal: 'Global',
-    navAiSecurity: 'AI security', navShort: 'Short contribution',
-    aiEyebrow: 'Matched to your AI-security work', aiTitle: 'Where to publish on AI, LLM & agentic security.',
-    aiLead: 'Open special issues and on-theme venues for LLM security, agentic AI, prompt injection and zero-trust for agents. Deadlines checked Aug 2026 — confirm on the official page before submitting.',
-    aiAllCfp: 'All IEEE-CS calls for papers ↗', aiWatch: 'On-theme workshops & conferences (short-paper tracks):',
-    shortEyebrow: 'Letters & rapid short-paper venues', shortTitle: 'Place a short contribution, fast.',
-    shortLead: 'Journals that accept letters and short papers — the quickest route to a citable result, in the same short format as your IEEE Networking Letters paper. Rolling submission.',
-    shortRolling: 'Rolling'
+    countrySouthAmerica: 'South America', countryOceania: 'Oceania', countryGlobal: 'Global'
   };
 
   const FR = {
@@ -115,14 +108,7 @@
     allAccess: 'Tous les modèles d’accès', diamond: 'Accès ouvert diamant', gold: 'Accès ouvert gold', subscription: 'Abonnement', other: 'Autre / non précisé', allJournalRanks: 'Tous les signaux de classement',
     eventResults: '<strong>{n}</strong> événements · <span>{mapped} cartographiés</span> · <span>{listOnly} en liste uniquement</span>', journalResults: '<strong>{n}</strong> revues', mappedLocations: '{events} événements · {locations} lieux', verified: 'Vérifié', watchlist: 'Sous surveillance', needsReview: 'À vérifier', closed: 'Clos', officialSourceReviewed: 'Source officielle vérifiée', venueUnranked: 'non classé', submissionDeadline: 'Échéance de soumission', deadlineTba: 'Échéance à annoncer', closesToday: 'Clôture aujourd’hui', daysLeft: '{n} jours restants', oneDayLeft: '1 jour restant', closedText: 'Clos', viewDetails: 'Voir le détail', officialCall: 'Appel officiel ↗', officialWebsite: 'Site de l’événement ↗', evidence: 'Preuve ↗', addCalendar: 'Ajouter au calendrier ↓', eventPeriod: 'Événement', deadlineWord: 'Échéance', noExactMatch: 'Aucune correspondance exacte.', broadenFilters: 'Élargissez un filtre ou incluez les fiches en attente de vérification.', resetAndShow: 'Réinitialiser et tout afficher', noUpcoming: 'Aucune échéance future vérifiée n’est actuellement disponible.', mapUnavailable: 'La bibliothèque cartographique n’a pas pu se charger. La liste des événements reste entièrement disponible.', noCoordinates: 'Aucune coordonnée vérifiée pour cette sélection.', dataErrorTitle: 'Les données du radar n’ont pas pu être chargées.', dataErrorText: 'L’actualisation automatique réessaiera au prochain passage. Les liens officiels restent disponibles dans le dépôt source.',
     accessModel: 'Accès', apc: 'APC', firstDecision: 'Première décision', peerReview: 'Évaluation', noPublishedFee: 'Non publié', noPublishedTimeline: 'Non publié', days: '{n} jours', active: 'Active', caution: 'Prudence', authorGuidelines: 'Instructions aux auteurs ↗', submit: 'Portail de soumission ↗', journalWebsite: 'Site de la revue ↗', noJournalMatch: 'Aucune revue ne correspond à ces filtres.', weeklyUpdated: 'Actualisé le {date}', neverUpdated: 'En attente de la première actualisation automatique',
-    countryAfrica: 'Afrique', countryAsia: 'Asie', countryEurope: 'Europe', countryNorthAmerica: 'Amérique du Nord', countrySouthAmerica: 'Amérique du Sud', countryOceania: 'Océanie', countryGlobal: 'Monde',
-    navAiSecurity: 'Sécurité IA', navShort: 'Short contribution',
-    aiEyebrow: 'Aligné sur vos travaux en sécurité des IA', aiTitle: 'Où publier sur la sécurité des IA, des LLM et des agents.',
-    aiLead: 'Numéros spéciaux ouverts et lieux ciblés pour la sécurité des LLM, l’IA agentique, l’injection de prompt et le zero-trust pour agents. Échéances relevées en août 2026 — à confirmer sur la page officielle avant toute soumission.',
-    aiAllCfp: 'Tous les appels IEEE-CS ↗', aiWatch: 'Ateliers et conférences dans votre axe (pistes short-paper) :',
-    shortEyebrow: 'Letters et revues courtes rapides', shortTitle: 'Publier une contribution courte, vite.',
-    shortLead: 'Des revues qui acceptent letters et short papers — la voie la plus rapide vers un résultat citable, dans le même format court que votre IEEE Networking Letters. Soumission au fil de l’eau.',
-    shortRolling: 'Au fil de l’eau'
+    countryAfrica: 'Afrique', countryAsia: 'Asie', countryEurope: 'Europe', countryNorthAmerica: 'Amérique du Nord', countrySouthAmerica: 'Amérique du Sud', countryOceania: 'Océanie', countryGlobal: 'Monde'
   };
 
   const KAB = {
@@ -152,14 +138,7 @@
     allAccess: 'Meṛṛa iskaren n unekcum', diamond: 'Anekcum ilelli diamond', gold: 'Anekcum ilelli gold', subscription: 'Ajerred', other: 'Wayeḍ / ur d-yettwasefhem', allJournalRanks: 'Meṛṛa inamal n uswir',
     eventResults: '<strong>{n}</strong> tidyanin · <span>{mapped} deg tkarḍa</span> · <span>{listOnly} deg tebdart kan</span>', journalResults: '<strong>{n}</strong> tisɣunin', mappedLocations: '{events} tidyanin · {locations} imukan', verified: 'Yettwasenqed', watchlist: 'Deg uḍfar', needsReview: 'Yesra asenqed', closed: 'Yemdel', officialSourceReviewed: 'Aɣbalu unṣib yettwasenqed', venueUnranked: 'war aswir', submissionDeadline: 'Azemz n taggara n usuter', deadlineTba: 'Azemz mazal', closesToday: 'Ad yemdel ass-a', daysLeft: '{n} n wussan qqimen', oneDayLeft: '1 n wass yeqqim', closedText: 'Yemdel', viewDetails: 'Wali talqayt', officialCall: 'Asuter unṣib ↗', officialWebsite: 'Asmel n tedyant ↗', evidence: 'Abeggen ↗', addCalendar: 'Rnu ɣer uwitay ↓', eventPeriod: 'Tadyant', deadlineWord: 'Azemz', noExactMatch: 'Ulac ayen yemṣadan.', broadenFilters: 'Ssiwseɛ imsizdeg neɣ sekcem wid mazal ur nettwasenqed ara.', resetAndShow: 'Ales u sken meṛṛa', noUpcoming: 'Ulac azemz iqerben yettwasenqed akka tura.', mapUnavailable: 'Takarḍa ur d-tuli ara. Tabdart n tidyanin tezga tettban.', noCoordinates: 'Ulac tisekta yettwasneqden i ufran-a.', dataErrorTitle: 'Isefka n radar ur d-ulin ara.', dataErrorText: 'Asnifel awurman ad yales tikelt-nniḍen. Iseɣwan unṣiben llan deg ukaram n uɣbalu.',
     accessModel: 'Anekcum', apc: 'APC', firstDecision: 'Tiririt tamezwarut', peerReview: 'Asenqed', noPublishedFee: 'Ur d-yettwaseknen', noPublishedTimeline: 'Ur d-yettwaseknen', days: '{n} n wussan', active: 'Turmidt', caution: 'Ɣur-k', authorGuidelines: 'Iwellihen i yimura ↗', submit: 'Anagraw n usuter ↗', journalWebsite: 'Asmel n tesɣunt ↗', noJournalMatch: 'Ulac tasɣunt yemṣadan d yimsizdeg-a.', weeklyUpdated: 'Yettusnifel {date}', neverUpdated: 'Yettṛaǧu asnifel awurman amezwaru',
-    countryAfrica: 'Tafriqt', countryAsia: 'Asya', countryEurope: 'Turuft', countryNorthAmerica: 'Marikan n ugafa', countrySouthAmerica: 'Marikan n unẓul', countryOceania: 'Usyanya', countryGlobal: 'Amaḍal',
-    navAiSecurity: 'Taɣellist AI', navShort: 'Short contribution',
-    aiEyebrow: 'Yeddukel d umahil-ik ɣef tɣellist n AI', aiTitle: 'Anda ara tsuffɣeḍ ɣef tɣellist n AI, LLM d yimyellal.',
-    aiLead: 'Iḥricen ispesyalen yeldin d yimukan i tɣellist n LLM, AI tamyellalt, prompt injection d zero-trust i yimyellal. Izmaz ttwasneqden deg ɣuct 2026 — senqed asebter unṣib send tuzzna.',
-    aiAllCfp: 'Meṛṛa isutar IEEE-CS ↗', aiWatch: 'Workshops d timliliyin deg wannar-ik (iberdan short-paper) :',
-    shortEyebrow: 'Letters d tesɣunin timeẓyanin tirurdanin', shortTitle: 'Suffeɣ tawsa tawezzlant, s tɣawla.',
-    shortLead: 'Tisɣunin i yeqbelen letters d short papers — abrid arurad ɣer ugmuḍ yezmren ad yettwabdar, s wemasal awezzlan am IEEE Networking Letters-ik. Tuzzna s ttawil.',
-    shortRolling: 'S ttawil'
+    countryAfrica: 'Tafriqt', countryAsia: 'Asya', countryEurope: 'Turuft', countryNorthAmerica: 'Marikan n ugafa', countrySouthAmerica: 'Marikan n unẓul', countryOceania: 'Usyanya', countryGlobal: 'Amaḍal'
   };
 
   const I18N = { fr: FR, en: EN, kab: KAB };
