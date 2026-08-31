@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-29T16:36:45Z",
-  "sourceCommit": "099d5768d4a002ca597f68c7cd81494036d4b281",
+  "generatedAt": "2026-08-31T10:22:03Z",
+  "sourceCommit": "4b353a256d4097357b181122828a6f9fd8748fd7",
   "sourceRepository": "yulliwasameur/cyber-research-radar",
   "recordCounts": {
-    "eventsRaw": 383,
-    "eventsUnique": 337,
+    "eventsRaw": 384,
+    "eventsUnique": 338,
     "journals": 59,
     "countries": 47
   },
@@ -17,6 +17,7 @@
     "watch_report.json",
     "journal_watch_report.json",
     "publication_recommender_events.json",
+    "community_opportunities.json",
     "publication_recommender_import_report.json"
   ],
   "languages": [
