@@ -3,17 +3,25 @@
 
 The static application is reconstructed from reviewed compressed assets every
 Monday. This idempotent patch therefore runs after each reconstruction so the
-version badge, visitor counter, cache busting and supplementary dataset survive.
+version badge, visitor counter, cache busting and supplementary datasets survive.
 """
 
 from __future__ import annotations
 
 import argparse
 import os
+import re
 from pathlib import Path
 
 VERSION = "3.2.0"
-SUPPLEMENTAL_DATASET = "publication_recommender_events.json"
+DATASETS = (
+    "opportunities.json",
+    "crypto_opportunities.json",
+    "cyber_opportunities.json",
+    "catalogue_events.json",
+    "publication_recommender_events.json",
+    "community_opportunities.json",
+)
 
 
 def write_atomic(path: Path, text: str) -> None:
@@ -30,8 +38,8 @@ def patch_index(path: Path) -> None:
             '<meta name="theme-color" content="#07151b">\n  <meta name="cyberresearchradar-version" content="3.2.0">',
             1,
         )
-    text = text.replace('./assets/styles.css"', f'./assets/styles.css?v={VERSION}"')
-    text = text.replace('./assets/app.js"', f'./assets/app.js?v={VERSION}"')
+    text = re.sub(r'\./assets/styles\.css(?:\?v=[^"\s]+)?"', f'./assets/styles.css?v={VERSION}"', text, count=1)
+    text = re.sub(r'\./assets/app\.js(?:\?v=[^"\s]+)?"', f'./assets/app.js?v={VERSION}"', text, count=1)
     if 'radar-upgrade.css' not in text:
         text = text.replace(
             f'<link rel="stylesheet" href="./assets/styles.css?v={VERSION}">',
@@ -49,12 +57,12 @@ def patch_index(path: Path) -> None:
 
 def patch_javascript(path: Path) -> None:
     text = path.read_text(encoding="utf-8")
-    if SUPPLEMENTAL_DATASET not in text:
-        old = "const DATA_FILES = ['opportunities.json', 'crypto_opportunities.json', 'cyber_opportunities.json', 'catalogue_events.json'];"
-        new = "const DATA_FILES = ['opportunities.json', 'crypto_opportunities.json', 'cyber_opportunities.json', 'catalogue_events.json', 'publication_recommender_events.json'];"
-        if old not in text:
-            raise RuntimeError("Could not locate the CyberResearch Radar dataset declaration")
-        text = text.replace(old, new, 1)
+    rendered = ", ".join(f"'{filename}'" for filename in DATASETS)
+    declaration = f"const DATA_FILES = [{rendered}];"
+    pattern = re.compile(r"const DATA_FILES = \[[^\]]*\];")
+    if not pattern.search(text):
+        raise RuntimeError("Could not locate the CyberResearch Radar dataset declaration")
+    text = pattern.sub(declaration, text, count=1)
     write_atomic(path, text)
 
 
@@ -69,7 +77,7 @@ def main() -> int:
         raise FileNotFoundError("CyberResearch Radar static shell is incomplete")
     patch_index(index)
     patch_javascript(javascript)
-    print(f"Applied CyberResearch Radar v{VERSION} shell upgrade")
+    print(f"Applied CyberResearch Radar v{VERSION} shell upgrade with {len(DATASETS)} datasets")
     return 0
 
 
