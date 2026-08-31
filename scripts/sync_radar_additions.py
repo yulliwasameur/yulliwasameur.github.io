@@ -17,10 +17,14 @@ BASE_EVENT_FILES = (
     "cyber_opportunities.json",
     "catalogue_events.json",
 )
-SUPPLEMENTAL_EVENT_FILE = "publication_recommender_events.json"
+SUPPLEMENTAL_EVENT_FILES = (
+    "publication_recommender_events.json",
+    "community_opportunities.json",
+)
 OPTIONAL_FILES = (
     "publication_recommender_import_report.json",
     "publication_recommender_watch_report.json",
+    "community_watch_report.json",
 )
 
 
@@ -44,18 +48,18 @@ def write_json_atomic(path: Path, payload: Any) -> None:
     os.replace(temporary, path)
 
 
-def validate_events(payload: Any) -> list[dict[str, Any]]:
+def validate_events(payload: Any, filename: str) -> list[dict[str, Any]]:
     if not isinstance(payload, list):
-        raise ValueError("Supplementary event dataset must be a JSON array")
+        raise ValueError(f"{filename} must be a JSON array")
     ids: set[str] = set()
     for index, record in enumerate(payload):
         if not isinstance(record, dict):
-            raise ValueError(f"Record {index} must be an object")
+            raise ValueError(f"{filename}[{index}] must be an object")
         for field in ("id", "title", "type", "officialUrl", "evidenceUrl"):
             if not record.get(field):
-                raise ValueError(f"Record {index} is missing {field}")
+                raise ValueError(f"{filename}[{index}] is missing {field}")
         if record["id"] in ids:
-            raise ValueError(f"Duplicate supplementary event id: {record['id']}")
+            raise ValueError(f"Duplicate id in {filename}: {record['id']}")
         ids.add(record["id"])
     return payload
 
@@ -68,11 +72,15 @@ def main() -> int:
     source_data = args.source.resolve() / "data"
     destination_data = args.destination.resolve() / "data"
 
-    source_events = source_data / SUPPLEMENTAL_EVENT_FILE
-    records = validate_events(read_json(source_events))
-    copy_atomic(source_events, destination_data / SUPPLEMENTAL_EVENT_FILE)
+    supplemental_records: dict[str, list[dict[str, Any]]] = {}
+    copied: list[str] = []
+    for filename in SUPPLEMENTAL_EVENT_FILES:
+        source = source_data / filename
+        records = validate_events(read_json(source), filename)
+        supplemental_records[filename] = records
+        copy_atomic(source, destination_data / filename)
+        copied.append(filename)
 
-    copied = [SUPPLEMENTAL_EVENT_FILE]
     for filename in OPTIONAL_FILES:
         source = source_data / filename
         if source.is_file():
@@ -82,15 +90,20 @@ def main() -> int:
 
     manifest_path = destination_data / "manifest.json"
     manifest = read_json(manifest_path)
+    event_files = (*BASE_EVENT_FILES, *SUPPLEMENTAL_EVENT_FILES)
     all_events: dict[str, dict[str, Any]] = {}
-    for filename in (*BASE_EVENT_FILES, SUPPLEMENTAL_EVENT_FILE):
-        for record in read_json(destination_data / filename):
+    raw_count = 0
+    for filename in event_files:
+        records = read_json(destination_data / filename)
+        raw_count += len(records)
+        for record in records:
             if record.get("type") in {"conference", "workshop"} and record.get("id"):
                 all_events[str(record["id"])] = record
+
     countries = {str(record.get("country")) for record in all_events.values() if record.get("country")}
     manifest.setdefault("recordCounts", {})
     manifest["recordCounts"].update({
-        "eventsRaw": sum(len(read_json(destination_data / filename)) for filename in (*BASE_EVENT_FILES, SUPPLEMENTAL_EVENT_FILE)),
+        "eventsRaw": raw_count,
         "eventsUnique": len(all_events),
         "countries": len(countries),
     })
@@ -102,7 +115,9 @@ def main() -> int:
             files.append(filename)
     manifest["files"] = files
     write_json_atomic(manifest_path, manifest)
-    print(f"Published {len(records)} supplementary events; {len(all_events)} unique events in manifest")
+
+    supplemental_count = sum(len(records) for records in supplemental_records.values())
+    print(f"Published {supplemental_count} supplementary events; {len(all_events)} unique events in manifest")
     return 0
 
 
