@@ -36,6 +36,8 @@ layout: default
         
         {% if page.collection == 'teaching' %}
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif page.status %}
+          <p><strong>{{ page.status }}</strong> <i>{{ page.venue }}</i></p>
         {% elsif page.venue and page.date %}
           <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.date %}
@@ -47,8 +49,10 @@ layout: default
           <p>{{ page.citation }}</p>
         {% endif %}
 
-        {% if page.paperurl or page.halurl or page.codeurl or page.programurl %}
+        {% if page.paperurl or page.halurl or page.codeurl or page.programurl or page.pdfurl or page.bibtexurl %}
           <p>
+          {% if page.pdfurl %}<a href="{{ page.pdfurl }}" class="btn btn--small">Author manuscript PDF</a>{% endif %}
+          {% if page.bibtexurl %}<a href="{{ page.bibtexurl }}" class="btn btn--small">BibTeX</a>{% endif %}
           {% if page.paperurl %}<a href="{{ page.paperurl }}" class="btn btn--small">Source / DOI</a>{% endif %}
           {% if page.halurl %}<a href="{{ page.halurl }}" class="btn btn--small">HAL / texte</a>{% endif %}
           {% if page.codeurl %}<a href="{{ page.codeurl }}" class="btn btn--small">Code et artefacts</a>{% endif %}

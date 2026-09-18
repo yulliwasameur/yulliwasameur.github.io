@@ -1,0 +1,23 @@
+---
+title: Benchmarking Detection Engineering Improvements through Instrumented Adversary Emulation
+collection: publications
+output_type: conference-record
+permalink: /publication/2026-09-18-detection-engineering/
+date: 2026-09-18
+publication_year: 2026
+event_month: 2026-09
+venue: ANUBIS, ESORICS 2026
+authors:
+- Tristan Madani
+- Yulliwas Ameur
+- Samia Bouzefrane
+halurl: https://hal.science/hal-05743341
+status: Conference contribution listed in HAL; proceedings publication details are not yet verified.
+bibtexurl: /files/publications.bib
+citation: 'Tristan Madani; Yulliwas Ameur; Samia Bouzefrane. "Benchmarking Detection Engineering Improvements through Instrumented Adversary Emulation." ANUBIS, ESORICS 2026. HAL: hal-05743341.'
+excerpt: Benchmarking Detection Engineering Improvements through Instrumented Adversary Emulation. Conference contribution listed in HAL; proceedings publication details are not yet verified.
+---
+
+**Status:** Conference contribution listed in HAL; proceedings publication details are not yet verified.
+
+**Conference period:** 2026-09. The page date records this listing; it is not a proceedings publication date.
