@@ -1,0 +1,46 @@
+seed: 586
+scenario: cigma-lab
+collected_at: "2026-08-19T08:00:00Z"
+noise:
+  enabled: true
+  ambiguous_entity_count: 2
+  false_claim_count: 2
+confidence:
+  source_reliability:
+    tls: 0.98
+    pki: 0.97
+    code: 0.88
+    cicd: 0.91
+    cmdb: 0.94
+    ot: 0.86
+  action_threshold: 0.65
+  verification_threshold: 0.85
+  path_penalty: 0.92
+scoring:
+  policy_horizon_years: 10.0
+  primary_policy: bounded-policy-tier/intra-tier-pareto/lexicographic-v3
+  weights:
+    quantum_vulnerability: 0.25
+    hndl_urgency: 0.20
+    exposure: 0.15
+    criticality: 0.20
+    blast_radius: 0.10
+    agility_penalty: 0.10
+evaluation:
+  ranking_k: 5
+  calibration_bins: 5
+  bootstrap_resamples: 5000
+  permutations: 10000
+calibration:
+  panel: fixtures/calibration_panel.csv
+  scope: independent-synthetic-policy-panel
+robustness:
+  seeds: 32
+  observation_dropout: [0.0, 0.10, 0.25, 0.50]
+openai_adapter:
+  enabled: true
+  model: gpt-5.6-luna
+  reasoning_effort: none
+  max_output_tokens: 8000
+  max_input_records: 100
+  timeout_seconds: 120

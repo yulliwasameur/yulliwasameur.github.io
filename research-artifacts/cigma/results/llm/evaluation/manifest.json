@@ -1,0 +1,73 @@
+{
+  "argv": [
+    "scripts/evaluate_llm_runs.py",
+    "--public",
+    "results/default/data/public/observations.json",
+    "--oracle",
+    "results/default/data/oracle/oracle.json",
+    "--base-graph",
+    "results/default/graphs/cigma_no_paths.json",
+    "--validation-graph",
+    "results/default/graphs/cigma_no_paths.json",
+    "--runs-root",
+    "results/llm",
+    "--output",
+    "results/llm/evaluation"
+  ],
+  "base_graph_method": "cigma_no_paths",
+  "implementation_files": {
+    "scripts/evaluate_llm_runs.py": "3721f5cb48756ed474a7435b13c6e9733942348f1b571d051e71d76dcb8f3267",
+    "src/cigma/evaluation.py": "be8fee51aaf98bb0ec094295df7fadfd7d50c72c897d03338ed90754fe4891f8",
+    "src/cigma/io.py": "dd5472a5257c09fbd492145a5afaed44e546e8a3605c0be801ac597bf8cef6e2",
+    "src/cigma/model.py": "e917376e211cfa06ffd04559dca8d39e435b963294fc88e2f5dbccde849d9378",
+    "src/cigma/ontology.py": "f0c1381526ed281f041fb8ec646dc97c632d79230e5beddb3d3b7fa86d8c0d73",
+    "src/cigma/openai_adapter.py": "a43a2db18be0fc49c04db73c4e9c84f9be746e6a18abf6d5cd74596598dddedb",
+    "src/cigma/validation.py": "123f61be6c4c39348a858f9caef2111884524cad36023e7a2728ac68225a4bdf"
+  },
+  "inputs": {
+    "base_graph": {
+      "path": "results/default/graphs/cigma_no_paths.json",
+      "sha256": "8fa27692a29f5d550b340a3b266ed820478290be2067076f241c47858692584a"
+    },
+    "oracle": {
+      "path": "results/default/data/oracle/oracle.json",
+      "sha256": "401d2f3dad7a8a0d755ff5c9a92bc5ed27e7d2bc8f109cb2d6d76b5e7b7ee9e0"
+    },
+    "public": {
+      "path": "results/default/data/public/observations.json",
+      "sha256": "76807c3be1c20b3f519ee5ebf1a1a2b75d7d77a78fd4955f658f1b1ca7040bad"
+    },
+    "runs": {
+      "run01": {
+        "raw_response.json": "640fe6ae1ec0f28e215ae6866f5c6627456a87316eb1230fb5d27d3512ca2ada",
+        "request_manifest.json": "e7f782b49476b20649b93d0c7721552366ea6f26bb723aa2b187545c06e36e04",
+        "validated_candidates.json": "fcc7ae54f6fb8c3844c096a20e2d498689ad53018dacb9f3905f6603bcfcbbab"
+      },
+      "run02": {
+        "raw_response.json": "25618713befae32f2a01bfd29060274f1cc682ea1e36797bfa259292905637c7",
+        "request_manifest.json": "e4042595c55e6a322871cf7dc59103ee035e662e553cb9df49efda29398a005c",
+        "validated_candidates.json": "1d30f9d61634f871ddab493db8c06375e8da05b9d8786989121a8a8781247d93"
+      },
+      "run03": {
+        "raw_response.json": "d56e6483ff25b6893d4e02013c97fcb0ca4dcdc7b61bb184381e299e02095309",
+        "request_manifest.json": "20bb72432c4fdde18e131a0056a6790a614e0392efff5e91f8cb7fd6a7eaa983",
+        "validated_candidates.json": "f6730d4e67ca75dfd5e93a5aab97d18573f7130d54d4d6f2eab0b451e71800e0"
+      }
+    },
+    "validation_graph": {
+      "path": "results/default/graphs/cigma_no_paths.json",
+      "sha256": "8fa27692a29f5d550b340a3b266ed820478290be2067076f241c47858692584a"
+    }
+  },
+  "network_required": false,
+  "oracle_usage": "post-hoc evaluation only; never supplied to the live adapter",
+  "outputs": {
+    "pairwise_jaccard.csv": "d8dcee87f6dd99c5609f677680f1a4773f49e18ab2eacc2a8292a5188f9b541e",
+    "paper_macros.tex": "4da5f765820dd5e2e9b5f0abc645945e24c6401b9ad9cbe047bec812bf77daad",
+    "runs.csv": "ed7c7c05fe27acc73c474c101902a72df1c9a4e2f83a3b51aee2c1872690e043",
+    "summary.json": "3303a4cfe8a242e52d3fe0c85b616932a018552df931bf60e53749e8c468bb2d"
+  },
+  "schema_sha256": "35fa2afa3bd599477b7e626ff0f91afdbecf8f2a3c051da8c87a43b5569b8a2f",
+  "script_sha256": "3721f5cb48756ed474a7435b13c6e9733942348f1b571d051e71d76dcb8f3267",
+  "validation_graph_method": "cigma_no_paths"
+}

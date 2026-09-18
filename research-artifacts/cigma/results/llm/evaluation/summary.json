@@ -1,0 +1,1089 @@
+{
+  "aggregate_usage": {
+    "input_tokens": 44259,
+    "output_tokens": 7415,
+    "total_tokens": 51674
+  },
+  "all_archived_trace_hashes_match": true,
+  "all_completed": true,
+  "all_graph_mutated_false": true,
+  "all_parseable": true,
+  "all_partitions_match": true,
+  "all_raw_hashes_match": true,
+  "all_replays_match": true,
+  "archived_live_input_sha256": "51b01bd64fa9a6a3580e0018b1b61e38f934f46bb463d1ad8efa6b061a20547d",
+  "base_false_positive_edges": 0,
+  "base_graph_method": "cigma_no_paths",
+  "base_predicted_edges": 29,
+  "base_recall": 0.8529411764705882,
+  "base_true_positive_edges": 29,
+  "caveat": "Three repeated calls on one synthetic fixture measure service variability, not generalization. The model saw no oracle, existing graph edges, computed scores, or structured attributes; verbatim public evidence excerpts did contain observed business context including criticality, exposure, lifetime, and agility. The archived live input preceded a correction of the synthetic root certificate from key_bits=3072 to 2048 so that it matches RSA-2048; deterministic replay uses the corrected fixture, with unchanged relation observations and node IDs. Deterministic candidate validation and the union use the same supplied cigma_no_paths graph and shared node IDs. The union isolates candidate path composition, is executable after CIGMA entity resolution, and is not an independent end-to-end LLM pipeline.",
+  "hybrid_definition": "union of supplied base graph (cigma_no_paths) predictions and validated LLM candidates on shared canonical node IDs; executable after CIGMA entity resolution but not an independent end-to-end LLM pipeline",
+  "incremental_truth_edges": 5,
+  "live_fixture_correction": "The live requests used the pre-correction synthetic root-certificate metadata key_bits=3072 while its algorithm identifier was RSA-2048. The current fixture corrects key_bits to 2048; relation observations, canonical node IDs, and the replay partitions are unchanged.",
+  "means": {
+    "accepted_candidates": 33.0,
+    "accepted_f1": 0.9305087465896325,
+    "accepted_false_triple_rate": 0.0,
+    "accepted_precision": 1.0,
+    "accepted_recall": 0.8725490196078431,
+    "false_evidence_candidates": 1.3333333333333333,
+    "hybrid_f1": 0.947089947089947,
+    "hybrid_precision": 1.0,
+    "hybrid_recall": 0.9019607843137255,
+    "incremental_correct_edges": 1.6666666666666667,
+    "incremental_edge_recall": 0.3333333333333333,
+    "input_tokens": 14753.0,
+    "latency_seconds": 16.220118947331986,
+    "output_tokens": 2471.6666666666665,
+    "raw_candidates": 35.333333333333336,
+    "raw_f1": 0.8977614977614978,
+    "raw_false_triple_rate": 0.07153009516747004,
+    "raw_precision": 0.92846990483253,
+    "raw_recall": 0.8725490196078431,
+    "rejected_candidates": 2.3333333333333335,
+    "total_tokens": 17224.666666666668,
+    "validator_rejection_rate": 0.06482843137254903
+  },
+  "oracle_edges": 34,
+  "pairwise_accepted_jaccard_mean": 0.8989898989898991,
+  "pairwise_raw_jaccard_mean": 0.8506167457780361,
+  "per_run": {
+    "run01": {
+      "accepted_metrics": {
+        "f1": 0.9032258064516129,
+        "fn": 6,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 0.8235294117647058,
+        "tp": 28
+      },
+      "accepted_triples": [
+        [
+          "cert:db",
+          "ISSUED_BY",
+          "cert:root"
+        ],
+        [
+          "cert:db",
+          "USES",
+          "alg:ecdsa-p256"
+        ],
+        [
+          "cert:edge",
+          "ISSUED_BY",
+          "cert:root"
+        ],
+        [
+          "cert:edge",
+          "USES",
+          "alg:rsa2048"
+        ],
+        [
+          "cert:ot",
+          "ISSUED_BY",
+          "cert:root"
+        ],
+        [
+          "cert:ot",
+          "USES",
+          "alg:ecdsa-p256"
+        ],
+        [
+          "cert:root",
+          "USES",
+          "alg:rsa2048"
+        ],
+        [
+          "device:plc",
+          "PROCESSES",
+          "data:telemetry"
+        ],
+        [
+          "device:plc",
+          "USES",
+          "alg:rsa2048"
+        ],
+        [
+          "endpoint:db",
+          "PRESENTS",
+          "cert:db"
+        ],
+        [
+          "endpoint:edge",
+          "PRESENTS",
+          "cert:edge"
+        ],
+        [
+          "endpoint:ot",
+          "PRESENTS",
+          "cert:ot"
+        ],
+        [
+          "pipeline:api",
+          "DEPLOYS",
+          "svc:api"
+        ],
+        [
+          "pipeline:ot",
+          "DEPLOYS",
+          "svc:ot"
+        ],
+        [
+          "pkg:mqtt",
+          "USES",
+          "alg:ecdsa-p256"
+        ],
+        [
+          "pkg:openssl",
+          "USES",
+          "alg:rsa2048"
+        ],
+        [
+          "pkg:pyca",
+          "USES",
+          "alg:aes256-gcm"
+        ],
+        [
+          "svc:api",
+          "DEPENDS_ON",
+          "svc:auth"
+        ],
+        [
+          "svc:api",
+          "DEPENDS_ON",
+          "svc:db"
+        ],
+        [
+          "svc:api",
+          "PROCESSES",
+          "data:patient"
+        ],
+        [
+          "svc:api",
+          "USES",
+          "pkg:pyca"
+        ],
+        [
+          "svc:auth",
+          "USES",
+          "pkg:openssl"
+        ],
+        [
+          "svc:db",
+          "HOSTS",
+          "endpoint:db"
+        ],
+        [
+          "svc:edge",
+          "DEPENDS_ON",
+          "svc:api"
+        ],
+        [
+          "svc:edge",
+          "HOSTS",
+          "endpoint:edge"
+        ],
+        [
+          "svc:ot",
+          "DEPENDS_ON",
+          "device:plc"
+        ],
+        [
+          "svc:ot",
+          "HOSTS",
+          "endpoint:ot"
+        ],
+        [
+          "svc:ot",
+          "USES",
+          "pkg:mqtt"
+        ]
+      ],
+      "hybrid_metrics": {
+        "f1": 0.9206349206349206,
+        "fn": 5,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 0.8529411764705882,
+        "tp": 29
+      },
+      "raw_metrics": {
+        "f1": 0.888888888888889,
+        "fn": 6,
+        "fp": 1,
+        "precision": 0.9655172413793104,
+        "recall": 0.8235294117647058,
+        "tp": 28
+      },
+      "raw_triples": [
+        [
+          "cert:db",
+          "ISSUED_BY",
+          "cert:root"
+        ],
+        [
+          "cert:db",
+          "USES",
+          "alg:ecdsa-p256"
+        ],
+        [
+          "cert:edge",
+          "ISSUED_BY",
+          "cert:root"
+        ],
+        [
+          "cert:edge",
+          "USES",
+          "alg:rsa2048"
+        ],
+        [
+          "cert:ot",
+          "ISSUED_BY",
+          "cert:root"
+        ],
+        [
+          "cert:ot",
+          "USES",
+          "alg:ecdsa-p256"
+        ],
+        [
+          "cert:root",
+          "USES",
+          "alg:rsa2048"
+        ],
+        [
+          "device:plc",
+          "PROCESSES",
+          "data:telemetry"
+        ],
+        [
+          "device:plc",
+          "USES",
+          "alg:rsa2048"
+        ],
+        [
+          "endpoint:db",
+          "PRESENTS",
+          "cert:db"
+        ],
+        [
+          "endpoint:edge",
+          "PRESENTS",
+          "cert:edge"
+        ],
+        [
+          "endpoint:ot",
+          "PRESENTS",
+          "cert:ot"
+        ],
+        [
+          "pipeline:api",
+          "DEPLOYS",
+          "svc:api"
+        ],
+        [
+          "pipeline:ot",
+          "DEPLOYS",
+          "svc:ot"
+        ],
+        [
+          "pkg:mqtt",
+          "USES",
+          "alg:ecdsa-p256"
+        ],
+        [
+          "pkg:openssl",
+          "USES",
+          "alg:rsa2048"
+        ],
+        [
+          "pkg:pyca",
+          "USES",
+          "alg:aes256-gcm"
+        ],
+        [
+          "svc:api",
+          "DEPENDS_ON",
+          "svc:auth"
+        ],
+        [
+          "svc:api",
+          "DEPENDS_ON",
+          "svc:db"
+        ],
+        [
+          "svc:api",
+          "PROCESSES",
+          "data:patient"
+        ],
+        [
+          "svc:api",
+          "USES",
+          "pkg:pyca"
+        ],
+        [
+          "svc:auth",
+          "PROCESSES",
+          "data:telemetry"
+        ],
+        [
+          "svc:auth",
+          "USES",
+          "pkg:openssl"
+        ],
+        [
+          "svc:db",
+          "HOSTS",
+          "endpoint:db"
+        ],
+        [
+          "svc:edge",
+          "DEPENDS_ON",
+          "svc:api"
+        ],
+        [
+          "svc:edge",
+          "HOSTS",
+          "endpoint:edge"
+        ],
+        [
+          "svc:ot",
+          "DEPENDS_ON",
+          "device:plc"
+        ],
+        [
+          "svc:ot",
+          "HOSTS",
+          "endpoint:ot"
+        ],
+        [
+          "svc:ot",
+          "USES",
+          "pkg:mqtt"
+        ]
+      ],
+      "rejection_reasons": [
+        "unsupported_direct_claim"
+      ]
+    },
+    "run02": {
+      "accepted_metrics": {
+        "f1": 0.9032258064516129,
+        "fn": 6,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 0.8235294117647058,
+        "tp": 28
+      },
+      "accepted_triples": [
+        [
+          "cert:db",
+          "ISSUED_BY",
+          "cert:root"
+        ],
+        [
+          "cert:db",
+          "USES",
+          "alg:ecdsa-p256"
+        ],
+        [
+          "cert:edge",
+          "ISSUED_BY",
+          "cert:root"
+        ],
+        [
+          "cert:edge",
+          "USES",
+          "alg:rsa2048"
+        ],
+        [
+          "cert:ot",
+          "ISSUED_BY",
+          "cert:root"
+        ],
+        [
+          "cert:ot",
+          "USES",
+          "alg:ecdsa-p256"
+        ],
+        [
+          "cert:root",
+          "USES",
+          "alg:rsa2048"
+        ],
+        [
+          "device:plc",
+          "PROCESSES",
+          "data:telemetry"
+        ],
+        [
+          "device:plc",
+          "USES",
+          "alg:rsa2048"
+        ],
+        [
+          "endpoint:db",
+          "PRESENTS",
+          "cert:db"
+        ],
+        [
+          "endpoint:edge",
+          "PRESENTS",
+          "cert:edge"
+        ],
+        [
+          "endpoint:ot",
+          "PRESENTS",
+          "cert:ot"
+        ],
+        [
+          "pipeline:api",
+          "DEPLOYS",
+          "svc:api"
+        ],
+        [
+          "pipeline:ot",
+          "DEPLOYS",
+          "svc:ot"
+        ],
+        [
+          "pkg:mqtt",
+          "USES",
+          "alg:ecdsa-p256"
+        ],
+        [
+          "pkg:openssl",
+          "USES",
+          "alg:rsa2048"
+        ],
+        [
+          "pkg:pyca",
+          "USES",
+          "alg:aes256-gcm"
+        ],
+        [
+          "svc:api",
+          "DEPENDS_ON",
+          "svc:auth"
+        ],
+        [
+          "svc:api",
+          "DEPENDS_ON",
+          "svc:db"
+        ],
+        [
+          "svc:api",
+          "PROCESSES",
+          "data:patient"
+        ],
+        [
+          "svc:api",
+          "USES",
+          "pkg:pyca"
+        ],
+        [
+          "svc:auth",
+          "USES",
+          "pkg:openssl"
+        ],
+        [
+          "svc:db",
+          "HOSTS",
+          "endpoint:db"
+        ],
+        [
+          "svc:edge",
+          "DEPENDS_ON",
+          "svc:api"
+        ],
+        [
+          "svc:edge",
+          "HOSTS",
+          "endpoint:edge"
+        ],
+        [
+          "svc:ot",
+          "DEPENDS_ON",
+          "device:plc"
+        ],
+        [
+          "svc:ot",
+          "HOSTS",
+          "endpoint:ot"
+        ],
+        [
+          "svc:ot",
+          "USES",
+          "pkg:mqtt"
+        ]
+      ],
+      "hybrid_metrics": {
+        "f1": 0.9206349206349206,
+        "fn": 5,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 0.8529411764705882,
+        "tp": 29
+      },
+      "raw_metrics": {
+        "f1": 0.8615384615384616,
+        "fn": 6,
+        "fp": 3,
+        "precision": 0.9032258064516129,
+        "recall": 0.8235294117647058,
+        "tp": 28
+      },
+      "raw_triples": [
+        [
+          "cert:db",
+          "ISSUED_BY",
+          "cert:root"
+        ],
+        [
+          "cert:db",
+          "USES",
+          "alg:ecdsa-p256"
+        ],
+        [
+          "cert:db",
+          "USES",
+          "alg:rsa2048"
+        ],
+        [
+          "cert:edge",
+          "ISSUED_BY",
+          "cert:root"
+        ],
+        [
+          "cert:edge",
+          "USES",
+          "alg:rsa2048"
+        ],
+        [
+          "cert:ot",
+          "ISSUED_BY",
+          "cert:root"
+        ],
+        [
+          "cert:ot",
+          "USES",
+          "alg:ecdsa-p256"
+        ],
+        [
+          "cert:root",
+          "USES",
+          "alg:rsa2048"
+        ],
+        [
+          "device:plc",
+          "PROCESSES",
+          "data:telemetry"
+        ],
+        [
+          "device:plc",
+          "USES",
+          "alg:rsa2048"
+        ],
+        [
+          "endpoint:db",
+          "PRESENTS",
+          "cert:db"
+        ],
+        [
+          "endpoint:edge",
+          "PRESENTS",
+          "cert:edge"
+        ],
+        [
+          "endpoint:ot",
+          "PRESENTS",
+          "cert:ot"
+        ],
+        [
+          "pipeline:api",
+          "DEPLOYS",
+          "svc:api"
+        ],
+        [
+          "pipeline:ot",
+          "DEPLOYS",
+          "svc:ot"
+        ],
+        [
+          "pkg:mqtt",
+          "USES",
+          "alg:ecdsa-p256"
+        ],
+        [
+          "pkg:mqtt",
+          "USES",
+          "alg:rsa2048"
+        ],
+        [
+          "pkg:openssl",
+          "USES",
+          "alg:rsa2048"
+        ],
+        [
+          "pkg:pyca",
+          "USES",
+          "alg:aes256-gcm"
+        ],
+        [
+          "svc:api",
+          "DEPENDS_ON",
+          "svc:auth"
+        ],
+        [
+          "svc:api",
+          "DEPENDS_ON",
+          "svc:db"
+        ],
+        [
+          "svc:api",
+          "PROCESSES",
+          "data:patient"
+        ],
+        [
+          "svc:api",
+          "USES",
+          "pkg:pyca"
+        ],
+        [
+          "svc:auth",
+          "PROCESSES",
+          "data:telemetry"
+        ],
+        [
+          "svc:auth",
+          "USES",
+          "pkg:openssl"
+        ],
+        [
+          "svc:db",
+          "HOSTS",
+          "endpoint:db"
+        ],
+        [
+          "svc:edge",
+          "DEPENDS_ON",
+          "svc:api"
+        ],
+        [
+          "svc:edge",
+          "HOSTS",
+          "endpoint:edge"
+        ],
+        [
+          "svc:ot",
+          "DEPENDS_ON",
+          "device:plc"
+        ],
+        [
+          "svc:ot",
+          "HOSTS",
+          "endpoint:ot"
+        ],
+        [
+          "svc:ot",
+          "USES",
+          "pkg:mqtt"
+        ]
+      ],
+      "rejection_reasons": [
+        "unsupported_direct_claim",
+        "unsupported_direct_claim",
+        "unsupported_direct_claim"
+      ]
+    },
+    "run03": {
+      "accepted_metrics": {
+        "f1": 0.9850746268656716,
+        "fn": 1,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 0.9705882352941176,
+        "tp": 33
+      },
+      "accepted_triples": [
+        [
+          "cert:db",
+          "ISSUED_BY",
+          "cert:root"
+        ],
+        [
+          "cert:db",
+          "USES",
+          "alg:ecdsa-p256"
+        ],
+        [
+          "cert:edge",
+          "ISSUED_BY",
+          "cert:root"
+        ],
+        [
+          "cert:edge",
+          "USES",
+          "alg:rsa2048"
+        ],
+        [
+          "cert:ot",
+          "ISSUED_BY",
+          "cert:root"
+        ],
+        [
+          "cert:ot",
+          "USES",
+          "alg:ecdsa-p256"
+        ],
+        [
+          "cert:root",
+          "USES",
+          "alg:rsa2048"
+        ],
+        [
+          "device:plc",
+          "PROCESSES",
+          "data:telemetry"
+        ],
+        [
+          "device:plc",
+          "USES",
+          "alg:rsa2048"
+        ],
+        [
+          "endpoint:db",
+          "PRESENTS",
+          "cert:db"
+        ],
+        [
+          "endpoint:edge",
+          "PRESENTS",
+          "cert:edge"
+        ],
+        [
+          "endpoint:ot",
+          "PRESENTS",
+          "cert:ot"
+        ],
+        [
+          "pipeline:api",
+          "DEPLOYS",
+          "svc:api"
+        ],
+        [
+          "pipeline:ot",
+          "DEPLOYS",
+          "svc:ot"
+        ],
+        [
+          "pkg:mqtt",
+          "USES",
+          "alg:ecdsa-p256"
+        ],
+        [
+          "pkg:openssl",
+          "USES",
+          "alg:rsa2048"
+        ],
+        [
+          "pkg:pyca",
+          "USES",
+          "alg:aes256-gcm"
+        ],
+        [
+          "svc:api",
+          "DEPENDS_ON",
+          "svc:auth"
+        ],
+        [
+          "svc:api",
+          "DEPENDS_ON",
+          "svc:db"
+        ],
+        [
+          "svc:api",
+          "PROCESSES",
+          "data:patient"
+        ],
+        [
+          "svc:api",
+          "USES",
+          "alg:aes256-gcm"
+        ],
+        [
+          "svc:api",
+          "USES",
+          "pkg:pyca"
+        ],
+        [
+          "svc:auth",
+          "USES",
+          "alg:rsa2048"
+        ],
+        [
+          "svc:auth",
+          "USES",
+          "pkg:openssl"
+        ],
+        [
+          "svc:db",
+          "HOSTS",
+          "endpoint:db"
+        ],
+        [
+          "svc:db",
+          "USES",
+          "alg:ecdsa-p256"
+        ],
+        [
+          "svc:edge",
+          "DEPENDS_ON",
+          "svc:api"
+        ],
+        [
+          "svc:edge",
+          "HOSTS",
+          "endpoint:edge"
+        ],
+        [
+          "svc:edge",
+          "USES",
+          "alg:rsa2048"
+        ],
+        [
+          "svc:ot",
+          "DEPENDS_ON",
+          "device:plc"
+        ],
+        [
+          "svc:ot",
+          "HOSTS",
+          "endpoint:ot"
+        ],
+        [
+          "svc:ot",
+          "USES",
+          "alg:ecdsa-p256"
+        ],
+        [
+          "svc:ot",
+          "USES",
+          "pkg:mqtt"
+        ]
+      ],
+      "hybrid_metrics": {
+        "f1": 1.0,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "tp": 34
+      },
+      "raw_metrics": {
+        "f1": 0.9428571428571428,
+        "fn": 1,
+        "fp": 3,
+        "precision": 0.9166666666666666,
+        "recall": 0.9705882352941176,
+        "tp": 33
+      },
+      "raw_triples": [
+        [
+          "cert:db",
+          "ISSUED_BY",
+          "cert:root"
+        ],
+        [
+          "cert:db",
+          "USES",
+          "alg:ecdsa-p256"
+        ],
+        [
+          "cert:edge",
+          "ISSUED_BY",
+          "cert:root"
+        ],
+        [
+          "cert:edge",
+          "USES",
+          "alg:rsa2048"
+        ],
+        [
+          "cert:ot",
+          "ISSUED_BY",
+          "cert:root"
+        ],
+        [
+          "cert:ot",
+          "USES",
+          "alg:ecdsa-p256"
+        ],
+        [
+          "cert:ot",
+          "USES",
+          "alg:rsa2048"
+        ],
+        [
+          "cert:root",
+          "USES",
+          "alg:rsa2048"
+        ],
+        [
+          "device:plc",
+          "PROCESSES",
+          "data:telemetry"
+        ],
+        [
+          "device:plc",
+          "USES",
+          "alg:rsa2048"
+        ],
+        [
+          "endpoint:db",
+          "PRESENTS",
+          "cert:db"
+        ],
+        [
+          "endpoint:edge",
+          "PRESENTS",
+          "cert:edge"
+        ],
+        [
+          "endpoint:ot",
+          "PRESENTS",
+          "cert:ot"
+        ],
+        [
+          "pipeline:api",
+          "DEPLOYS",
+          "svc:api"
+        ],
+        [
+          "pipeline:ot",
+          "DEPLOYS",
+          "svc:ot"
+        ],
+        [
+          "pkg:mqtt",
+          "USES",
+          "alg:ecdsa-p256"
+        ],
+        [
+          "pkg:mqtt",
+          "USES",
+          "alg:rsa2048"
+        ],
+        [
+          "pkg:openssl",
+          "USES",
+          "alg:rsa2048"
+        ],
+        [
+          "pkg:pyca",
+          "USES",
+          "alg:aes256-gcm"
+        ],
+        [
+          "svc:api",
+          "DEPENDS_ON",
+          "svc:auth"
+        ],
+        [
+          "svc:api",
+          "DEPENDS_ON",
+          "svc:db"
+        ],
+        [
+          "svc:api",
+          "PROCESSES",
+          "data:patient"
+        ],
+        [
+          "svc:api",
+          "USES",
+          "alg:aes256-gcm"
+        ],
+        [
+          "svc:api",
+          "USES",
+          "pkg:pyca"
+        ],
+        [
+          "svc:auth",
+          "PROCESSES",
+          "data:telemetry"
+        ],
+        [
+          "svc:auth",
+          "USES",
+          "alg:rsa2048"
+        ],
+        [
+          "svc:auth",
+          "USES",
+          "pkg:openssl"
+        ],
+        [
+          "svc:db",
+          "HOSTS",
+          "endpoint:db"
+        ],
+        [
+          "svc:db",
+          "USES",
+          "alg:ecdsa-p256"
+        ],
+        [
+          "svc:edge",
+          "DEPENDS_ON",
+          "svc:api"
+        ],
+        [
+          "svc:edge",
+          "HOSTS",
+          "endpoint:edge"
+        ],
+        [
+          "svc:edge",
+          "USES",
+          "alg:rsa2048"
+        ],
+        [
+          "svc:ot",
+          "DEPENDS_ON",
+          "device:plc"
+        ],
+        [
+          "svc:ot",
+          "HOSTS",
+          "endpoint:ot"
+        ],
+        [
+          "svc:ot",
+          "USES",
+          "alg:ecdsa-p256"
+        ],
+        [
+          "svc:ot",
+          "USES",
+          "pkg:mqtt"
+        ]
+      ],
+      "rejection_reasons": [
+        "unsupported_direct_claim",
+        "unsupported_direct_claim",
+        "unsupported_direct_claim"
+      ]
+    }
+  },
+  "requested_models": [
+    "gpt-5.6-luna"
+  ],
+  "returned_models": [
+    "gpt-5.6-luna"
+  ],
+  "runs": 3,
+  "validation_graph_method": "cigma_no_paths"
+}

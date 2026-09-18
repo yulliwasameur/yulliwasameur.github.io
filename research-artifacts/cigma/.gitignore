@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.mplconfig/
+.venv/
+results/test-*/
+results/debug-*/
+results/llm/replay-*/
+.env
+.env.*

@@ -1,0 +1,1 @@
+{"intercept":-7.4607060785343915,"panel_brier":0.10682948299671652,"panel_cases":30,"panel_sha256":"61a2890d6b0473a936c5e6c5deb78ad1a325a7d67db4b0242280a9cf42d0d4e7","slope":17.33300521493124,"training_scope":"independent synthetic policy panel; not benchmark oracle or expert data"}

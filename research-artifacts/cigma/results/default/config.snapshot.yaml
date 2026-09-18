@@ -1,0 +1,49 @@
+calibration:
+  panel: fixtures/calibration_panel.csv
+  scope: independent-synthetic-policy-panel
+collected_at: '2026-08-19T08:00:00Z'
+confidence:
+  action_threshold: 0.65
+  path_penalty: 0.92
+  source_reliability:
+    cicd: 0.91
+    cmdb: 0.94
+    code: 0.88
+    ot: 0.86
+    pki: 0.97
+    tls: 0.98
+  verification_threshold: 0.85
+evaluation:
+  bootstrap_resamples: 5000
+  calibration_bins: 5
+  permutations: 10000
+  ranking_k: 5
+noise:
+  ambiguous_entity_count: 2
+  enabled: true
+  false_claim_count: 2
+openai_adapter:
+  enabled: false
+  max_output_tokens: 4000
+  model: gpt-5.4-nano-2026-03-17
+robustness:
+  observation_dropout:
+  - 0.0
+  - 0.1
+  - 0.25
+  - 0.5
+  seeds: 32
+scenario: cigma-lab
+scoring:
+  high_urgency_threshold: 0.65
+  medium_urgency_threshold: 0.4
+  policy_horizon_years: 10.0
+  primary_policy: bounded-policy-tier/intra-tier-pareto/lexicographic-v3
+  weights:
+    agility_penalty: 0.1
+    blast_radius: 0.1
+    criticality: 0.2
+    exposure: 0.15
+    hndl_urgency: 0.2
+    quantum_vulnerability: 0.25
+seed: 586
