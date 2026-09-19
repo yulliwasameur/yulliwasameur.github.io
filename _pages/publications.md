@@ -10,6 +10,8 @@ Cette page distingue les publications évaluées par les pairs des autres produc
 
 [Download the bibliography (BibTeX)](/files/publications.bib) · [Subscribe to publications (Atom)](/feed/publications.xml) · [Research code and artifacts](/code/) · [Research highlights in English](/research-highlights/)
 
+Présentations de recherche : [English](/research-highlights/) · [Español](/research/es/) · [Português do Brasil](/research/pt-br/) · [简体中文](/research/zh-hans/).
+
 ## Publications évaluées par les pairs
 
 {% assign sorted_publications = site.publications | sort: "date" | reverse %}

@@ -2,11 +2,16 @@
 layout: single
 title: "Research highlights: privacy, cryptography and AI security"
 permalink: /research-highlights/
+lang: en
+locale: en_US
+research_languages: true
 author_profile: true
 description: "English contribution summaries for five featured publications by Yulliwas Ameur, with research questions, limitations, citations and available code."
 ---
 
-These five contributions are the works featured on my [ORCID profile](https://orcid.org/0000-0003-1435-2982). Each summary explains the question, the contribution and the scope of the evidence. Updated 19 September 2026.
+I am a lecturer and researcher in cybersecurity at EFREI Paris, France. These five contributions are the works featured on my [ORCID profile](https://orcid.org/0000-0003-1435-2982). Each summary explains the question, the contribution and the scope of the evidence. Updated 19 September 2026.
+
+[English](/research-highlights/) · [Español](/research/es/) · [Português do Brasil](/research/pt-br/) · [简体中文](/research/zh-hans/)
 
 [All publications](/publications/) · [Bibliography in BibTeX](/files/publications.bib) · [Research code](/code/) · [Professional contact](mailto:yulliwas.ameur@efrei.fr)
 
@@ -63,3 +68,10 @@ These five contributions are the works featured on my [ORCID profile](https://or
 ## Related work in detection engineering
 
 [ANUBIS: measuring detection improvement](/publication/2026-09-18-detection-engineering/) distinguishes alerts that fire from alerts with the correct ATT&CK mapping. [LLM4Sec: constraining rule generation](/publication/2026-09-18-knowledge-graph-siem/) investigates whether knowledge-graph context improves the structural correctness of generated Sigma rules. [Context vs. Compute](/publication/2026-09-19-context-vs-compute/) extends the comparison across model capacities and context conditions.
+
+## Other available software archives
+
+- **ErrorCaps**, version v3.0.1: a synthetic benchmark for indirect prompt injection during agent error recovery. Archive title: *ErrorCaps: committed-effect measurement of recovery-path injection defense (CRiSIS 2026 artifact)*. Published on Zenodo under the MIT license; the CRiSIS 2026 label does not establish acceptance of the associated manuscript. [Description](/publication/2026-08-28-software-errorcaps/) · [Version DOI](https://doi.org/10.5281/zenodo.22147247).
+- **Bearer, Bound, Attested**, version v1.1: experimental and formal-analysis material on key binding, provenance and attestation for Zero Trust. Archive title: *Bearer, Bound, Attested: Factoring Key Binding, Provenance, and Attestation for Zero-Trust Enforcement (reproducible artefact)*. Published on Zenodo under the MIT license; the archive describes the associated manuscript as a submission to *IEEE Networking Letters*. [Description](/publication/bearer-bound-attested-software/) · [Version DOI](https://doi.org/10.5281/zenodo.22146879).
+
+Cite the original English titles and the specific software or dataset version used. The linked records contain the complete author lists and available materials.

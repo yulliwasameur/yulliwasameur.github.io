@@ -53,4 +53,12 @@
 
 <link rel="alternate" type="application/atom+xml" title="Yulliwas Ameur — publications" href="{{ '/feed/publications.xml' | absolute_url }}">
 
+{% if page.research_languages %}
+<link rel="alternate" hreflang="en" href="{{ '/research-highlights/' | absolute_url }}">
+<link rel="alternate" hreflang="es" href="{{ '/research/es/' | absolute_url }}">
+<link rel="alternate" hreflang="pt-BR" href="{{ '/research/pt-br/' | absolute_url }}">
+<link rel="alternate" hreflang="zh-Hans" href="{{ '/research/zh-hans/' | absolute_url }}">
+<link rel="alternate" hreflang="x-default" href="{{ '/research-highlights/' | absolute_url }}">
+{% endif %}
+
 <!-- end custom head snippets -->
