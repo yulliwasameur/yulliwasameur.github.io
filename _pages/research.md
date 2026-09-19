@@ -36,3 +36,5 @@ description: "Axes de recherche, encadrements et activités scientifiques de Yul
 [ORCID](https://orcid.org/0000-0003-1435-2982){: .btn }
 [Google Scholar](https://scholar.google.com/citations?user=wwTgzYsAAAAJ){: .btn }
 [DBLP](https://dblp.org/pid/329/0026){: .btn }
+
+[Research highlights in English: contributions, evidence and citation links](/research-highlights/)

@@ -30,3 +30,11 @@ Tool-augmented LLM agents produce structured, multi-phase network traffic whose 
 ## Open manuscript
 
 The PDF is an author manuscript, with an IEEE copyright and version notice. The version of record will be linked when its DOI is available.
+
+## Presentation
+
+[Download the authors' AgentFlowShield presentation (PowerPoint, 12 slides)](/publication/2026-09-18-agentflowshield/slides.pptx).
+
+This is the supplied presentation associated with AICCSA 2026. For exact evaluation conditions, residual leakage and the scope of the results, consult the author manuscript above.
+
+[English contribution summary](/research-highlights/).

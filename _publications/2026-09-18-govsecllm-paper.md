@@ -23,3 +23,11 @@ excerpt: 'GovSecLLM++: A Compliance-Aware Benchmark for Security Testing and Gov
 **Status:** Conference contribution listed in HAL; proceedings publication details are not yet verified.
 
 **Conference period:** 2026-09. The page date records this listing; it is not a proceedings publication date.
+
+## Contribution in brief
+
+GovSecLLM++ connects security testing of LLM applications to inspectable governance evidence. Its public artifact package includes adaptive test outputs, scoring utilities, strict rescoring files, human-validation summaries, a data card and reproducibility notes. The examples use synthetic secrets and credentials.
+
+The software and dataset are separately citable objects. [Software DOI](https://doi.org/10.5281/zenodo.20636767) · [Dataset concept DOI](https://doi.org/10.5281/zenodo.20646701) · [Dataset version DOI](https://doi.org/10.5281/zenodo.20646702). The current code release does not include the final paper PDF.
+
+[Research highlights and scope of the evidence](/research-highlights/).

@@ -60,3 +60,5 @@ Le statut et les versions disponibles sont précisés dans chaque fiche.
     {% include archive-single.html %}
   {% endif %}
 {% endfor %}
+
+[Research highlights in English: contributions, evidence and citation links](/research-highlights/)
