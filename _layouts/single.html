@@ -49,9 +49,10 @@ layout: default
           <p>{{ page.citation }}</p>
         {% endif %}
 
-        {% if page.paperurl or page.halurl or page.codeurl or page.programurl or page.pdfurl or page.bibtexurl %}
+        {% if page.paperurl or page.halurl or page.codeurl or page.programurl or page.pdfurl or page.external_pdfurl or page.bibtexurl %}
           <p>
-          {% if page.pdfurl %}<a href="{{ page.pdfurl }}" class="btn btn--small">Author manuscript PDF</a>{% endif %}
+          {% if page.pdfurl %}<a href="{{ page.pdfurl | relative_url }}" class="btn btn--small">{{ page.pdf_label | default: "Author manuscript PDF" | escape }}</a>{% endif %}
+          {% if page.external_pdfurl %}<a href="{{ page.external_pdfurl | escape }}" class="btn btn--small">{{ page.external_pdf_label | default: "PDF on HAL" | escape }}</a>{% endif %}
           {% if page.bibtexurl %}<a href="{{ page.bibtexurl }}" class="btn btn--small">BibTeX</a>{% endif %}
           {% if page.paperurl %}<a href="{{ page.paperurl }}" class="btn btn--small">Source / DOI</a>{% endif %}
           {% if page.halurl %}<a href="{{ page.halurl }}" class="btn btn--small">HAL / texte</a>{% endif %}

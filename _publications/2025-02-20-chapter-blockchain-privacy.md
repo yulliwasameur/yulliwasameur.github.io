@@ -16,4 +16,8 @@ authors:
 doi: 10.1201/9788770047746-13
 publication_year: 2025
 bibtexurl: /files/publications.bib
+schema_type: Chapter
+firstpage: 239
+lastpage: 267
+external_pdfurl: https://hal.science/hal-05330722v1/file/Advancing_Blockchain_Privacy__The_Role_of_Homomorphic_Encryption%20%281%29.pdf
 ---

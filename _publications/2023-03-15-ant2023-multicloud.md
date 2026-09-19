@@ -16,6 +16,11 @@ authors:
 doi: 10.1016/j.procs.2023.03.050
 publication_year: 2023
 bibtexurl: /files/publications.bib
+journal_title: Procedia Computer Science
+volume: 220
+firstpage: 390
+lastpage: 397
+external_pdfurl: https://hal.science/hal-03933238v1/file/version_auteur.pdf
 ---
 
 ## Abstract

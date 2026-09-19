@@ -11,4 +11,6 @@ citation: 'Yulliwas Ameur. "Peer Review Report For: Applications of Homomorphic 
 doi: 10.21956/openreseurope.19508.r42646
 publication_year: 2024
 bibtexurl: /files/publications.bib
+authors:
+- Yulliwas Ameur
 ---

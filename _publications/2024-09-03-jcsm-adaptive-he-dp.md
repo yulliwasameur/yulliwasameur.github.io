@@ -16,6 +16,11 @@ authors:
 doi: 10.13052/jcsm2245-1439.1353
 publication_year: 2024
 bibtexurl: /files/publications.bib
+journal_title: Journal of Cyber Security and Mobility
+volume: 13
+issue: 5
+firstpage: 863
+lastpage: 886
 ---
 
 ## Abstract

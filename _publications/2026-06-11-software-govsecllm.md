@@ -12,4 +12,8 @@ citation: 'Yulliwas Ameur, Samia Bouzefrane, Lyes Khoukhi. "GovSecLLM++: Complia
 doi: 10.5281/zenodo.20636767
 publication_year: 2026
 bibtexurl: /files/publications.bib
+authors:
+- Yulliwas Ameur
+- Samia Bouzefrane
+- Lyes Khoukhi
 ---

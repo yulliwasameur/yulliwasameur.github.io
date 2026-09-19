@@ -56,8 +56,11 @@
       <p>{{ post.citation }}</p>
     {% endif %}
 
-    {% if post.paperurl or post.halurl or post.codeurl or post.programurl %}
+    {% if post.paperurl or post.halurl or post.codeurl or post.programurl or post.pdfurl or post.external_pdfurl or post.bibtexurl %}
       <p>
+      {% if post.pdfurl %}<a href="{{ post.pdfurl | relative_url }}" class="btn btn--small">{{ post.pdf_label | default: "Author manuscript PDF" | escape }}</a>{% endif %}
+      {% if post.external_pdfurl %}<a href="{{ post.external_pdfurl | escape }}" class="btn btn--small">{{ post.external_pdf_label | default: "PDF on HAL" | escape }}</a>{% endif %}
+      {% if post.bibtexurl %}<a href="{{ post.bibtexurl | relative_url }}" class="btn btn--small">BibTeX</a>{% endif %}
       {% if post.paperurl %}<a href="{{ post.paperurl }}" class="btn btn--small">Source / DOI</a>{% endif %}
       {% if post.halurl %}<a href="{{ post.halurl }}" class="btn btn--small">HAL / texte</a>{% endif %}
       {% if post.codeurl %}<a href="{{ post.codeurl }}" class="btn btn--small">Code et artefacts</a>{% endif %}

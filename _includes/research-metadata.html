@@ -1,0 +1,32 @@
+{% assign research_type = page.schema_type | default: "ScholarlyArticle" %}
+{% if page.output_type == "software" %}{% assign research_type = "SoftwareSourceCode" %}{% endif %}
+{% if page.output_type == "dataset" %}{% assign research_type = "Dataset" %}{% endif %}
+{% if page.output_type == "thesis" %}{% assign research_type = "Thesis" %}{% endif %}
+{% if page.output_type == "open-review" %}{% assign research_type = "CreativeWork" %}{% endif %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": {{ research_type | jsonify }},
+  "@id": {{ page.url | absolute_url | append: '#research-output' | jsonify }},
+  "name": {{ page.citation_title | default: page.title | strip_html | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},
+  "mainEntityOfPage": {{ page.url | absolute_url | jsonify }},
+  "author": [{% for person in page.authors %}{
+    "@type": "Person",
+    "name": {{ person | jsonify }}{% if person == "Yulliwas Ameur" %},
+    "@id": "https://orcid.org/0000-0003-1435-2982"{% endif %}
+  }{% unless forloop.last %},{% endunless %}{% endfor %}]
+  {% if page.excerpt %},"description": {{ page.excerpt | strip_html | jsonify }}{% endif %}
+  {% if page.status %},"creativeWorkStatus": {{ page.status | jsonify }}{% endif %}
+  {% if page.doi %},"identifier": {"@type": "PropertyValue", "propertyID": "DOI", "value": {{ page.doi | jsonify }}}{% endif %}
+  {% if page.paperurl %},"sameAs": {{ page.paperurl | jsonify }}{% endif %}
+  {% if page.halurl %},"archivedAt": {{ page.halurl | jsonify }}{% endif %}
+  {% if page.output_type == "software" and page.codeurl %},"codeRepository": {{ page.codeurl | jsonify }}{% endif %}
+  {% if page.pdfurl %},"encoding": {
+    "@type": "MediaObject",
+    "contentUrl": {{ page.pdfurl | absolute_url | jsonify }},
+    "encodingFormat": "application/pdf",
+    "name": {{ page.pdf_label | default: "Author manuscript PDF" | jsonify }}
+  }{% endif %}
+}
+</script>

@@ -32,13 +32,25 @@
 
 
 {% if page.collection == "publications" and page.authors %}
-<meta name="citation_title" content="{{ page.title | strip_html | escape }}">
+{% unless page.output_type == "software" or page.output_type == "dataset" or page.output_type == "open-review" %}
+<meta name="citation_title" content="{{ page.citation_title | default: page.title | strip_html | escape }}">
 {% for person in page.authors %}<meta name="citation_author" content="{{ person | escape }}">
 {% endfor %}
 <meta name="citation_publication_date" content="{% if page.publication_year %}{{ page.publication_year }}{% else %}{{ page.date | date: '%Y/%m/%d' }}{% endif %}">
 {% if page.doi %}<meta name="citation_doi" content="{{ page.doi | escape }}">{% endif %}
-{% if page.pdfurl %}<meta name="citation_pdf_url" content="{{ page.pdfurl | absolute_url }}">{% endif %}
-{% if page.output_type == "conference-record" %}<meta name="citation_conference_title" content="{{ page.venue | escape }}">{% endif %}
+<meta name="citation_abstract_html_url" content="{{ page.url | absolute_url }}">
+{% if page.pdfurl and page.pdf_kind != "extended-abstract" %}<meta name="citation_pdf_url" content="{{ page.pdfurl | absolute_url }}">{% endif %}
+{% if page.journal_title %}<meta name="citation_journal_title" content="{{ page.journal_title | escape }}">{% endif %}
+{% if page.conference_title %}<meta name="citation_conference_title" content="{{ page.conference_title | escape }}">{% elsif page.output_type == "conference-record" %}<meta name="citation_conference_title" content="{{ page.venue | escape }}">{% endif %}
+{% if page.volume %}<meta name="citation_volume" content="{{ page.volume | escape }}">{% endif %}
+{% if page.issue %}<meta name="citation_issue" content="{{ page.issue | escape }}">{% endif %}
+{% if page.firstpage %}<meta name="citation_firstpage" content="{{ page.firstpage | escape }}">{% endif %}
+{% if page.lastpage %}<meta name="citation_lastpage" content="{{ page.lastpage | escape }}">{% endif %}
+{% if page.thesis_institution %}<meta name="citation_dissertation_institution" content="{{ page.thesis_institution | escape }}">{% endif %}
+{% endunless %}
+{% include research-metadata.html %}
 {% endif %}
+
+<link rel="alternate" type="application/atom+xml" title="Yulliwas Ameur — publications" href="{{ '/feed/publications.xml' | absolute_url }}">
 
 <!-- end custom head snippets -->

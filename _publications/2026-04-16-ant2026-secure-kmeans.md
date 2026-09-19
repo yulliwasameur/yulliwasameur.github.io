@@ -16,6 +16,11 @@ authors:
 doi: 10.1016/j.procs.2026.04.073
 publication_year: 2026
 bibtexurl: /files/publications.bib
+journal_title: Procedia Computer Science
+volume: 280
+firstpage: 576
+lastpage: 583
+halurl: https://hal.science/hal-05743298
 ---
 
 ## Abstract

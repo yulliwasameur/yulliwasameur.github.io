@@ -14,4 +14,8 @@ authors:
 doi: 10.1007/978-3-032-11119-7_8
 publication_year: 2026
 bibtexurl: /files/publications.bib
+schema_type: Chapter
+firstpage: 183
+lastpage: 201
+halurl: https://hal.science/hal-05743852
 ---

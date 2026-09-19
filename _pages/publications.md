@@ -8,7 +8,7 @@ description: "Publications scientifiques, thèse, prépublication, logiciels et 
 
 Cette page distingue les publications évaluées par les pairs des autres productions de recherche. Les notices HAL et les DOI éditeurs sont fournis lorsqu'ils sont disponibles. Mon [CV HAL](https://cv.hal.science/yulliwas-ameur) reste la source institutionnelle de référence.
 
-[Download the bibliography (BibTeX)](/files/publications.bib) · [Research code and artifacts](/code/)
+[Download the bibliography (BibTeX)](/files/publications.bib) · [Subscribe to publications (Atom)](/feed/publications.xml) · [Research code and artifacts](/code/) · [Research highlights in English](/research-highlights/)
 
 ## Publications évaluées par les pairs
 

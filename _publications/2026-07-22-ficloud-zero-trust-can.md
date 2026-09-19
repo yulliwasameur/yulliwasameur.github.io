@@ -19,4 +19,8 @@ publication_year: 2026
 paperurl: https://doi.org/10.1109/ficloud70576.2026.00079
 pages: 506-511
 bibtexurl: /files/publications.bib
+conference_title: 2026 13th International Conference on Future Internet of Things
+  and Cloud (FiCloud)
+firstpage: 506
+lastpage: 511
 ---

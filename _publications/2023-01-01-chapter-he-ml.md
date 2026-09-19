@@ -16,4 +16,8 @@ authors:
 doi: 10.1007/978-3-031-09640-2_18
 publication_year: 2023
 bibtexurl: /files/publications.bib
+schema_type: Chapter
+firstpage: 391
+lastpage: 410
+external_pdfurl: https://hal.science/hal-03933309v1/file/Book_chapter_HE_version_auteure.pdf
 ---

@@ -11,6 +11,9 @@ citation: 'Yulliwas Ameur, Samia Bouzefrane. "GovSecLLM++ SECAI 2026 Artifact Pa
 doi: 10.5281/zenodo.20646701
 publication_year: 2026
 bibtexurl: /files/publications.bib
+authors:
+- Yulliwas Ameur
+- Samia Bouzefrane
 ---
 
 ## Abstract

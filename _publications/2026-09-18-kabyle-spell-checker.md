@@ -19,6 +19,8 @@ bibtexurl: /files/publications.bib
 citation: 'Massil Aoudj; Tahar Boukhenoufa; Samia Bouzefrane; Yulliwas Ameur; Kamal Naït-Zerrad. "Building a Community-Grounded Spell Checker for the Kabyle Language Using NLP Powered by AI." FEL XXX 2026. HAL: hal-05743861.'
 excerpt: Building a Community-Grounded Spell Checker for the Kabyle Language Using NLP Powered by AI. Conference contribution listed in HAL; proceedings publication details are not yet verified.
 pdfurl: /publication/2026-09-18-kabyle-spell-checker/paper.pdf
+pdf_label: Early extended abstract PDF (3 pages)
+pdf_kind: extended-abstract
 ---
 
 **Status:** Conference contribution listed in HAL; proceedings publication details are not yet verified.

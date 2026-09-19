@@ -49,6 +49,12 @@ staticman:
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
+# Publications are a collection, so the default posts-only feed omits them.
+feed:
+  posts_limit: 100
+  collections:
+    - publications
+
 # SEO Related
 google_site_verification :
 bing_site_verification   :
