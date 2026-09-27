@@ -43,7 +43,7 @@
   };
   const initialTheme = () => {
     try { const saved = localStorage.getItem('ya-theme'); if (saved === 'light' || saved === 'dark') return saved; } catch (_) {}
-    return 'dark';
+    return 'light';
   };
 
   function translateNode(node, lang) {
