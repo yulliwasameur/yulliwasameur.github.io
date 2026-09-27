@@ -530,7 +530,7 @@ tbody tr:hover { background: transparent; }
   display: inline-block;
   margin: 0 .4rem .5rem 0;
   padding: .38rem .8rem;
-  border: 1px solid var(--ya-line);
+  border: 1px solid var(--ya-line) !important;
   border-radius: 4px;
   background: transparent;
   box-shadow: none;
@@ -539,17 +539,17 @@ tbody tr:hover { background: transparent; }
   font-size: .8rem;
   font-weight: 500;
   line-height: 1.3;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 .btn:hover,
 .page__content .btn:hover {
-  border-color: var(--ya-accent);
+  border-color: var(--ya-accent) !important;
   background: transparent;
   color: var(--ya-accent) !important;
 }
 .btn--primary,
 .page__content .btn--primary {
-  border-color: var(--ya-accent);
+  border-color: var(--ya-accent) !important;
   background: var(--ya-accent);
   color: var(--ya-bg) !important;
 }
