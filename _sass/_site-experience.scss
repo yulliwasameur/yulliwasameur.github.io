@@ -20,7 +20,6 @@ $ya-lozenge: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width
   --ya-accent: #a8402a;
   --ya-ochre: #c98f22;
   --ya-accent-soft: rgba(168, 64, 42, .08);
-  --ya-frieze: url("#{$ya-frieze-light}");
   --ya-measure: 44rem;
   --ya-wide: 64rem;
   --ya-sans: "Inter", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -28,6 +27,12 @@ $ya-lozenge: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width
   --ya-tifinagh: "Noto Sans Tifinagh", "Ebrima", "Segoe UI Historic", sans-serif;
   --ya-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
+
+html[data-site-theme="dark"] .masthead:before,
+html[data-site-theme="dark"] .page__title:after,
+html[data-site-theme="dark"] .archive h1:after,
+html[data-site-theme="dark"] .ya-home__frieze,
+html[data-site-theme="dark"] .page__footer:before { background-image: url("#{$ya-frieze-dark}"); }
 
 html[data-site-theme="dark"] {
   --ya-bg: #17130f;
@@ -39,7 +44,6 @@ html[data-site-theme="dark"] {
   --ya-accent: #e07a5f;
   --ya-ochre: #e3b04b;
   --ya-accent-soft: rgba(224, 122, 95, .1);
-  --ya-frieze: url("#{$ya-frieze-dark}");
 }
 
 /* ---------- Base ---------- */
@@ -52,6 +56,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   margin: 0;
   background: var(--ya-bg);
   color: var(--ya-text);
@@ -149,7 +154,10 @@ tbody tr:hover { background: transparent; }
   content: "";
   display: block;
   height: 8px;
-  background: var(--ya-frieze) repeat-x left center / auto 8px;
+  background-image: url("#{$ya-frieze-light}");
+  background-repeat: repeat-x;
+  background-position: left center;
+  background-size: auto 8px;
 }
 .masthead__inner-wrap {
   max-width: var(--ya-wide);
@@ -411,7 +419,10 @@ tbody tr:hover { background: transparent; }
   width: 3.5rem;
   height: 8px;
   margin-top: 1rem;
-  background: var(--ya-frieze) repeat-x left center / auto 8px;
+  background-image: url("#{$ya-frieze-light}");
+  background-repeat: repeat-x;
+  background-position: left center;
+  background-size: auto 8px;
 }
 .page__title a { color: inherit; text-decoration: none; }
 
@@ -570,11 +581,18 @@ tbody tr:hover { background: transparent; }
 
 /* ---------- Accueil ---------- */
 
-.layout--splash #main,
-#main:has(.ya-home) { max-width: var(--ya-wide); padding-top: 4.5rem; }
 .splash .page__content { margin: 0; padding: 0; }
 
-.ya-home { color: var(--ya-text); }
+/* L’accueil déborde la colonne de lecture pour occuper la largeur du site. */
+.ya-home {
+  position: relative;
+  left: 50%;
+  width: calc(100vw - 3rem);
+  max-width: var(--ya-wide);
+  padding-top: 1rem;
+  transform: translateX(-50%);
+  color: var(--ya-text);
+}
 
 .ya-home__intro {
   display: grid;
@@ -617,7 +635,10 @@ tbody tr:hover { background: transparent; }
   max-width: calc(42px * 9);
   height: 12px;
   margin: 2rem 0;
-  background: var(--ya-frieze) repeat-x left center / auto 12px;
+  background-image: url("#{$ya-frieze-light}");
+  background-repeat: repeat-x;
+  background-position: left center;
+  background-size: auto 12px;
 }
 
 .ya-home__role {
@@ -715,7 +736,10 @@ tbody tr:hover { background: transparent; }
   content: "";
   display: block;
   height: 8px;
-  background: var(--ya-frieze) repeat-x left center / auto 8px;
+  background-image: url("#{$ya-frieze-light}");
+  background-repeat: repeat-x;
+  background-position: left center;
+  background-size: auto 8px;
   opacity: .9;
 }
 .page__footer {
@@ -768,7 +792,7 @@ tbody tr:hover { background: transparent; }
   .greedy-nav button.greedy-nav__toggle { right: 6.6rem; }
   .site-nav-tools { margin-left: 0; padding-left: .5rem; gap: .2rem; }
   #main { padding: 2.2rem 1rem 3rem; }
-  .layout--splash #main, #main:has(.ya-home) { padding-top: 2.8rem; }
+  .ya-home { width: calc(100vw - 2rem); padding-top: 0; }
   .page__title, .archive h1, .archive .page__title { font-size: 1.65rem; }
   .ya-home__intro, .ya-home__body { grid-template-columns: 1fr; gap: 2.5rem; }
   .ya-home__portrait { order: -1; width: 11rem; margin: 0 auto 1rem; }
