@@ -12,18 +12,6 @@ main:
     title: "Enseignement"
     url: /teaching/
 
-  - key: talks
-    title: "Conférences"
-    url: /talks/
-
-  - key: analyses
-    title: "Analyses"
-    url: /analyses/
-
-  - key: code
-    title: "Code"
-    url: /code/
-
   - key: cv
     title: "CV"
     url: /cv/

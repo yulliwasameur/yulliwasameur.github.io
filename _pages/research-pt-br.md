@@ -13,7 +13,7 @@ Sou professor e pesquisador em cibersegurança na EFREI Paris, França. Pesquiso
 
 [English](/research-highlights/) · [Español](/research/es/) · [Português do Brasil](/research/pt-br/) · [简体中文](/research/zh-hans/)
 
-[Todas as publicações](/publications/) · [Bibliografia BibTeX](/files/publications.bib) · [Código](/code/) · [ORCID](https://orcid.org/0000-0003-1435-2982) · [Contato](mailto:yulliwas.ameur@efrei.fr)
+[Todas as publicações](/publications/) · [Bibliografia BibTeX](/files/publications.bib) · [ORCID](https://orcid.org/0000-0003-1435-2982) · [Contato](mailto:yulliwas.ameur@efrei.fr)
 
 ## 1. Agrupamento de dados criptografados
 

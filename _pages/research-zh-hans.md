@@ -13,7 +13,7 @@ description: "Yulliwas Ameur 的研究简介：隐私保护、密码学和人工
 
 [English](/research-highlights/) · [Español](/research/es/) · [Português do Brasil](/research/pt-br/) · [简体中文](/research/zh-hans/)
 
-[全部研究成果](/publications/) · [BibTeX 参考文献](/files/publications.bib) · [代码](/code/) · [ORCID](https://orcid.org/0000-0003-1435-2982) · [联系我](mailto:yulliwas.ameur@efrei.fr)
+[全部研究成果](/publications/) · [BibTeX 参考文献](/files/publications.bib) · [ORCID](https://orcid.org/0000-0003-1435-2982) · [联系我](mailto:yulliwas.ameur@efrei.fr)
 
 ## 1. 对加密数据进行聚类
 

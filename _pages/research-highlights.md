@@ -13,7 +13,7 @@ I am a lecturer and researcher in cybersecurity at EFREI Paris, France. These fi
 
 [English](/research-highlights/) · [Español](/research/es/) · [Português do Brasil](/research/pt-br/) · [简体中文](/research/zh-hans/)
 
-[All publications](/publications/) · [Bibliography in BibTeX](/files/publications.bib) · [Research code](/code/) · [Professional contact](mailto:yulliwas.ameur@efrei.fr)
+[All publications](/publications/) · [Bibliography in BibTeX](/files/publications.bib) · [Professional contact](mailto:yulliwas.ameur@efrei.fr)
 
 ## Secure k-means clustering on encrypted data
 

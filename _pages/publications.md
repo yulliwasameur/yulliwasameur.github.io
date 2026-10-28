@@ -8,7 +8,7 @@ description: "Publications scientifiques, thèse, prépublication, logiciels et 
 
 Cette page distingue les publications évaluées par les pairs des autres productions de recherche. Les notices HAL et les DOI éditeurs sont fournis lorsqu'ils sont disponibles. Mon [CV HAL](https://cv.hal.science/yulliwas-ameur) reste la source institutionnelle de référence.
 
-[Bibliographie complète (BibTeX)](/files/publications.bib) · [Flux Atom des publications](/feed/publications.xml) · [Code et artefacts](/code/) · [Présentation en anglais (Research highlights)](/research-highlights/)
+[Bibliographie complète (BibTeX)](/files/publications.bib) · [Flux Atom des publications](/feed/publications.xml) · [Présentation en anglais (Research highlights)](/research-highlights/)
 
 Présentations de recherche : [English](/research-highlights/) · [Español](/research/es/) · [Português do Brasil](/research/pt-br/) · [简体中文](/research/zh-hans/).
 

@@ -56,9 +56,6 @@ environnements IoT/cloud.
   <li><a href="/publications/">Publications</a></li>
   <li><a href="/recherche/">Recherche, encadrement et service scientifique</a></li>
   <li><a href="/teaching/">Enseignement</a></li>
-  <li><a href="/talks/">Conférences</a></li>
-  <li><a href="/analyses/">Analyses</a></li>
-  <li><a href="/code/">Code et artefacts</a></li>
   <li><a href="/cv/">Curriculum vitae</a> (<a href="/files/CV_Yulliwas_AMEUR.pdf">PDF</a>)</li>
 </ul>
 
