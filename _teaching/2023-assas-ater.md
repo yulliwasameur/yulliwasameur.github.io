@@ -1,11 +1,11 @@
 ---
-title: "ATER - Universit&eacute; Paris Panth&eacute;on-Assas (2023-2024)"
+title: "Université Paris-Panthéon-Assas — ATER (09/2023 – 04/2024)"
 collection: teaching
-type: "Undergraduate (192h)"
+type: "Licence (192 h)"
 permalink: /teaching/2023-assas-ater
-venue: "Universit&eacute; Paris Panth&eacute;on-Assas"
+venue: "Université Paris-Panthéon-Assas"
 date: 2023-09-01
 location: "Paris, France"
 ---
 
-Teaching and research fellow (ATER): Python programming, VBA programming, databases, office tools.
+Attaché temporaire d'enseignement et de recherche : programmation Python et VBA, bases de données, outils bureautiques.

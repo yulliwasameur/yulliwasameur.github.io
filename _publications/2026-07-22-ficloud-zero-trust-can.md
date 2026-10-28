@@ -1,6 +1,7 @@
 ---
 title: Energy-Efficient Adaptive Zero Trust Security for Automotive CAN Networks
 collection: publications
+halurl: https://hal.science/hal-05771181
 output_type: peer-reviewed
 permalink: /publication/2026-07-22-ficloud-zero-trust-can
 excerpt: Adaptive Zero Trust security for automotive CAN networks with an emphasis on energy efficiency.

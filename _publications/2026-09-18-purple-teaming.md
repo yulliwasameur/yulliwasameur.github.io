@@ -12,16 +12,16 @@ authors:
 - Yulliwas Ameur
 - Samia Bouzefrane
 halurl: https://hal.science/hal-05743354
-status: Conference contribution listed in HAL; proceedings publication details are not yet verified.
+status: Version finale acceptée le 26 septembre 2026 pour présentation à C&ESAR 2026 (Rennes, novembre 2026).
 bibtexurl: /files/publications.bib
 citation: 'Tristan Madani; Yulliwas Ameur; Samia Bouzefrane. "From Attack Scenario to Measurable Detection Improvement: A Knowledge-Driven ATT&CK/D3FEND Framework for Instrumented Purple Teaming." C&ESAR 2026. HAL: hal-05743354.'
 excerpt: Organizations run purple team exercises, find gaps, patch a few rules, and report success—but without a formal measurement framework, they cannot quantify how much detection improved or why specific techniques went undet…
 pdfurl: /publication/2026-09-18-purple-teaming/paper.pdf
 ---
 
-**Status:** Conference contribution listed in HAL; proceedings publication details are not yet verified.
+**Statut :** Version finale acceptée le 26 septembre 2026 pour présentation à C&ESAR 2026 (Rennes, novembre 2026).
 
-**Conference period:** 2026-11. The page date records this listing; it is not a proceedings publication date.
+**Période de la conférence :** 2026-11. La date de cette fiche est celle de son ajout, pas celle de la parution des actes.
 
 ## Abstract
 
@@ -29,4 +29,4 @@ Organizations run purple team exercises, find gaps, patch a few rules, and repor
 
 ## Available version
 
-Author manuscript, 16 pages, archived on 13 May 2026. The PDF contains the authors’ CC BY 4.0 notice and is shared unchanged. The final proceedings version is not yet verified. Section 10 describes an artifact repository kept private during review; no public implementation is linked here.
+Author manuscript, 16 pages, archived on 13 May 2026. The PDF contains the authors’ CC BY 4.0 notice and is shared unchanged. The PDF below is the May 2026 author manuscript; the corrected final version will replace it after the conference. Section 10 describes an artifact repository kept private during review; no public implementation is linked here.

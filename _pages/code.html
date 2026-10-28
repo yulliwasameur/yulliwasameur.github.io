@@ -3,54 +3,44 @@ layout: archive
 title: "Code et artefacts de recherche"
 permalink: /code/
 author_profile: true
-description: "Code source et artefacts de recherche de Yulliwas Ameur en chiffrement homomorphe, PPML, cryptographie et sécurité des LLM."
+description: "Code source et artefacts de recherche de Yulliwas Ameur : sécurité des agents IA, cryptographie post-quantique, chiffrement homomorphe, TAL du kabyle."
 ---
 
-<p>Code source et artefacts associés à mes travaux de recherche. Les versions disponibles et leurs limites de validation sont indiquées pour chaque projet.</p>
+<p>Code source, données et archives de reproductibilité associés à mes travaux. Pour chaque artefact, citer l'identifiant pérenne (DOI) et la version utilisée.</p>
 
-<h2>Research code and reproducibility artifacts</h2>
-<p>Public source code, data and archived research materials. Cite the persistent identifier and the exact version used when one is available.</p>
+<h2>Sécurité des agents IA et des LLM</h2>
 
-<h3><a href="/publication/2026-08-28-software-errorcaps/">ErrorCaps — recovery-path injection benchmark</a></h3>
-<p>MIT-licensed software archive, version v3.0.1, published on 28 August 2026. Synthetic benchmark, per-episode records and reproduction instructions for studying indirect prompt injection during agent error recovery. <a href="https://doi.org/10.5281/zenodo.22147247">Cite or download this version on Zenodo</a>. The archive's CRiSIS 2026 label does not establish paper acceptance.</p>
+<h3><a href="https://github.com/yulliwasameur/GovSecLLMpp-SECAI2026">GovSecLLM++</a></h3>
+<p>Banc d'essai et paquet de reproductibilité pour les tests de sécurité et les preuves de gouvernance d'applications fondées sur des LLM. Données, secrets et identifiants synthétiques. <a href="https://doi.org/10.5281/zenodo.20636767">Logiciel (DOI)</a> · <a href="https://doi.org/10.5281/zenodo.20646701">Jeu de données (DOI)</a> · <a href="/publication/2026-09-18-govsecllm-paper/">Article (SecAI @ ESORICS 2026)</a>.</p>
 
-<h3><a href="/publication/bearer-bound-attested-software/">Bearer, Bound, Attested — Zero Trust enforcement artifact</a></h3>
-<p>MIT-licensed software archive, version v1.1, published on 28 August 2026. Measurement and formal-analysis material comparing key binding, provenance and attestation. <a href="https://doi.org/10.5281/zenodo.22146879">Cite this version and access its instructions and results on Zenodo</a>. The associated manuscript is described as an IEEE Networking Letters submission.</p>
+<h3><a href="https://github.com/pm-mendes/rag-ipi-benchmark">RAG-IPI benchmark</a></h3>
+<p>Banc d'évaluation de l'injection indirecte de consignes dans les systèmes RAG : code, données et résultats. Dépôt maintenu par Miqeas Pedro Mendes. <a href="/publication/2026-08-31-wiiat2026-rag-ipi/">Article (IEEE/WIC WI-IAT 2026)</a>.</p>
 
-<h3><a href="https://github.com/Insaf19/PQtrust-agent-artifact">PQTrust-Agent — source code and artifact</a></h3>
-<p>Canonical public repository maintained by coauthor Insaf Imene Lasledj. Associated <a href="/publication/2026-09-18-pqtrust-agent/">paper, abstract and author manuscript</a>.</p>
+<h3><a href="/publication/2026-08-28-software-errorcaps/">ErrorCaps</a></h3>
+<p>Banc d'essai synthétique de l'injection indirecte de consignes pendant la reprise sur erreur des agents à outils. Licence MIT, version 3.0.1 (28 août 2026). <a href="https://doi.org/10.5281/zenodo.22147247">Zenodo (DOI)</a>.</p>
 
-<h3><a href="https://github.com/yulliwasameur/yulliwasameur.github.io/tree/master/research-artifacts/cigma">CIGMA — browsable source snapshot, 19 August 2026</a></h3>
-<p><a href="/files/cigma-artifact-snapshot-2026-08-19.zip">Download the source, synthetic fixture, tests and archived results (ZIP)</a>. The existing test suite produced 33 passes and one export-consistency failure on 18 September 2026. This snapshot has a known mismatch between regenerated paper macros and the expected digest; it is not a complete validation of every manuscript version. <a href="/files/cigma-validation.md">Read the validation report</a> and the <a href="/publication/2026-09-18-cigma/">research record</a>.</p>
+<h3><a href="/publication/bearer-bound-attested-software/">Bearer, Bound, Attested</a></h3>
+<p>Mesures et modèles ProVerif comparant liaison de clé, provenance et attestation pour l'application du Zero Trust. Licence MIT, version 1.1 (28 août 2026). <a href="https://doi.org/10.5281/zenodo.22146879">Zenodo (DOI)</a>.</p>
 
-<h2>Projets mis en avant</h2>
+<h3><a href="https://github.com/Insaf19/PQtrust-agent-artifact">PQTrust-Agent</a></h3>
+<p>Code et artefact de l'article <a href="/publication/2026-09-18-pqtrust-agent/">PQTrust-Agent (WI-IAT 2026)</a>. Dépôt maintenu par Insaf Imene Lasledj.</p>
 
-<h3><a href="https://github.com/yulliwasameur/GovSecLLMpp-SECAI2026">GovSecLLM++ SECAI 2026</a></h3>
-<p>Benchmark et paquet de reproductibilité pour les tests de sécurité et les preuves de gouvernance d'applications basées sur des LLM. Les données, secrets et identifiants inclus sont synthétiques. <a href="https://doi.org/10.5281/zenodo.20636767">Software DOI</a> · <a href="https://doi.org/10.5281/zenodo.20646701">Dataset DOI</a> · <a href="/publication/2026-09-18-govsecllm-paper/">Paper record</a>.</p>
+<h2>Cryptographie post-quantique</h2>
+
+<h3><a href="https://github.com/yulliwasameur/yulliwasameur.github.io/tree/master/research-artifacts/cigma">CIGMA</a></h3>
+<p>Instantané du code source du 19 août 2026, avec données synthétiques, tests et résultats archivés (<a href="/files/cigma-artifact-snapshot-2026-08-19.zip">archive ZIP</a>). Le 18 septembre 2026, 33 tests sur 34 passaient ; un contrôle de cohérence des macros de l'article échouait. Lire le <a href="/files/cigma-validation.md">rapport de validation</a> avant de réutiliser les résultats. <a href="/publication/2026-09-18-cigma/">Article (C&amp;ESAR 2026)</a>.</p>
+
+<h2>Traitement automatique du kabyle</h2>
+
+<h3><a href="https://doi.org/10.5281/zenodo.22112059">Correcteur orthographique kabyle</a></h3>
+<p>Correcteur déterministe et ressources linguistiques : lexique attesté, distance d'édition pondérée par les confusions de lettres, morphologie, modèle de langue statistique. Version 1.0.0 (1er septembre 2026), logiciel sous licence MIT, données sous CC BY-SA 4.0. Auteurs : M. Aoudj, T. Boukhenoufa, S. Bouzefrane, Y. Ameur, K. Naït-Zerrad. <a href="/publication/2026-09-18-kabyle-spell-checker/">Article (FEL XXX)</a>.</p>
+
+<h2>Chiffrement homomorphe et cryptanalyse</h2>
 
 <h3><a href="https://github.com/yulliwasameur/SecureK-NNbaseOnHE">SecureK-NNbaseOnHE</a></h3>
-<p>Implémentation d'une classification k-NN sécurisée fondée sur le chiffrement homomorphe.</p>
+<p>Classification k-NN sécurisée fondée sur le chiffrement homomorphe. <a href="/publication/2022-09-21-psd2022-knn/">Article (PSD 2022)</a>.</p>
 
 <h3><a href="https://github.com/yulliwasameur/py_mpqs">py_mpqs</a></h3>
 <p>Implémentation Python optimisée du crible quadratique multipolynomial.</p>
 
-<p><a href="https://github.com/yulliwasameur" class="btn btn--primary">Voir le profil GitHub complet</a></p>
-
-<h2>Tous les dépôts publics non forkés</h2>
-
-<article class="code">
-  <div>
-    {% assign public_repos = site.github.public_repositories | sort: 'pushed_at'
-    | reverse %} {% for repo in public_repos %} {% if repo.fork == false %}
-    <h1>
-      <a href="{{ repo.html_url }}" target="_blank"> {{ repo.name }} </a>
-    </h1>
-    <h4>{{ repo.description }}</h4>
-    {% if repo.language %} {{ repo.language }} {% endif %}
-    <i class="fas fa-star pl-md-2" aria-hidden="true"></i> {{
-    repo.stargazers_count }}
-    <i class="fas fa-code-branch pl-md-2" aria-hidden="true"></i>{{
-    repo.forks_count }} <br /><br />
-    {% endif %} {% endfor %}
-  </div>
-</article>
+<p><a href="https://github.com/yulliwasameur">Tous mes dépôts sur GitHub</a></p>

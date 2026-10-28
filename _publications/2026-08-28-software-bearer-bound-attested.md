@@ -17,7 +17,7 @@ doi: 10.5281/zenodo.22146879
 concept_doi: 10.5281/zenodo.22142867
 paperurl: https://doi.org/10.5281/zenodo.22146879
 bibtexurl: /files/publications.bib
-status: Published software archive; associated manuscript publication status is stated below.
+status: Archive logicielle publiée sur Zenodo.
 excerpt: Versioned software archive comparing token key binding, provenance and attestation mechanisms for Zero Trust enforcement.
 citation: 'Yulliwas Ameur; Soumya Banerjee; Samia Bouzefrane. "Bearer, Bound, Attested: Factoring Key Binding, Provenance,
   and Attestation for Zero-Trust Enforcement (reproducible artefact)." Version v1.1, Zenodo, 28 August 2026. DOI: 10.5281/zenodo.22146879.'
@@ -33,11 +33,6 @@ The archive compares four enforcement configurations: bearer JWTs, certificate-b
 
 The package includes a measurement harness, bootstrap and TOST analysis, ablations and second-host experiments, a ProVerif 2.05 model suite with replay, forwarding and self-assertion controls, and SPIRE 1.9.6 validation material. Download `LNET_V3_artifact.zip` from the [official archive for the reproduction instructions and recorded results](https://zenodo.org/records/22146879).
 
-## Associated manuscript
-
-*Bearer, Bound, Attested: Factoring Key Binding, Provenance, and Attestation for Zero-Trust Enforcement*
-
-The archive describes the associated manuscript as a submission to IEEE Networking Letters. Acceptance and publication of the manuscript are not established by this software release. The DOI on this page identifies the software archive, not a journal or proceedings paper.
 
 ## Cite the version used
 

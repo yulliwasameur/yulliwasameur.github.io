@@ -16,7 +16,7 @@ doi: 10.5281/zenodo.22147247
 concept_doi: 10.5281/zenodo.22146809
 paperurl: https://doi.org/10.5281/zenodo.22147247
 bibtexurl: /files/publications.bib
-status: Published software archive; associated manuscript publication status is stated below.
+status: Archive logicielle publiée sur Zenodo.
 excerpt: Versioned software archive for a synthetic benchmark of indirect prompt injection during error recovery in tool-using
   agents.
 citation: 'Yulliwas Ameur; Samia Bouzefrane; Soumya Banerjee. "ErrorCaps: committed-effect measurement of recovery-path injection
@@ -33,11 +33,6 @@ The archive describes a synthetic benchmark for indirect prompt injection during
 
 The archive provides the software, recorded results and an offline `make reproduce` workflow. Download `errorcaps-repro-v3.0.1.zip` from the [official archive for the instructions and recorded results](https://zenodo.org/records/22147247).
 
-## Associated manuscript
-
-*Where Does Recovery-Path Injection Security Come From? Decomposing Error Sanitization, Effect Monitoring, and Policy Precision*
-
-The archive carries a CRiSIS 2026 label. This label does not establish acceptance or proceedings publication of the associated manuscript. The DOI on this page identifies the software archive, not a journal or proceedings paper.
 
 ## Cite the version used
 

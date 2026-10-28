@@ -2,6 +2,7 @@
 title: 'Context vs. Compute: Self-Hosted Detection Rule Generation with Knowledge-Graph-Augmented
   Language Models'
 collection: publications
+halurl: https://hal.science/hal-05771222
 output_type: conference-record
 permalink: /publication/2026-09-19-context-vs-compute/
 date: '2026-09-19'
@@ -12,18 +13,16 @@ authors:
 - Tristan Madani
 - Yulliwas Ameur
 - Samia Bouzefrane
-status: Accepted for IEEE CloudCom 2026 proceedings with a poster presentation opportunity,
-  subject to registration and camera-ready requirements. Proceedings publication and
-  DOI are not yet verified.
+status: Accepté le 15 septembre 2026 avec présentation en poster à IEEE CloudCom 2026 (Paris) ; version finale et copyright déposés ; actes IEEE à paraître.
 bibtexurl: /files/publications.bib
 citation: 'Tristan Madani; Yulliwas Ameur; Samia Bouzefrane. "Context vs. Compute:
   Self-Hosted Detection Rule Generation with Knowledge-Graph-Augmented Language Models."
-  IEEE CloudCom 2026. Proceedings forthcoming, subject to final publication requirements.'
+  IEEE CloudCom 2026 (poster). Actes IEEE à paraître.'
 excerpt: Comparing knowledge-graph and retrieval context across open-weight language
   model capacities for Sigma detection-rule generation.
 ---
 
-**Status:** Accepted for IEEE CloudCom 2026 proceedings with a poster presentation opportunity, subject to registration and camera-ready requirements. Proceedings publication and DOI are not yet verified.
+**Statut :** accepté le 15 septembre 2026 avec présentation en poster à IEEE CloudCom 2026 (Paris, 29 octobre 2026) ; version finale et copyright déposés ; actes IEEE à paraître.
 
 ## Contribution in brief
 
@@ -33,6 +32,6 @@ The available submission used cloud inference infrastructure. Equivalence with l
 
 ## Publication status
 
-The organizers offered proceedings publication with a poster on 15 September 2026. Final publication remains subject to author registration and the conference's camera-ready requirements. This record does not claim a regular oral presentation, a completed proceedings deposit or an assigned DOI. The page date is the date this record was added.
+The organizers offered proceedings publication with a poster on 15 September 2026. The final version and IEEE copyright were submitted on 29 September 2026. The DOI will be added once the proceedings are published.
 
 Related work: [LLM4Sec](/publication/2026-09-18-knowledge-graph-siem/) · [ANUBIS](/publication/2026-09-18-detection-engineering/).

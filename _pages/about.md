@@ -15,6 +15,7 @@ redirect_from:
 <p>
 <b>Enseignant-chercheur en cybersécurité</b><br>
 Efrei Research Lab, Paris<br>
+Responsable de la majeure Cybersécurité (CSIG), Efrei<br>
 Membre associé du laboratoire CEDRIC (Cnam)<br>
 Docteur en informatique du Cnam
 </p>
@@ -34,11 +35,20 @@ environnements IoT/cloud.
 
 <h2>Thèmes de recherche</h2>
 <ul>
-  <li>Cryptographie appliquée : chiffrement homomorphe, post-quantique</li>
-  <li>Apprentissage automatique préservant la vie privée</li>
-  <li>Sécurité des systèmes et des réseaux (IoT, cloud, VANET)</li>
-  <li>Sécurité et gouvernance des LLM et des agents IA</li>
-  <li>Investigation numérique</li>
+  <li>Sécurité des agents IA et des RAG : injection indirecte, autorisation, gouvernance</li>
+  <li>Ingénierie de la détection et purple teaming</li>
+  <li>Cryptographie post-quantique et crypto-agilité</li>
+  <li>Chiffrement homomorphe et apprentissage préservant la vie privée</li>
+  <li>Traitement automatique du kabyle</li>
+</ul>
+
+<h2>Nouvelles</h2>
+<ul>
+  <li><b>09/2026</b> — Article accepté dans la revue <i>Cybersecurity</i> (Springer Nature) : <a href="/publication/2026-09-22-cybersecurity-idbleed/">contre-mesure à l'attaque temporelle IDBleed</a>.</li>
+  <li><b>09/2026</b> — Trois articles acceptés à IEEE/WIC WI-IAT 2026 et à ses ateliers (Brisbane), dont <a href="/publication/2026-08-31-wiiat2026-rag-ipi/">l'évaluation de l'injection indirecte dans les RAG</a>.</li>
+  <li><b>09/2026</b> — Présentation orale de <a href="/publication/2026-09-18-govsecllm-paper/">GovSecLLM++</a> à SecAI @ ESORICS 2026 (Rome).</li>
+  <li><b>09/2026</b> — Responsable de la majeure Cybersécurité (CSIG) de l'Efrei.</li>
+  <li><b>2027</b> — Co-président d'EMSICC 2027 (IEEE FiCloud, Prague) et Publicity Chair de WISTP 2027 (Djerba).</li>
 </ul>
 
 <h2>Sur ce site</h2>
@@ -61,3 +71,5 @@ environnements IoT/cloud.
   <li><a href="https://www.linkedin.com/in/yameur/">LinkedIn</a></li>
   <li><a href="https://github.com/yulliwasameur">GitHub</a></li>
 </ul>
+
+<p><a href="/research-highlights/">English version (research highlights)</a></p>

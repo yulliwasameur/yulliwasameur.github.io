@@ -12,15 +12,15 @@ authors:
 - Yulliwas Ameur
 - Samia Bouzefrane
 halurl: https://hal.science/hal-05743336
-status: Conference contribution listed in HAL; proceedings publication details are not yet verified.
+status: Accepté le 20 juillet 2026 à LLM4Sec @ ESORICS 2026 ; inclus dans les actes LNCS.
 bibtexurl: /files/publications.bib
 citation: 'Tristan Madani; Yulliwas Ameur; Samia Bouzefrane. "Knowledge-Graph-Constrained LLM Generation of SIEM Detection Rules." LLM4Sec, ESORICS 2026. HAL: hal-05743336.'
-excerpt: Knowledge-Graph-Constrained LLM Generation of SIEM Detection Rules. Conference contribution listed in HAL; proceedings publication details are not yet verified.
+excerpt: 'Generating SIEM detection rules with LLMs constrained by a knowledge graph.'
 ---
 
-**Status:** Conference contribution listed in HAL; proceedings publication details are not yet verified.
+**Statut :** Accepté le 20 juillet 2026 à LLM4Sec @ ESORICS 2026 ; inclus dans les actes LNCS.
 
-**Conference period:** 2026-09. The page date records this listing; it is not a proceedings publication date.
+**Période de la conférence :** 2026-09. La date de cette fiche est celle de son ajout, pas celle de la parution des actes.
 
 ## Contribution in brief
 

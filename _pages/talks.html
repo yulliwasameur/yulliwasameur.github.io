@@ -1,19 +1,21 @@
 ---
 layout: archive
-title: "Talks and presentations"
+title: "Conférences et présentations"
 permalink: /talks/
 author_profile: true
-description: "Conférences et présentations de Yulliwas Ameur en cryptographie, PPML et cybersécurité."
+description: "Conférences, présentations et médiation scientifique de Yulliwas Ameur en cybersécurité, cryptographie et sécurité de l'IA."
 ---
 
-Interventions invitées, séminaires et présentations de recherche en cryptographie, apprentissage automatique préservant la vie privée et cybersécurité.
-
-{% if site.talkmap_link == true %}
-
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
-
-{% endif %}
+Présentations de recherche, conférences invitées, séminaires et médiation scientifique.
 
 {% for post in site.talks reversed %}
   {% include archive-single-talk.html %}
 {% endfor %}
+
+<h2>Travaux co-signés présentés par les co-auteurs</h2>
+
+<ul>
+  <li>19/10/2026 — <i>Evaluating Indirect Prompt Injection in RAG Systems</i>, présentation par Miqeas Pedro Mendes à la journée GLSEC 2026 (Vannes) ; présentation à IEEE/WIC WI-IAT 2026 prévue en décembre.</li>
+  <li>Novembre 2026 — <i>Building a Community-Grounded Spell Checker for the Kabyle Language</i>, présentation par Massil Aoudj (FEL XXX).</li>
+  <li>Novembre 2026 — travaux sur le purple teaming et la micro-segmentation, présentation par Tristan Madani et Daniel Tanier (C&amp;ESAR 2026, Rennes).</li>
+</ul>

@@ -12,16 +12,16 @@ authors:
 - Yulliwas Ameur
 - Mehammed Daoui
 halurl: https://hal.science/hal-05743316
-status: Accepted conference paper; proceedings forthcoming.
+status: Article accepté ; actes à paraître.
 bibtexurl: /files/publications.bib
 citation: 'Redha Boukhari; Yulliwas Ameur; Mehammed Daoui. "AgentFlowShield: Defending LLM Agents Against Metadata Side Channels." AICCSA 2026. HAL: hal-05743316.'
 pdfurl: /publication/2026-09-18-agentflowshield/paper.pdf
 excerpt: Tool-augmented LLM agents produce structured, multi-phase network traffic whose encrypted metadata—packet sizes, inter-arrival times, burst boundaries, and streaming cadence—can reveal which tools were invoked, whether r…
 ---
 
-**Status:** Accepted conference paper; proceedings forthcoming.
+**Statut :** Accepted conference paper; proceedings forthcoming.
 
-**Conference period:** 2026-10. The page date records this listing; it is not a proceedings publication date.
+**Période de la conférence :** 2026-10. La date de cette fiche est celle de son ajout, pas celle de la parution des actes.
 
 ## Abstract
 

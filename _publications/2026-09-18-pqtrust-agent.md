@@ -12,7 +12,7 @@ authors:
 - Insaf Imene Lasledj
 - Samia Bouzefrane
 halurl: https://hal.science/hal-05743305
-status: Accepted conference paper; proceedings forthcoming.
+status: Article accepté ; actes à paraître.
 bibtexurl: /files/publications.bib
 citation: 'Yulliwas Ameur; Insaf Imene Lasledj; Samia Bouzefrane. "PQTrust-Agent: Policy-Compiled Post-Quantum Trust Contracts for Web-of-Agents Communications." IEEE/WIC/ACM WI-IAT 2026. HAL: hal-05743305.'
 pdfurl: /publication/2026-09-18-pqtrust-agent/paper.pdf
@@ -20,9 +20,9 @@ codeurl: https://github.com/Insaf19/PQtrust-agent-artifact
 excerpt: Autonomous Web agents can agree on a task while enforcing incompatible cryptographic, fallback, resumption, and lease policies. This paper presents PQTrust-Agent, a constraint-first bilateral authorization protocol. Each…
 ---
 
-**Status:** Accepted conference paper; proceedings forthcoming.
+**Statut :** Accepted conference paper; proceedings forthcoming.
 
-**Conference period:** 2026-12. The page date records this listing; it is not a proceedings publication date.
+**Période de la conférence :** 2026-12. La date de cette fiche est celle de son ajout, pas celle de la parution des actes.
 
 ## Abstract
 

@@ -1,6 +1,7 @@
 ---
 title: "State-of-the-Art and Development of Privacy-Enhancing Technologies"
 collection: publications
+halurl: https://hal.science/hal-05771207
 output_type: preprint
 permalink: /publication/2023-03-02-easychair-pets
 excerpt: "A survey of privacy-enhancing technologies and their development for secure data processing."

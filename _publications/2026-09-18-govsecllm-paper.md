@@ -13,16 +13,16 @@ authors:
 - Samia Bouzefrane
 - Lyes Khoukhi
 halurl: https://hal.science/hal-05743323
-status: Conference contribution listed in HAL; proceedings publication details are not yet verified.
+status: Long papier accepté le 24 juillet 2026 et présenté oralement à SecAI @ ESORICS 2026 (Rome, 17–18 septembre 2026) ; actes LNCS.
 bibtexurl: /files/publications.bib
 citation: 'Yulliwas Ameur; Insaf Imene Lasledj; Samia Bouzefrane; Lyes Khoukhi. "GovSecLLM++: A Compliance-Aware Benchmark for Security Testing and Governance Evidence in LLM-Based Applications." SecAI, ESORICS 2026. HAL: hal-05743323.'
 codeurl: https://github.com/yulliwasameur/GovSecLLMpp-SECAI2026
-excerpt: 'GovSecLLM++: A Compliance-Aware Benchmark for Security Testing and Governance Evidence in LLM-Based Applications. Conference contribution listed in HAL; proceedings publication details are not yet verified.'
+excerpt: 'A compliance-aware benchmark that produces security-testing results and governance evidence for LLM-based applications.'
 ---
 
-**Status:** Conference contribution listed in HAL; proceedings publication details are not yet verified.
+**Statut :** Long papier accepté le 24 juillet 2026 et présenté oralement à SecAI @ ESORICS 2026 (Rome, 17–18 septembre 2026) ; actes LNCS.
 
-**Conference period:** 2026-09. The page date records this listing; it is not a proceedings publication date.
+**Période de la conférence :** 2026-09. La date de cette fiche est celle de son ajout, pas celle de la parution des actes.
 
 ## Contribution in brief
 

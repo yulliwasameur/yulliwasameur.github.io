@@ -1,13 +1,15 @@
 ---
-title: "Cybersecurity courses - Efrei (since 2024)"
+title: "Efrei Paris — enseignant-chercheur en cybersécurité (depuis 2024)"
 collection: teaching
-type: "Engineering cycle / MSc level"
+type: "Cycle ingénieur et master"
 permalink: /teaching/2024-efrei-cybersecurity
-venue: "Efrei, Paris Panth&eacute;on-Assas Universit&eacute;"
+venue: "Efrei, Université Paris-Panthéon-Assas"
 date: 2024-09-01
-location: "Paris (Villejuif), France"
+location: "Villejuif, France"
 ---
 
-Head of the work-study "Networks &amp; Security" major and educational lead of the Airbus cyber range.
+**Responsable de la majeure Cybersécurité (CSIG)** depuis septembre 2026. Auparavant responsable de la majeure Réseaux & Sécurité en alternance (2024–2026).
 
-30-hour modules: Ethical Hacking; Advanced Windows &amp; Active Directory Security; Cryptography; Cybersecurity; Network Security; Security Projects (Windows &amp; forensics).
+**Coordinateur pédagogique de la cyber range Airbus** de l'Efrei.
+
+Modules de 30 heures : hacking éthique ; sécurité avancée de Windows et d'Active Directory ; cryptographie ; cybersécurité ; sécurité des réseaux ; projets de sécurité (Windows et investigation numérique).
