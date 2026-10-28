@@ -1,48 +1,66 @@
 ---
 permalink: /
-title: "Dr Yulliwas Ameur"
+title: "Yulliwas Ameur"
 layout: splash
 excerpt: "Enseignant-chercheur en cybersécurité : cryptographie, PPML, sécurité des systèmes et réseaux, IA et investigation numérique."
-description: "Portail académique trilingue de Yulliwas Ameur : recherche, publications, conférences, formations et CyberResearch Radar."
+description: "Page personnelle de Yulliwas Ameur, enseignant-chercheur en cybersécurité à l'Efrei Research Lab (Paris)."
 author_profile: false
-classes: wide
 redirect_from:
   - /about/
   - /about.html
 ---
 
-<div class="ya-home" data-ya-home markdown="0">
-  <header class="ya-home__intro">
-    <div>
-      <p class="ya-home__eyebrow" data-fr="Cybersécurité · Cryptographie · IA" data-en="Cybersecurity · Cryptography · AI" data-kab="Taɣellist tumḍint · Takriptugrafit · AI">Cybersécurité · Cryptographie · IA</p>
-      <h1 id="ya-home-title"><span>Yulliwas</span> <span>Ameur</span></h1>
-      <p class="ya-home__tifinagh" lang="kab-Tfng" aria-hidden="true">ⵢⵓⵍⵍⵉⵡⴰⵙ ⴰⵎⴻⵓⵔ</p>
-      <span class="ya-home__frieze" aria-hidden="true"></span>
-      <p class="ya-home__role" data-fr="Enseignant-chercheur en cybersécurité à l’Efrei Research Lab, docteur en informatique du Cnam (CEDRIC)." data-en="Teacher-researcher in cybersecurity at Efrei Research Lab, PhD in Computer Science from Cnam (CEDRIC)." data-kab="Aselmad-amnadi · Taɣellist tumḍint · Efrei Research Lab · CEDRIC/Cnam">Enseignant-chercheur en cybersécurité à l’Efrei Research Lab, docteur en informatique du Cnam (CEDRIC).</p>
-    </div>
-    <figure class="ya-home__portrait">
-      <img class="ya-home__photo" src="/images/profile.png" alt="Yulliwas Ameur" width="480" height="480" loading="eager" decoding="async">
-    </figure>
-  </header>
+<h1>Yulliwas Ameur</h1>
 
-  <section class="ya-home__body">
-    <div class="ya-home__bio">
-      <p data-fr="Mes travaux associent cryptographie appliquée, sécurité de l’IA, systèmes résilients et investigation numérique afin de produire des résultats utiles, vérifiables et transmissibles." data-en="My work combines applied cryptography, AI security, resilient systems and digital investigation to produce useful, verifiable and transferable results." data-kab="Anadi-w yessemlil takriptugrafit yettwasqedcen, taɣellist n AI, inagrawen iǧehden d usenqed umḍin iwakken ad d-nawi igmaḍ iwulmen, yettwasneqden u zemren ad ttwaslemden.">Mes travaux associent cryptographie appliquée, sécurité de l’IA, systèmes résilients et investigation numérique afin de produire des résultats utiles, vérifiables et transmissibles.</p>
-      <p data-fr="J’enseigne et je mène mes recherches à l’Efrei, à Paris. Ma thèse, soutenue au Cnam, portait sur l’apprentissage automatique sous chiffrement homomorphe dans les environnements IoT/cloud." data-en="I teach and do research at Efrei in Paris. My PhD thesis, defended at Cnam, addressed machine learning under homomorphic encryption in IoT/cloud environments." data-kab="J’enseigne et je mène mes recherches à l’Efrei, à Paris. Ma thèse, soutenue au Cnam, portait sur l’apprentissage automatique sous chiffrement homomorphe dans les environnements IoT/cloud.">J’enseigne et je mène mes recherches à l’Efrei, à Paris. Ma thèse, soutenue au Cnam, portait sur l’apprentissage automatique sous chiffrement homomorphe dans les environnements IoT/cloud.</p>
-    </div>
-    <dl class="ya-home__meta">
-      <dt data-fr="Contact" data-en="Contact" data-kab="Imayl">Contact</dt>
-      <dd><a href="mailto:yulliwas.ameur@efrei.fr">yulliwas.ameur@efrei.fr</a></dd>
-      <dt data-fr="Profils" data-en="Profiles" data-kab="Iseɣwan">Profils</dt>
-      <dd>
-        <ul class="ya-home__links">
-          <li><a href="https://cv.hal.science/yulliwas-ameur" target="_blank" rel="noreferrer">HAL</a></li>
-          <li><a href="https://orcid.org/0000-0003-1435-2982" target="_blank" rel="noreferrer">ORCID</a></li>
-          <li><a href="https://scholar.google.com/citations?user=wwTgzYsAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a></li>
-          <li><a href="https://www.linkedin.com/in/yameur/" target="_blank" rel="noreferrer">LinkedIn</a></li>
-          <li><a href="https://github.com/yulliwasameur" target="_blank" rel="noreferrer">GitHub</a></li>
-        </ul>
-      </dd>
-    </dl>
-  </section>
-</div>
+<img class="portrait" src="/images/photo-150.jpg" alt="Photo de Yulliwas Ameur" width="150" height="200">
+
+<p>
+<b>Enseignant-chercheur en cybersécurité</b><br>
+Efrei Research Lab, Paris<br>
+Membre associé du laboratoire CEDRIC (Cnam)<br>
+Docteur en informatique du Cnam
+</p>
+
+<p>
+Courriel : <a href="mailto:yulliwas.ameur@efrei.fr">yulliwas.ameur@efrei.fr</a>
+</p>
+
+<p>
+Mes travaux portent sur la cryptographie appliquée, la sécurité de l'IA,
+les systèmes résilients et l'investigation numérique. Ma thèse, soutenue au Cnam,
+portait sur l'apprentissage automatique sous chiffrement homomorphe dans les
+environnements IoT/cloud.
+</p>
+
+<br class="clair">
+
+<h2>Thèmes de recherche</h2>
+<ul>
+  <li>Cryptographie appliquée : chiffrement homomorphe, post-quantique</li>
+  <li>Apprentissage automatique préservant la vie privée</li>
+  <li>Sécurité des systèmes et des réseaux (IoT, cloud, VANET)</li>
+  <li>Sécurité et gouvernance des LLM et des agents IA</li>
+  <li>Investigation numérique</li>
+</ul>
+
+<h2>Sur ce site</h2>
+<ul>
+  <li><a href="/publications/">Publications</a></li>
+  <li><a href="/recherche/">Recherche, encadrement et service scientifique</a></li>
+  <li><a href="/teaching/">Enseignement</a></li>
+  <li><a href="/talks/">Conférences</a></li>
+  <li><a href="/analyses/">Analyses</a></li>
+  <li><a href="/code/">Code et artefacts</a></li>
+  <li><a href="/cv/">Curriculum vitae</a> (<a href="/files/CV_Yulliwas_AMEUR.pdf">PDF</a>)</li>
+  <li><a href="/cyberresearchradar/">CyberResearch Radar</a></li>
+</ul>
+
+<h2>Ailleurs sur le Web</h2>
+<ul>
+  <li><a href="https://cv.hal.science/yulliwas-ameur">HAL</a></li>
+  <li><a href="https://orcid.org/0000-0003-1435-2982">ORCID</a></li>
+  <li><a href="https://scholar.google.com/citations?user=wwTgzYsAAAAJ">Google Scholar</a></li>
+  <li><a href="https://dblp.org/pid/329/0026">DBLP</a></li>
+  <li><a href="https://www.linkedin.com/in/yameur/">LinkedIn</a></li>
+  <li><a href="https://github.com/yulliwasameur">GitHub</a></li>
+</ul>

@@ -1,6 +1,17 @@
-<script src="{{ base_path }}/assets/js/main.min.js"></script>
-<script src="{{ base_path }}/assets/js/site-experience.js"></script>
-<script defer src="{{ base_path }}/assets/js/live-site-status.js?v=3.2.0"></script>
-
+<script>
+(function () {
+  var el = document.getElementById('compteur');
+  if (!el || !window.fetch) return;
+  fetch('https://counterapi.com/api/yulliwasameur.github.io/visit/personal-site?unique=true', { cache: 'no-store' })
+    .then(function (r) { if (!r.ok) throw 0; return r.json(); })
+    .then(function (p) {
+      var n = Number(p && (p.count != null ? p.count : (p.data && p.data.count != null ? p.data.count : p.value)));
+      if (!isFinite(n)) throw 0;
+      var s = String(Math.round(n));
+      while (s.length < 6) s = '0' + s;
+      el.textContent = s;
+    })
+    .catch(function () { el.textContent = '??????'; });
+})();
+</script>
 {% include analytics.html %}
-{% include /comments-providers/scripts.html %}

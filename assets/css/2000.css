@@ -1,0 +1,89 @@
+/* Yulliwas Ameur — feuille de style « page perso, an 2000 ».
+   Volontairement minimale : polices système, liens bleus soulignés, filets <hr>. */
+
+html { background: #ffffff; }
+
+body {
+  margin: 0;
+  padding: 16px 20px 32px;
+  max-width: 760px;
+  background: #ffffff;
+  color: #000000;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+a:link    { color: #0000ee; }
+a:visited { color: #551a8b; }
+a:hover   { color: #ee0000; }
+a:active  { color: #ff0000; }
+
+h1 { font-size: 26px; margin: 8px 0 4px; font-weight: bold; }
+h2 { font-size: 20px; margin: 22px 0 6px; font-weight: bold; }
+h3 { font-size: 17px; margin: 16px 0 4px; font-weight: bold; }
+h4, h5, h6 { font-size: 16px; margin: 12px 0 4px; }
+
+hr {
+  border: 0;
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid #ffffff;
+  height: 0;
+  margin: 12px 0;
+}
+
+img { max-width: 100%; height: auto; border: 0; }
+
+ul, ol { padding-left: 28px; }
+li { margin: 2px 0; }
+
+table { border-collapse: collapse; }
+td, th { vertical-align: top; padding: 2px 6px; }
+th { text-align: left; }
+
+pre, code, tt, kbd {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+}
+pre { background: #f0f0f0; border: 1px solid #c0c0c0; padding: 6px; overflow-x: auto; }
+
+blockquote { margin: 8px 24px; font-style: italic; }
+
+small, .small { font-size: 13px; }
+
+/* En-tête et navigation */
+.entete { margin-bottom: 4px; }
+.entete .nom { font-size: 28px; font-weight: bold; text-decoration: none; color: #000000; }
+.nav { font-family: Arial, Helvetica, sans-serif; font-size: 14px; margin: 6px 0 0; }
+
+/* Accueil */
+.portrait { float: left; margin: 4px 16px 8px 0; border: 1px solid #000000; }
+.clair { clear: both; }
+.fraicheur { font-size: 13px; }
+
+/* Pied de page et compteur */
+.pied { font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #333333; }
+.compteur {
+  display: inline-block;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  font-weight: bold;
+  background: #000000;
+  color: #33ff33;
+  padding: 1px 5px;
+  letter-spacing: 2px;
+  border: 2px inset #c0c0c0;
+}
+
+/* Restes du thème précédent : on neutralise ce qui ne s'affiche pas sans lui */
+.fa, .sr-only, .page__meta-title, .archive__item-teaser { display: none; }
+.btn::before { content: "["; }
+.btn::after  { content: "]"; }
+.archive__item-title { font-size: 17px; margin: 14px 0 2px; }
+.archive__item p { margin: 2px 0; }
+.page__date, .page__meta { font-size: 14px; }
+
+@media (max-width: 520px) {
+  body { padding: 12px 16px 24px; }
+  .portrait { float: none; display: block; margin: 0 0 10px; }
+}
