@@ -6,12 +6,6 @@ author_profile: true
 description: "Publications scientifiques, thèse, prépublication, logiciels et jeux de données de Yulliwas Ameur en cybersécurité, cryptographie et apprentissage automatique préservant la vie privée."
 ---
 
-Cette page distingue les publications évaluées par les pairs des autres productions de recherche. Les notices HAL et les DOI éditeurs sont fournis lorsqu'ils sont disponibles. Mon [CV HAL](https://cv.hal.science/yulliwas-ameur) reste la source institutionnelle de référence.
-
-[Bibliographie complète (BibTeX)](/files/publications.bib) · [Flux Atom des publications](/feed/publications.xml) · [Présentation en anglais (Research highlights)](/research-highlights/)
-
-Présentations de recherche : [English](/research-highlights/) · [Español](/research/es/) · [Português do Brasil](/research/pt-br/) · [简体中文](/research/zh-hans/).
-
 ## Publications évaluées par les pairs
 
 {% assign sorted_publications = site.publications | sort: "date" | reverse %}
