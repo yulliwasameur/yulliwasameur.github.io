@@ -10,7 +10,7 @@ redirect_from:
   - /about.html
 ---
 
-<img class="portrait" src="/images/photo-150.jpg" alt="Photo de Yulliwas Ameur" width="150" height="200">
+<img class="portrait" src="/images/photo-150.jpg?v=2" alt="Photo de Yulliwas Ameur" width="150" height="200">
 
 <p>
 <b>Enseignant-chercheur en cybersécurité</b><br>
