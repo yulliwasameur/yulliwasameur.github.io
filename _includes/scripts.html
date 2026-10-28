@@ -10,8 +10,9 @@
       var s = String(Math.round(n));
       while (s.length < 6) s = '0' + s;
       el.textContent = s;
+      document.getElementById('ligne-compteur').style.display = '';
     })
-    .catch(function () { el.textContent = '??????'; });
+    .catch(function () {});
 })();
 </script>
 {% include analytics.html %}

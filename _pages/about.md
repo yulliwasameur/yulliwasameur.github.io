@@ -10,8 +10,6 @@ redirect_from:
   - /about.html
 ---
 
-<h1>Yulliwas Ameur</h1>
-
 <img class="portrait" src="/images/photo-150.jpg" alt="Photo de Yulliwas Ameur" width="150" height="200">
 
 <p>
