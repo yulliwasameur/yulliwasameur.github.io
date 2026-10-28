@@ -1,11 +1,11 @@
 ---
 title: "Secure Machine Learning: applying homomorphic encryption in machine learning"
 collection: talks
-type: "Invited talk"
+type: "Conférence invitée"
 permalink: /talks/2022-05-25-usthb-algiers
-venue: "Faculty of Computer Science, USTHB (48th anniversary celebration)"
+venue: "Faculté d'informatique, USTHB (48e anniversaire)"
 date: 2022-05-25
-location: "Algiers, Algeria"
+location: "Alger, Algérie"
 ---
 
-Introduction to homomorphic encryption, overview of the most promising schemes and tools, and discussion of privacy-preserving machine learning (PPML) models.
+Introduction au chiffrement homomorphe, panorama des schémas et outils les plus prometteurs, et modèles d'apprentissage automatique préservant la vie privée.

@@ -9,7 +9,7 @@ layout: default
             <p class="page__meta">{% include read-time.html %}</p>
           {% endif %}
         {% if page.modified %}
-          <p class="page__date"><strong>{{ site.data.ui-text[site.locale].date_label | default: "Date :" }}</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
+          <p class="page__date"><strong>{{ site.data.ui-text[site.locale].date_label | default: "Date :" }}</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%d/%m/%Y" }}</time></p>
         {% endif %}
         
         {% if page.collection == 'teaching' %}
@@ -19,7 +19,7 @@ layout: default
         {% elsif page.venue and page.date %}
           <p>Publié dans <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.date %}
-          <p class="page__date"><strong>{{ site.data.ui-text[site.locale].date_label | default: "Date :" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+          <p class="page__date"><strong>{{ site.data.ui-text[site.locale].date_label | default: "Date :" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%d/%m/%Y" }}</time></p>
         {% endif %}
         
              

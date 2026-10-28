@@ -5,6 +5,7 @@ type: "Médiation scientifique"
 permalink: /talks/2025-inria-chiche
 venue: "Programme Inria « Chiche ! »"
 date: 2025-09-01
+date_label: "2025–2026"
 location: "Lycées, France"
 ---
 

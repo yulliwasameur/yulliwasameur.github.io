@@ -1,11 +1,11 @@
 ---
 title: "Homomorphic encryption and machine learning: advances and challenges"
 collection: talks
-type: "Seminar talk"
+type: "Séminaire"
 permalink: /talks/2021-04-15-cedric-seminar
-venue: 'CEDRIC seminar - "Confiance et S&eacute;curit&eacute; Num&eacute;rique" axis'
+venue: "Séminaire du CEDRIC, axe « Confiance et sécurité numérique »"
 date: 2021-04-15
 location: "Paris, France"
 ---
 
-Advances in fully homomorphic encryption: mathematical foundations, recent improvements, implementation results and open challenges for machine learning.
+Avancées du chiffrement totalement homomorphe : fondements mathématiques, améliorations récentes, résultats d'implémentation et défis ouverts pour l'apprentissage automatique.
