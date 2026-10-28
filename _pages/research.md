@@ -13,8 +13,8 @@ Enseignant-chercheur à l'Efrei Research Lab (équipe Security, Resilience and T
 1. **Sécurité des agents IA et des RAG** : injection indirecte de consignes, autorisation et délégation entre agents, gouvernance et preuves de conformité des applications fondées sur des LLM. Voir [WI-IAT 2026](/publication/2026-08-31-wiiat2026-rag-ipi/), [GovSecLLM++](/publication/2026-09-18-govsecllm-paper/), [PQTrust-Agent](/publication/2026-09-18-pqtrust-agent/), [AgentFlowShield](/publication/2026-09-18-agentflowshield/).
 2. **Ingénierie de la détection et purple teaming** : mesure de l'amélioration de la détection, ATT&CK/D3FEND, génération de règles SIEM par LLM et graphes de connaissances. Voir [ANUBIS](/publication/2026-09-18-detection-engineering/), [LLM4Sec](/publication/2026-09-18-knowledge-graph-siem/), [C&ESAR](/publication/2026-09-18-purple-teaming/), [CloudCom](/publication/2026-09-19-context-vs-compute/).
 3. **Cryptographie post-quantique et crypto-agilité** : inventaire et priorisation de la migration, TLS post-quantique adaptatif. Voir [CIGMA](/publication/2026-09-18-cigma/), [SmartPQ-Shield](/publication/2026-09-30-wiiat2026-smartpq-shield/).
-4. **Chiffrement homomorphe et apprentissage préservant la vie privée** : k-NN et k-means sur données chiffrées, confidentialité différentielle. Voir [PSD 2022](/publication/2022-09-21-psd2022-knn/), [ANT 2026](/publication/2026-04-16-ant2026-secure-kmeans/), [thèse](/publication/2023-12-18-phd-thesis/).
-5. **Sécurité des systèmes et des réseaux** : canaux auxiliaires temporels dans l'IoT, Zero Trust pour réseaux CAN automobiles, micro-segmentation. Voir [IDBleed](/publication/2026-09-22-cybersecurity-idbleed/), [FiCloud 2026](/publication/2026-07-22-ficloud-zero-trust-can/), [C&ESAR 2026](/publication/2026-09-27-cesar2026-microsegmentation/).
+4. **Chiffrement homomorphe et apprentissage préservant la vie privée** : k-NN et k-means sur données chiffrées, confidentialité différentielle. Voir [PSD 2022](/publication/2022-09-21-psd2022-knn), [ANT 2026](/publication/2026-04-16-ant2026-secure-kmeans), [thèse](/publication/2023-12-18-phd-thesis).
+5. **Sécurité des systèmes et des réseaux** : canaux auxiliaires temporels dans l'IoT, Zero Trust pour réseaux CAN automobiles, micro-segmentation. Voir [IDBleed](/publication/2026-09-22-cybersecurity-idbleed/), [FiCloud 2026](/publication/2026-07-22-ficloud-zero-trust-can), [C&ESAR 2026](/publication/2026-09-27-cesar2026-microsegmentation/).
 6. **Traitement automatique du kabyle** : correcteur orthographique et ressources linguistiques ouvertes. Voir [FEL 2026](/publication/2026-09-18-kabyle-spell-checker/).
 
 ## Encadrement doctoral
@@ -36,8 +36,8 @@ Collaboration doctorale avec **Redha Boukhari** (Université Mouloud Mammeri de 
 | 2026 | Insaf Imene Lasledj | Stage de recherche | Cryptographie post-quantique et apprentissage par renforcement | [SmartPQ-Shield](/publication/2026-09-30-wiiat2026-smartpq-shield/), [PQTrust-Agent](/publication/2026-09-18-pqtrust-agent/), [CIGMA](/publication/2026-09-18-cigma/) |
 | 2026 | Ahmed Kefkef | Stage M2, Efrei Research Lab, avec Lyes Khoukhi | IDS sur trafic chiffré TLS/QUIC | — |
 | 2025 | Abdoul Ahad Fall | Stage de recherche, Efrei Research Lab | Approches hybrides pour la cryptographie post-quantique | — |
-| 2023 | Rezak Aziz | Stage ESI, avec S. Bouzefrane et V. Audigier | Clustering sous chiffrement homomorphe | [ANT 2026](/publication/2026-04-16-ant2026-secure-kmeans/) |
-| 2021 | Corentin Lanusse-Malhéné | Stage ENSC Bordeaux, avec S. Bouzefrane et V. Audigier | k-NN sécurisé par chiffrement homomorphe | [PSD 2022](/publication/2022-09-21-psd2022-knn/) |
+| 2023 | Rezak Aziz | Stage ESI, avec S. Bouzefrane et V. Audigier | Clustering sous chiffrement homomorphe | [ANT 2026](/publication/2026-04-16-ant2026-secure-kmeans) |
+| 2021 | Corentin Lanusse-Malhéné | Stage ENSC Bordeaux, avec S. Bouzefrane et V. Audigier | k-NN sécurisé par chiffrement homomorphe | [PSD 2022](/publication/2022-09-21-psd2022-knn) |
 
 ## Service scientifique
 
