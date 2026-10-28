@@ -23,7 +23,7 @@ Langues : français, kabyle, anglais (B2)
 
 <h2>Postes</h2>
 <table>
-  <tr><td>depuis 05/2024</td><td>Enseignant-chercheur en CDI, Efrei Paris, Efrei Research Lab, équipe Security, Resilience and Trust (Villejuif)</td></tr>
+  <tr><td>depuis 05/2024</td><td>Enseignant-chercheur, Efrei Paris, Efrei Research Lab, équipe Security, Resilience and Trust (Villejuif)</td></tr>
   <tr><td>depuis 11/2025</td><td>Membre associé, laboratoire CEDRIC (EA 4629), équipe ROC, Cnam Paris</td></tr>
   <tr><td>09/2023 – 04/2024</td><td>Attaché temporaire d'enseignement et de recherche (ATER), Université Paris-Panthéon-Assas</td></tr>
   <tr><td>09/2020 – 12/2023</td><td>Doctorant, laboratoire CEDRIC, Cnam Paris</td></tr>
@@ -117,7 +117,6 @@ Langues : français, kabyle, anglais (B2)
 <h3>Logiciels et jeux de données ouverts</h3>
 <ol>
   <li><b>Yulliwas Ameur</b>, Samia Bouzefrane, Lyes Khoukhi. <a href="/publication/2026-06-11-software-govsecllm">GovSecLLM++: Compliance-Aware Benchmark for Security Testing and Governance Evidence in LLM-Based Applications</a>. <i>Zenodo, logiciel</i>, 2026. DOI : <a href="https://doi.org/10.5281/zenodo.20636767">10.5281/zenodo.20636767</a>.</li>
-  <li><b>Yulliwas Ameur</b>, Samia Bouzefrane. <a href="/publication/2026-06-11-dataset-govsecllm">GovSecLLM++ SECAI 2026 Artifact Package (dataset)</a>. <i>Zenodo, jeu de données</i>, 2026. DOI : <a href="https://doi.org/10.5281/zenodo.20646701">10.5281/zenodo.20646701</a>.</li>
   <li><b>Yulliwas Ameur</b>, Samia Bouzefrane, Soumya Banerjee. <a href="/publication/2026-08-28-software-errorcaps/">ErrorCaps: committed-effect measurement of recovery-path injection defense (CRiSIS 2026 artifact)</a>. <i>Zenodo, logiciel v3.0.1</i>, 2026. DOI : <a href="https://doi.org/10.5281/zenodo.22147247">10.5281/zenodo.22147247</a>.</li>
   <li><b>Yulliwas Ameur</b>, Soumya Banerjee, Samia Bouzefrane. <a href="/publication/bearer-bound-attested-software/">Bearer, Bound, Attested: Factoring Key Binding, Provenance, and Attestation for Zero-Trust Enforcement (reproducible artefact)</a>. <i>Zenodo, logiciel v1.1</i>, 2026. DOI : <a href="https://doi.org/10.5281/zenodo.22146879">10.5281/zenodo.22146879</a>.</li>
   <li>M. Aoudj, T. Boukhenoufa, S. Bouzefrane, <b>Yulliwas Ameur</b>, K. Naït-Zerrad. Building a Community-Grounded Spell Checker for Kabyle Using Hybrid NLP: software and language resources. <i>Zenodo, logiciel v1.0.0</i>, 2026. DOI : <a href="https://doi.org/10.5281/zenodo.22112059">10.5281/zenodo.22112059</a>.</li>
