@@ -50,7 +50,6 @@ environnements IoT/cloud.
   <li><a href="/analyses/">Analyses</a></li>
   <li><a href="/code/">Code et artefacts</a></li>
   <li><a href="/cv/">Curriculum vitae</a> (<a href="/files/CV_Yulliwas_AMEUR.pdf">PDF</a>)</li>
-  <li><a href="/cyberresearchradar/">CyberResearch Radar</a></li>
 </ul>
 
 <h2>Ailleurs sur le Web</h2>

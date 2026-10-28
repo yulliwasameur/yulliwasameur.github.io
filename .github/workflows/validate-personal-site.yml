@@ -40,7 +40,7 @@ jobs:
           from pathlib import Path
           page = Path('_site/index.html').read_text(encoding='utf-8')
           parser = HTMLParser(convert_charrefs=True); parser.feed(page); parser.close()
-          for marker in ('CyberResearch Radar','/assets/css/2000.css','id="compteur"','/cyberresearchradar/','photo-150.jpg','Dernière mise à jour'):
+          for marker in ('/assets/css/2000.css','id="compteur"','photo-150.jpg','Dernière mise à jour'):
               assert marker in page, f'Missing homepage marker: {marker}'
           for path in ('_site/assets/css/2000.css','_site/images/photo-150.jpg','_site/publications/index.html','_site/cv/index.html','_site/cyberresearchradar/index.html','_site/cyberresearchradar/assets/radar-upgrade.js','_site/cyberresearchradar/data/manifest.json'):
               assert Path(path).is_file(), f'Missing generated file: {path}'
