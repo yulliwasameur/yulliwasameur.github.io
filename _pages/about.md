@@ -44,6 +44,7 @@ environnements IoT/cloud.
 
 <h2>Nouvelles</h2>
 <ul>
+  <li><b>11/2026</b> — Cours ouvert en accès libre : <a href="/teaching/2026-cours-ouvert-cryptographie-post-quantique">Cryptographie post-quantique</a> (9 modules, 21 TP, licence CC BY 4.0, <a href="https://doi.org/10.5281/zenodo.24052302">Zenodo</a>).</li>
   <li><b>09/2026</b> — Article accepté dans la revue <i>Cybersecurity</i> (Springer Nature) : <a href="/publication/2026-09-22-cybersecurity-idbleed/">contre-mesure à l'attaque temporelle IDBleed</a>.</li>
   <li><b>09/2026</b> — Trois articles acceptés à IEEE/WIC WI-IAT 2026 et à ses ateliers (Brisbane), dont <a href="/publication/2026-08-31-wiiat2026-rag-ipi/">l'évaluation de l'injection indirecte dans les RAG</a>.</li>
   <li><b>09/2026</b> — Présentation orale de <a href="/publication/2026-09-18-govsecllm-paper/">GovSecLLM++</a> à SecAI @ ESORICS 2026 (Rome).</li>
