@@ -69,6 +69,7 @@ Langues : français, kabyle, anglais (B2)
 <ul>
   <li>Présentation orale : SecAI @ ESORICS 2026 (Rome).</li>
   <li>Conférences invitées : ILCE, Neuchâtel (2023) ; USTHB, Alger (2022) ; séminaire du CEDRIC (2021).</li>
+  <li>Vulgarisation : « <a href="https://theconversation.com/votre-assistant-ia-peut-il-obeir-a-un-inconnu-295513">Votre assistant IA peut-il obéir à un inconnu ?</a> », <em>The Conversation France</em>, 8 novembre 2026 (injection de consignes dans les agents d'IA).</li>
   <li>Médiation scientifique : programme Inria « 1 scientifique, 1 classe : chiche ! » (2025–2026).</li>
   <li>Associations : ARCSI, AFSIN, CEFCYS.</li>
 </ul>
