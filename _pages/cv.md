@@ -59,8 +59,8 @@ Langues : français, kabyle, anglais (B2)
 <h2>Service scientifique et expertise</h2>
 <ul>
   <li>Organisation : co-président et responsable web et communication d'EMSICC 2027 (atelier d'IEEE FiCloud 2027) ; Publicity Chair de WISTP 2027 ; comité local de MSPN 2023.</li>
-  <li>Comités de programme : ANT (2024, 2026, 2027), ARES/IWCC (2023, 2024), WISTP (2024), MSPN (2023), EMSICC (2026).</li>
-  <li>Évaluation d'artefacts : DSN (2025). Relecture : IEEE ICC (2024) ; 15 rapports pour 5 revues (ORCID).</li>
+  <li>Comités de programme : IEEE ICC (2027, symposium SAC – Big Data), SiMLA (2027, atelier d'ACNS 2027), ANT (2024, 2026, 2027), ARES/IWCC (2023, 2024), WISTP (2024), MSPN (2023), EMSICC (2026).</li>
+  <li>Évaluation d'artefacts : DSN (2025). Relecture : The Web Conference (WWW 2027) ; IEEE ICC (2024) ; 15 rapports pour 5 revues (ORCID).</li>
   <li>Expert inscrit au registre des experts de la Commission européenne (2026) ; Aidant cyber MonAideCyber (ANSSI) depuis 2025.</li>
   <li>Financement obtenu : Cohere Labs Catalyst Grant (2026), crédits de calcul pour le traitement automatique du kabyle.</li>
 </ul>
