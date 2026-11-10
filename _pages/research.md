@@ -50,6 +50,7 @@ Collaboration doctorale avec **Redha Boukhari** (Université Mouloud Mammeri de 
 ## Financements
 
 - **EuroHPC Benchmark Access** (2026, EHPC-BEN-2026B11-194) : 2 500 heures-nœud sur le supercalculateur européen LUMI (GPU AMD MI250X, Finlande), pendant 3 mois, pour entraîner et mesurer des agents d'IA à poids ouverts plus résistants à l'injection de consignes.
+- **GENCI – accès dynamique Jean Zay** (2026, AD011018449) : 12 000 heures de GPU H100 sur le supercalculateur Jean Zay (IDRIS), de novembre 2026 à novembre 2027, pour évaluer pas à pas l'injection de consignes indirecte dans les agents d'IA outillés (Web, RAG, MCP) et tester des défenses.
 - **Cohere Labs Catalyst Grant** (2026) : crédits de calcul pour les travaux sur le traitement automatique du kabyle.
 
 ## Collaborations
