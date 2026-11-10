@@ -62,7 +62,7 @@ Langues : français, kabyle, anglais (B2)
   <li>Comités de programme : IEEE ICC (2027, symposium SAC – Big Data), SiMLA (2027, atelier d'ACNS 2027), ANT (2024, 2026, 2027), ARES/IWCC (2023, 2024), WISTP (2024), MSPN (2023), EMSICC (2026).</li>
   <li>Évaluation d'artefacts : DSN (2025). Relecture : The Web Conference (WWW 2027) ; IEEE ICC (2024) ; 15 rapports pour 5 revues (ORCID).</li>
   <li>Expert inscrit au registre des experts de la Commission européenne (2026) ; Aidant cyber MonAideCyber (ANSSI) depuis 2025.</li>
-  <li>Financement obtenu : Cohere Labs Catalyst Grant (2026), crédits de calcul pour le traitement automatique du kabyle.</li>
+  <li>Financements obtenus : EuroHPC Benchmark Access (2026, EHPC-BEN-2026B11-194), 2 500 heures-nœud sur le supercalculateur européen LUMI (GPU AMD MI250X, Finlande) pour entraîner et mesurer des agents d'IA à poids ouverts ; Cohere Labs Catalyst Grant (2026), crédits de calcul pour le traitement automatique du kabyle.</li>
 </ul>
 
 <h2>Diffusion</h2>

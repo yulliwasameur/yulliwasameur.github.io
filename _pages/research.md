@@ -49,6 +49,7 @@ Collaboration doctorale avec **Redha Boukhari** (Université Mouloud Mammeri de 
 
 ## Financements
 
+- **EuroHPC Benchmark Access** (2026, EHPC-BEN-2026B11-194) : 2 500 heures-nœud sur le supercalculateur européen LUMI (GPU AMD MI250X, Finlande), pendant 3 mois, pour entraîner et mesurer des agents d'IA à poids ouverts plus résistants à l'injection de consignes.
 - **Cohere Labs Catalyst Grant** (2026) : crédits de calcul pour les travaux sur le traitement automatique du kabyle.
 
 ## Collaborations
