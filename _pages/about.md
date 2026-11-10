@@ -58,6 +58,7 @@ environnements IoT/cloud.
 
 <h2>Nouvelles</h2>
 <ul class="ya-news">
+  <li><span class="ya-date">nov. 2026</span> — Nouveau logiciel libre : <a href="/logiciels/">KabOCR</a>, un OCR gratuit pour le kabyle. Déposez un PDF : vous obtenez le texte et un PDF cherchable, directement dans le navigateur (<a href="https://yulliwasameur.github.io/kabocr/">essayer</a>, <a href="https://doi.org/10.5281/zenodo.24111659">Zenodo</a>).</li>
   <li><span class="ya-date">2027</span> — Co-président d'<a href="https://emsicc2027.roc.cnam.fr/">EMSICC 2027</a> (atelier d'IEEE FiCloud, Prague) et Publicity Chair de <a href="https://wistp2027.roc.cnam.fr/">WISTP 2027</a> (Djerba).</li>
   <li><span class="ya-date">nov. 2026</span> — Membre du comité de programme d'<a href="https://www.comsoc.org/conferences-events/ieee-international-conference-communications-2027">IEEE ICC 2027</a> (symposium SAC – Big Data) et de <a href="https://easychair.org/cfp/SiMLA27">SiMLA 2027</a> (atelier d'ACNS 2027), relecteur pour <a href="https://www2027.thewebconf.org/">The Web Conference 2027</a>.</li>
   <li><span class="ya-date">nov. 2026</span> — Nouveau cours ouvert en accès libre : <a href="/teaching/2026-cours-ouvert-cryptographie-post-quantique">Cryptographie post-quantique</a> (9 modules, 21 TP, licence CC BY 4.0, <a href="https://doi.org/10.5281/zenodo.24052302">Zenodo</a>).</li>
@@ -73,6 +74,7 @@ environnements IoT/cloud.
   <li><a href="/recherche/">Recherche, encadrement et service scientifique</a></li>
   <li><a href="/teaching/">Enseignement</a></li>
   <li><a href="/talks/">Conférences et interventions</a></li>
+  <li><a href="/logiciels/">Logiciels et outils libres</a></li>
   <li><a href="/cv/">Curriculum vitae</a> (<a href="/files/CV_Yulliwas_AMEUR.pdf">PDF</a>)</li>
 </ul>
 
@@ -122,6 +124,7 @@ homomorphically encrypted data in IoT/cloud environments.
 
 <h2>News</h2>
 <ul class="ya-news">
+  <li><span class="ya-date">Nov 2026</span> — New free software: <a href="/logiciels/">KabOCR</a>, free OCR for Kabyle. Drop a PDF and get the text and a searchable PDF, right in your browser (<a href="https://yulliwasameur.github.io/kabocr/">try it</a>, <a href="https://doi.org/10.5281/zenodo.24111659">Zenodo</a>).</li>
   <li><span class="ya-date">2027</span> — Co-chair of <a href="https://emsicc2027.roc.cnam.fr/">EMSICC 2027</a> (IEEE FiCloud workshop, Prague) and Publicity Chair of <a href="https://wistp2027.roc.cnam.fr/">WISTP 2027</a> (Djerba).</li>
   <li><span class="ya-date">Nov 2026</span> — Program committee member for <a href="https://www.comsoc.org/conferences-events/ieee-international-conference-communications-2027">IEEE ICC 2027</a> (SAC – Big Data symposium) and <a href="https://easychair.org/cfp/SiMLA27">SiMLA 2027</a> (ACNS 2027 workshop), reviewer for <a href="https://www2027.thewebconf.org/">The Web Conference 2027</a>.</li>
   <li><span class="ya-date">Nov 2026</span> — New open course, free to use: <a href="/teaching/2026-cours-ouvert-cryptographie-post-quantique">Post-Quantum Cryptography</a> (in French; 9 modules, 21 labs, CC BY 4.0 licence, <a href="https://doi.org/10.5281/zenodo.24052302">Zenodo</a>).</li>
@@ -138,6 +141,7 @@ homomorphically encrypted data in IoT/cloud environments.
   <li><a href="/recherche/">Research, supervision and academic service</a></li>
   <li><a href="/teaching/">Teaching</a></li>
   <li><a href="/talks/">Talks and presentations</a></li>
+  <li><a href="/logiciels/">Software and open tools</a></li>
   <li><a href="/cv/">Curriculum vitae</a> (<a href="/files/CV_Yulliwas_AMEUR.pdf">PDF</a>)</li>
 </ul>
 <p><small>Most pages of this site are in French.</small></p>
@@ -167,7 +171,7 @@ homomorphically encrypted data in IoT/cloud environments.
     document.querySelectorAll('[data-home-lang]').forEach(function (el) { el.hidden = el.getAttribute('data-home-lang') !== lang; });
     document.querySelectorAll('[data-home-switch]').forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-home-switch') === lang)); });
     document.documentElement.lang = lang;
-    var NAV = { '/': ['Accueil', 'Home'], '/publications/': ['Publications', 'Publications'], '/recherche/': ['Recherche', 'Research'], '/teaching/': ['Enseignement', 'Teaching'], '/talks/': ['Conférences', 'Talks'], '/cv/': ['CV', 'CV'], '/sitemap/': ['Plan du site', 'Site map'] };
+    var NAV = { '/': ['Accueil', 'Home'], '/publications/': ['Publications', 'Publications'], '/recherche/': ['Recherche', 'Research'], '/teaching/': ['Enseignement', 'Teaching'], '/talks/': ['Conférences', 'Talks'], '/logiciels/': ['Logiciels', 'Software'], '/cv/': ['CV', 'CV'], '/sitemap/': ['Plan du site', 'Site map'] };
     var i = lang === 'en' ? 1 : 0;
     document.querySelectorAll('.entete .nav a, .pied a').forEach(function (a) {
       var k = new URL(a.href, location.href).pathname; if (NAV[k] && a.closest('.entete, .pied')) a.textContent = NAV[k][i];
