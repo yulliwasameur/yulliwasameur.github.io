@@ -16,6 +16,10 @@ main:
     title: "Conférences"
     url: /talks/
 
+  - key: software
+    title: "Logiciels"
+    url: /logiciels/
+
   - key: cv
     title: "CV"
     url: /cv/
