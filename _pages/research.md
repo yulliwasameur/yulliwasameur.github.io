@@ -44,7 +44,7 @@ Collaboration doctorale avec **Redha Boukhari** (Université Mouloud Mammeri de 
 - **Organisation** : co-président et responsable web et communication d'EMSICC 2027 (atelier d'IEEE FiCloud 2027, Prague) ; responsable de la communication (Publicity Chair) de WISTP 2027 (Djerba, IFIP WG 11.2) ; comité local de MSPN 2023.
 - **Comités de programme** : IEEE ICC (2027, symposium SAC – Big Data), SiMLA (2027, atelier d'ACNS 2027), ANT (2024, 2026, 2027), ARES/IWCC (2023, 2024), WISTP (2024), MSPN (2023), EMSICC (2026).
 - **Évaluation d'artefacts** : DSN (2025).
-- **Relecture** : The Web Conference (WWW 2027) ; IEEE ICC (2024) ; 15 rapports pour 5 revues, consultables sur [ORCID](https://orcid.org/0000-0003-1435-2982) : *SN Computer Science*, *Journal of Information Security and Applications*, *Annals of Telecommunications*, *Mathematics* (MDPI), *Physical Communication*.
+- **Relecture** : The Web Conference (WWW 2027) ; TEA-OS (2027, atelier d'AAAI 2027) ; IEEE ICC (2024) ; 15 rapports pour 5 revues, consultables sur [ORCID](https://orcid.org/0000-0003-1435-2982) : *SN Computer Science*, *Journal of Information Security and Applications*, *Annals of Telecommunications*, *Mathematics* (MDPI), *Physical Communication*.
 - **Expertise** : expert inscrit au registre des experts de la Commission européenne (2026) ; Aidant cyber du dispositif MonAideCyber (ANSSI) depuis 2025.
 
 ## Financements
